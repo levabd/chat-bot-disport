@@ -25,9 +25,9 @@
 	<use xlink:href="#marker" transform="translate(-135, 106) scale(1.1,1.1)" />
 	<use xlink:href="#marker" transform="translate(30, 106) scale(1.1,1.1)" />
 	
-	<use xlink:href="#tip" transform="translate(138, 55) scale(0.15,0.15)" fill="#f5a989" />
-	<use xlink:href="#tip" transform="translate(303, 55) scale(0.15,0.15)" fill="#f5a989" />
-	<use xlink:href="#tip" transform="translate(469, 55) scale(0.15,0.15)" fill="#f5a989" />
+	<use xlink:href="#tip" transform="translate(138, 55) scale(0.15,0.15)" fill="rgb(66, 156, 200)" />
+	<use xlink:href="#tip" transform="translate(303, 55) scale(0.15,0.15)" fill="rgb(66, 156, 200)" />
+	<use xlink:href="#tip" transform="translate(469, 55) scale(0.15,0.15)" fill="rgb(66, 156, 200)" />
 
 	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 153, 305)" font-size="12px">
 		1 месяц
@@ -45,14 +45,14 @@
 		<tspan>1</tspan>
 		<tspan x="0" dy="1em">занятие</tspan>
 	</text>
-	<text font-family="Ubuntu" fill="rgb(245, 169, 137)" transform="matrix( 1, 0, 0, 1, 256, 81)" font-weight="bold" font-size="20px">
+	<text font-family="Ubuntu" fill="rgb(66, 156, 200)" transform="matrix( 1, 0, 0, 1, 256, 81)" font-weight="bold" font-size="20px">
 		=
 	</text>
 	<text text-anchor="middle" font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 1, 0, 0, 1, 345, 72)" font-weight="bold" font-size="12px">
 		<tspan>5</tspan>
 		<tspan x="0" dy="1em">занятий</tspan>
 	</text>
-	<text font-family="Ubuntu" fill="rgb(245, 169, 137)" transform="matrix( 1, 0, 0, 1, 421, 81)" font-weight="bold" font-size="20px">
+	<text font-family="Ubuntu" fill="rgb(66, 156, 200)" transform="matrix( 1, 0, 0, 1, 421, 81)" font-weight="bold" font-size="20px">
 		=
 	</text>
 	<text text-anchor="middle" font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 1, 0, 0, 1, 511, 72)" font-weight="bold" font-size="12px">

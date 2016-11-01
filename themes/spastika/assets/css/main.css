@@ -282,6 +282,10 @@ div[class^=col-] {
     content: normal;
 }*/
 
+#insultWhere .form-check-input {
+    margin-left: 0;
+}
+
 .btn-primary {
     background-color: #f5a98a !important;
     text-transform: uppercase;
@@ -1372,7 +1376,7 @@ div[class^=col-] {
 }
 
 #faq {
-    padding: 5rem 0 7rem;
+    padding: 5rem 0 3rem;
 }
 
 #faq ul {
@@ -1713,6 +1717,12 @@ div[class^=col-] {
     -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
+}
+
+.types-tab-content .container .row div.doctor-names strong {
+    font: 700 16px/1 'Ubuntu', serif;
+    padding: 8px 0;
+    display: inline-block;
 }
 
 .types-tab-content .container .row div strong {
@@ -2262,12 +2272,12 @@ div[class^=col-] {
 
 .doctor-names div {
     padding-left: 45px;
-    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4000 4000'%3E%3CclipPath id='clipCircle'%3E%3Ccircle cx='2150' cy='2500' r='1850' /%3E%3C/clipPath%3E%3Cpath fill='%23f79168' transform='translate(0,2800) scale(0.72,-0.72)' stroke='none' d='M2035 3589 c-38 -11 -108 -38 -155 -62 -111 -55 -241 -180 -288 -277 -56 -116 -66 -178 -66 -440 l-1 -235 43 -71 c23 -39 42 -74 42 -80 0 -5 15 -28 34 -52 22 -27 40 -66 51 -110 9 -37 25 -89 37 -117 27 -67 37 -112 38 -161 0 -46 -8 -55 -85 -99 -27 -16 -72 -50 -100 -76 -27 -26 -75 -61 -105 -79 -63 -37 -240 -97 -385 -130 -258 -58 -382 -92 -404 -108 -41 -31 -75 -148 -182 -627 -40 -177 -70 -339 -76 -403 l-5 -52 1696 0 1696 0 0 28 c0 15 -4 32 -9 38 -4 5 -14 56 -20 114 -30 255 -59 396 -107 522 -19 48 -34 102 -34 120 -1 73 -62 154 -161 211 -38 22 -449 180 -563 217 -28 9 -69 42 -137 109 -53 53 -111 107 -129 120 -79 59 -83 164 -15 367 26 76 62 162 80 189 62 95 97 184 111 277 4 35 2 55 -11 80 -14 26 -20 75 -26 223 -10 209 -22 269 -69 333 -54 75 -129 119 -250 149 -59 14 -90 28 -193 85 -42 24 -159 22 -252 -3z' clip-path='url(%23clipCircle)'/%3E%3C/svg%3E") no-repeat scroll left top transparent;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4000 4000'%3E%3CclipPath id='clipCircle'%3E%3Ccircle cx='2150' cy='2500' r='1850' /%3E%3C/clipPath%3E%3Cpath fill='%23f79168' transform='translate(0,1000) scale(0.25,-0.25)' stroke='none' d='M2035 3589 c-38 -11 -108 -38 -155 -62 -111 -55 -241 -180 -288 -277 -56 -116 -66 -178 -66 -440 l-1 -235 43 -71 c23 -39 42 -74 42 -80 0 -5 15 -28 34 -52 22 -27 40 -66 51 -110 9 -37 25 -89 37 -117 27 -67 37 -112 38 -161 0 -46 -8 -55 -85 -99 -27 -16 -72 -50 -100 -76 -27 -26 -75 -61 -105 -79 -63 -37 -240 -97 -385 -130 -258 -58 -382 -92 -404 -108 -41 -31 -75 -148 -182 -627 -40 -177 -70 -339 -76 -403 l-5 -52 1696 0 1696 0 0 28 c0 15 -4 32 -9 38 -4 5 -14 56 -20 114 -30 255 -59 396 -107 522 -19 48 -34 102 -34 120 -1 73 -62 154 -161 211 -38 22 -449 180 -563 217 -28 9 -69 42 -137 109 -53 53 -111 107 -129 120 -79 59 -83 164 -15 367 26 76 62 162 80 189 62 95 97 184 111 277 4 35 2 55 -11 80 -14 26 -20 75 -26 223 -10 209 -22 269 -69 333 -54 75 -129 119 -250 149 -59 14 -90 28 -193 85 -42 24 -159 22 -252 -3z' clip-path='url(%23clipCircle)'/%3E%3C/svg%3E") no-repeat scroll left top transparent;
 }
 
 .doctor-names .assistant {
     margin-top: 26px;
-    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4000 4000'%3E%3CclipPath id='clipCircle'%3E%3Ccircle cx='2150' cy='2500' r='1850' /%3E%3C/clipPath%3E%3Cpath fill='%2363dafd' transform='translate(0,2800) scale(0.72,-0.72)' stroke='none' d='M2035 3589 c-38 -11 -108 -38 -155 -62 -111 -55 -241 -180 -288 -277 -56 -116 -66 -178 -66 -440 l-1 -235 43 -71 c23 -39 42 -74 42 -80 0 -5 15 -28 34 -52 22 -27 40 -66 51 -110 9 -37 25 -89 37 -117 27 -67 37 -112 38 -161 0 -46 -8 -55 -85 -99 -27 -16 -72 -50 -100 -76 -27 -26 -75 -61 -105 -79 -63 -37 -240 -97 -385 -130 -258 -58 -382 -92 -404 -108 -41 -31 -75 -148 -182 -627 -40 -177 -70 -339 -76 -403 l-5 -52 1696 0 1696 0 0 28 c0 15 -4 32 -9 38 -4 5 -14 56 -20 114 -30 255 -59 396 -107 522 -19 48 -34 102 -34 120 -1 73 -62 154 -161 211 -38 22 -449 180 -563 217 -28 9 -69 42 -137 109 -53 53 -111 107 -129 120 -79 59 -83 164 -15 367 26 76 62 162 80 189 62 95 97 184 111 277 4 35 2 55 -11 80 -14 26 -20 75 -26 223 -10 209 -22 269 -69 333 -54 75 -129 119 -250 149 -59 14 -90 28 -193 85 -42 24 -159 22 -252 -3z' clip-path='url(%23clipCircle)'/%3E%3C/svg%3E") no-repeat scroll left top transparent;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4000 4000'%3E%3CclipPath id='clipCircle'%3E%3Ccircle cx='2150' cy='2500' r='1850' /%3E%3C/clipPath%3E%3Cpath fill='%2363dafd' transform='translate(0,1000) scale(0.25,-0.25)' stroke='none' d='M2035 3589 c-38 -11 -108 -38 -155 -62 -111 -55 -241 -180 -288 -277 -56 -116 -66 -178 -66 -440 l-1 -235 43 -71 c23 -39 42 -74 42 -80 0 -5 15 -28 34 -52 22 -27 40 -66 51 -110 9 -37 25 -89 37 -117 27 -67 37 -112 38 -161 0 -46 -8 -55 -85 -99 -27 -16 -72 -50 -100 -76 -27 -26 -75 -61 -105 -79 -63 -37 -240 -97 -385 -130 -258 -58 -382 -92 -404 -108 -41 -31 -75 -148 -182 -627 -40 -177 -70 -339 -76 -403 l-5 -52 1696 0 1696 0 0 28 c0 15 -4 32 -9 38 -4 5 -14 56 -20 114 -30 255 -59 396 -107 522 -19 48 -34 102 -34 120 -1 73 -62 154 -161 211 -38 22 -449 180 -563 217 -28 9 -69 42 -137 109 -53 53 -111 107 -129 120 -79 59 -83 164 -15 367 26 76 62 162 80 189 62 95 97 184 111 277 4 35 2 55 -11 80 -14 26 -20 75 -26 223 -10 209 -22 269 -69 333 -54 75 -129 119 -250 149 -59 14 -90 28 -193 85 -42 24 -159 22 -252 -3z' clip-path='url(%23clipCircle)'/%3E%3C/svg%3E") no-repeat scroll left top transparent;
 }
 
 .doctor-names {
@@ -2392,6 +2402,11 @@ nav {
 
 
 /*-------------------- Footer --------------------*/
+
+#layout-footer {
+    padding-top: 4rem;
+    background: #fff;
+}
 
 #footer .upper {
     position: relative;
