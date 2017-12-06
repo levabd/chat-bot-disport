@@ -1,0 +1,6 @@
+{
+    "require": {
+        "botman/installer": "^1.0",
+        "botman/botman": "^2.1"
+    }
+}
