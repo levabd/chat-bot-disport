@@ -1,0 +1,103 @@
+<?php
+
+if (!function_exists('listFiles')) {
+    function listFiles($path = '', $type = '', &$files = '') {
+        if ($type == 'static_pages') {
+            $path = str_replace('$', 'content/static-pages', $path);
+        }
+        else {
+            if ($type == 'content' && substr_count($path, 'static-pages') > 0) {
+                return $files;
+            }
+
+            $path = str_replace('$', $type, $path);
+        }
+
+        if (!File::isDirectory(base_path().'/'.$path)) {
+            return $files;
+        }
+
+        if ($folder = opendir(base_path().'/'.$path)) {
+            $path = str_replace('themes/', '', $path);
+
+            while ($file = readdir($folder)) {
+                if (File::isFile($sub = base_path().'/themes/'.$path.'/'.$file)) {
+                    $files .= '<option value="'.$path.'/'.$file.'">'.substr($file, 0, strrpos($file, '.')).'</option>';
+                }
+
+                else if ($file != '.' && $file != '..') {
+                    listFiles($sub, $type, $files);
+                }
+            }
+
+            closedir($folder);
+        }
+
+        return $files;
+    }
+}
+
+if (count($themes) == 1 || $this->property('theme')) {
+    $items = listFiles('themes/'.$theme.'/$', $this->property('type'));
+}
+
+else {
+    $items = '';
+
+    foreach ($themes as $name) {
+        $items .= '<optgroup label="'.$name.'">'.listFiles('themes/'.$name.'/$', $this->property('type')).'</optgroup>';
+    }
+}
+
+?>
+<div class="report-widget">
+    <h3 style="margin-bottom:25px;"><?= e(trans($this->property('title'))) ?></h3>
+
+<?php if (!isset($error)): ?>
+    <form>
+        <p>
+            <select name="page" onchange="QeditPage(this);" class="form-control custom-select" style="width:100%;">
+                <option value=""><?= e(trans('indikator.qedit::lang.widget.select')) ?></option>
+                <?= $items ?>
+            </select>
+        </p>
+        <p>
+            <div<?php if ($this->property('editor') == 'rich') echo ' class="field-richeditor size-'.$this->property('size').'" data-editor-lang="'.App::getLocale().'" data-control="richeditor"'; ?>>
+                <textarea name="content" class="qedit-textarea"<?php if ($this->property('editor') == 'none') echo ' style="height:'.$this->property('height').'px;width:100%;"'; ?>></textarea>
+                <?php if ($this->property('editor') == 'rich') echo '<div class="height-indicator"></div>'; ?>
+            </div>
+        </p>
+        <p>
+            <button
+                type="submit"
+                data-request="<?= $this->getEventHandler('onQeditSave') ?>"
+                data-hotkey="ctrl+s, cmd+s"
+                class="btn btn-primary">
+                <?= e(trans('backend::lang.form.save')) ?>
+            </button>
+            <span style="margin-left:10px;"><?= e(trans('indikator.qedit::lang.widget.modify')) ?>: <strong class="qedit-date"><?= e(trans('indikator.qedit::lang.widget.nodate')) ?></strong></span>
+        </p>
+    </form>
+
+<?php else: ?>
+    <p class="flash-message static warning"><?= e($error) ?></p>
+<?php endif ?>
+</div>
+
+<script type="text/javascript">
+function QeditPage(path) {
+    /* Content */
+    $.post('<?= Backend::url('indikator/qedit/content') ?>?path=' + path.value, function(data, status) {
+        if ($('.field-richeditor').length == 0) {
+            $('.qedit-textarea').val(data);
+        }
+        else {
+            $('.qedit-textarea').froalaEditor('html.set', data);
+        }
+    });
+    /* Date */
+    $.post('<?= Backend::url('indikator/qedit/date') ?>?path=' + path.value, function(data, status) {
+        $('.qedit-date').html(data);
+    });
+}
+</script>

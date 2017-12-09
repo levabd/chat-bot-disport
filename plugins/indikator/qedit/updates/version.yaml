@@ -1,0 +1,19 @@
+1.0.0: First version of Quick Edit.
+1.0.1: Support CMS contents.
+1.0.2: Fixed minor issue.
+1.0.3: Works with all themes.
+1.0.4: Fixed the blank theme issue.
+1.0.5: Improved the Rich editor.
+1.1.0: Support partials and layouts.
+1.1.1: Changed the size of Rich Editor.
+1.1.2: Minor changes.
+1.1.3: Minor improvement.
+1.1.4: Minor improvements.
+1.1.5: Cleanup the code.
+1.1.6: Added the plugin icon.
+1.1.7: Improved the widget exception handling.
+1.1.8: Improved the format of modify date.
+1.1.9: Updated for latest October.
+1.2.0: Support the Static Pages plugin.
+1.2.1: Improved the Rich editor mode.
+1.2.2: Hide the files of unused themes.

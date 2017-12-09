@@ -1,0 +1,23 @@
+{
+    "name": "spastika-theme",
+    "type": "",
+    "description": "SPASTIKA theme by Media Systems",
+    "keywords": [],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oleg Levitsky",
+            "email": "levabd@gmail.com",
+            "role": "web-developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
