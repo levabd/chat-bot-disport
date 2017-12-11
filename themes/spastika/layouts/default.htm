@@ -26,7 +26,8 @@
     <meta name="msapplication-TileImage" content="{{ 'assets/images/ms-icon-144x144.png'|theme }}">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="{{ 'assets/vendor/font-awesome/css/font-awesome.min.css'|theme }}">
-    <link rel="stylesheet" href="{{ 'assets/vendor/bootstrap/css/bootstrap.min.css'|theme }}"> {% styles %}
+    <link rel="stylesheet" href="{{ 'assets/vendor/bootstrap/css/bootstrap.min.css'|theme }}">
+    <link rel="stylesheet" href="{{ 'assets/vendor/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.min.css'|theme }}"> {% styles %}
 </head>
 
 <body>
@@ -52,7 +53,9 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="{{ 'assets/vendor/jquery-3.2.1.slim.min.js'|theme }}"></script>
+    <script src="{{ 'assets/vendor/jquery-3.2.1.min.js'|theme }}"></script>
+    <script src="{{ 'assets/vendor/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.concat.min.js'|theme }}"></script>
+    <script src="{{ 'assets/javascript/chat.js'|theme }}"></script>
     <script src="{{ 'assets/vendor/popper.min.js'|theme }}"></script>
     <script src="{{ 'assets/vendor/bootstrap/js/bootstrap.min.js'|theme }}"></script>
     {% framework extras %} {% scripts %}
