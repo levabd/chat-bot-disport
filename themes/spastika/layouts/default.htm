@@ -25,9 +25,13 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="{{ 'assets/images/ms-icon-144x144.png'|theme }}">
     <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
     <link rel="stylesheet" href="{{ 'assets/vendor/font-awesome/css/font-awesome.min.css'|theme }}">
     <link rel="stylesheet" href="{{ 'assets/vendor/bootstrap/css/bootstrap.min.css'|theme }}">
-    <link rel="stylesheet" href="{{ 'assets/vendor/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.min.css'|theme }}"> {% styles %}
+    <link rel="stylesheet" href="{{ 'assets/vendor/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.min.css'|theme }}">
+    <link rel="stylesheet" href="{{ 'assets/css/main.css'|theme }}"> {% styles %}
 </head>
 
 <body>
@@ -43,9 +47,9 @@
     </section>
 
     <!-- Chat box -->
-    <footer id="layout-chat">
+    <section id="layout-chat">
         {% partial 'site/chat' %}
-    </footer>
+    </section>
 
     <!-- Footer -->
     <footer id="layout-footer">

@@ -4,12 +4,10 @@
     *::after {
         box-sizing: border-box;
     }
-    /*--------------------
-    Chat
-    --------------------*/
+    /*-------------------- Chat --------------------*/
     
     .chat {
-        position: absolute;
+        position: fixed;
         bottom: 5%;
         right: 1%;
         -webkit-transform: translate(0%, 0%);
@@ -33,9 +31,7 @@
         -ms-flex-direction: column;
         flex-direction: column;
     }
-    /*--------------------
-    Chat Title
-    --------------------*/
+    /*-------------------- Chat Title --------------------*/
     
     .chat-title {
         -webkit-box-flex: 0;
@@ -89,9 +85,7 @@
         width: 100%;
         height: auto;
     }
-    /*--------------------
-    Messages
-    --------------------*/
+    /*-------------------- Messages --------------------*/
     
     .messages {
         -webkit-box-flex: 1;
@@ -258,9 +252,7 @@
         -webkit-animation-delay: .3s;
         animation-delay: .3s;
     }
-    /*--------------------
-    Message Box
-    --------------------*/
+    /*-------------------- Message Box --------------------*/
     
     .message-box {
         -webkit-box-flex: 0;
@@ -318,9 +310,7 @@
         margin-bottom: 5px;
         border-top: 2px solid #23abd5;
     }
-    /*--------------------
-    Custom Srollbar
-    --------------------*/
+    /*-------------------- Custom Srollbar --------------------*/
     
     .mCSB_scrollTools {
         margin: 1px -3px 1px 0;
@@ -335,9 +325,7 @@
     .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
         background-color: rgba(0, 0, 0, 0.5) !important;
     }
-    /*--------------------
-    Bounce
-    --------------------*/
+    /*-------------------- Bounce --------------------*/
     
     @-webkit-keyframes bounce {
         0% {
@@ -470,14 +458,12 @@
             transform: translateY(-10px);
         }
     }
-    /*--------------------
-    Chat Button
-    --------------------*/
+    /*-------------------- Chat Button --------------------*/
     
     #chat_toggle {
         bottom: 25px;
         right: 10px;
-        position: absolute;
+        position: fixed;
     }
     
     .img-circle {
@@ -823,4 +809,4 @@
         <hr />
     </div>
 
-</div>;
+</div>
