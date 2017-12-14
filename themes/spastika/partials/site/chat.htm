@@ -743,10 +743,32 @@
         font-weight: 100;
     }
     
-    .fa-window-minimize-thin:before {
-        content: '―';
+    .window-minimize-thin:before {
+        /*content: '―';
         font-weight: 400;
-        padding-right: 18px;
+        padding-right: 18px;*/
+        content: "";
+        border-style: solid;
+        border-color: #fff;
+        border-width: 0px 0px 1px 0px;
+        height: 10px;
+        width: 14px;
+        position: absolute;
+        top: 4px;
+        right: 31px;
+    }
+    
+    .window-maximize-thin:before {
+        /*content: ' ͞͞͞͞͞ ͞';*/
+        content: "";
+        border-style: solid;
+        border-color: #fff;
+        border-width: 1px 0px 0px 0px;
+        height: 10px;
+        width: 14px;
+        position: absolute;
+        top: 3px;
+        right: 31px;
     }
     
     .x::before,
@@ -794,7 +816,9 @@
             <h1>Добрый день</h3>
         </div>
         <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4" style="text-align: right; width: 20%;">
-            <a href="#"><i id="minim_chat_window" class="fa fa-window-minimize-thin" aria-hidden="true"></i></a>
+            <a href="#" id="minim_chat_window">
+                <div class="window-minimize-thin"></div>
+            </a>
             <a href="#" id="close_chat_window">
                 <div class="x"></div>
             </a>

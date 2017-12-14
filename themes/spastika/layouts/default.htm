@@ -3,11 +3,26 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>SPASTIKA - {{ this.page.title }}</title>
     <meta name="description" content="{{ this.page.meta_description }}" />
     <meta name="title" content="{{ this.page.meta_title }}" />
     <meta name="author" content="Oleg Levitsky https://github.com/levabd" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="SPASTIKA - {{ this.page.title }}">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="SPASTIKA">
+    <meta property="og:image" content="{{ 'assets/images/android-icon-192x192.png'|theme }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="SPASTIKA">
+    <meta name="twitter:image" content="{{ 'assets/images/android-icon-192x192.png'|theme }}">
+
     <link rel="apple-touch-icon" sizes="57x57" href="{{ 'assets/images/apple-icon-57x57.png'|theme }}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ 'assets/images/apple-icon-60x60.png'|theme }}">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ 'assets/images/apple-icon-72x72.png'|theme }}">
@@ -37,7 +52,7 @@
 <body>
 
     <!-- Header -->
-    <header id="layout-header">
+    <header id="layout-header" class="container">
         {% partial 'site/header' %}
     </header>
 
@@ -62,6 +77,7 @@
     <script src="{{ 'assets/javascript/chat.js'|theme }}"></script>
     <script src="{{ 'assets/vendor/popper.min.js'|theme }}"></script>
     <script src="{{ 'assets/vendor/bootstrap/js/bootstrap.min.js'|theme }}"></script>
+    <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
     {% framework extras %} {% scripts %}
 
 </body>

@@ -31,6 +31,116 @@ font-family: 'Open Sans', sans-serif; (700)
 */
 
 
+/*------------------- General --------------------*/
+
+.btn-primary {
+    background-color: #f5a98a !important;
+    border: none;
+    border-bottom: 4px solid #d5724b;
+    border-radius: .25rem;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 1.1rem 4.0625rem;
+}
+
+.btn-primary:hover {
+    background-color: #d5724b !important;
+    border-bottom: 4px solid #b33a00;
+}
+
+
+/*--------------------- Logo ---------------------*/
+
+.logo-p1 {
+    font-family: 'MyriadProBlack', sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.logo-p2 {
+    font-family: 'MyriadProLight', sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+
+/*-------------------- Header --------------------*/
+
+.navbar-brand .logo-p1,
+.navbar-brand .logo-p2 {
+    font-size: 26px;
+    color: #4a5665;
+}
+
+nav .container {
+    padding: 10px 15px;
+}
+
+#layout-content {
+    margin-top: 80px;
+}
+
+.navbar-collapse {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding: .5rem 2rem;
+    position: relative;
+    color: #6f8095;
+}
+
+.navbar-expand-md .navbar-nav .nav-link:hover {
+    color: #f79168;
+    text-decoration: none;
+}
+
+.navbar-expand-md .navbar-nav .active .nav-link {
+    color: #f79168;
+}
+
+.navbar-collapse div {
+    text-align: center;
+}
+
+.navbar-collapse .active a::after {
+    content: "";
+    background: #f79168;
+    position: absolute;
+    bottom: 1px;
+    left: 42%;
+    height: 3px;
+    width: 16%;
+}
+
+.navbar-collapse.show .active a::after {
+    left: 47%;
+    width: 5%;
+}
+
+.navbar-collapse .btn-primary {
+    padding: .8rem 2.35rem;
+    border-bottom: none;
+}
+
+.navbar {
+    background-color: #fff;
+    transition: .25s ease-in-out;
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(111,128,149, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
 /*-------------------- Footer --------------------*/
 
 #footer {
@@ -87,7 +197,7 @@ font-family: 'Open Sans', sans-serif; (700)
 
 #footer .community .icon.social {
     float: left;
-    margin: 0 31px 0 0;
+    margin: 0 31px 10px 0;
     cursor: pointer;
     background: #6c6c6c;
     color: #262626;
@@ -115,16 +225,10 @@ font-family: 'Open Sans', sans-serif; (700)
     filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .8));
 }
 
-#footer .community .icon.social.fcb i {
-    left: 13px;
-}
-
-#footer .community .icon.social.tw i {
-    left: 11px;
-}
-
+#footer .community .icon.social.fcb i,
+#footer .community .icon.social.tw i,
 #footer .community .icon.social.in i {
-    left: 11px;
+    left: 13px;
 }
 
 #footer .menu {
@@ -153,18 +257,8 @@ font-family: 'Open Sans', sans-serif; (700)
     text-align: center;
 }
 
-#footer .logo-p1 {
-    font-family: 'MyriadProBlack', sans-serif;
-    letter-spacing: 5px;
-    font-size: 26px;
-    text-transform: uppercase;
-    color: #e6e6e6;
-}
-
+#footer .logo-p1,
 #footer .logo-p2 {
-    font-family: 'MyriadProLight', sans-serif;
-    letter-spacing: 5px;
     font-size: 26px;
-    text-transform: uppercase;
     color: #e6e6e6;
 }

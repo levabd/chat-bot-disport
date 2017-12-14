@@ -1,21 +1,24 @@
-<!-- Nav -->
-<nav id="layout-nav" class="navbar navbar-inverse navbar-fixed-top navbar-autohide" role="navigation">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md fixed-top navbar-inverse" id="navbar">
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ 'home'|page }}">October Demo</a>
-        </div>
-        <div class="collapse navbar-collapse navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                <li class="separator hidden-xs"></li>
-                <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Basic concepts</a></li>
-                <li class="{% if this.page.id == 'ajax' %}active{% endif %}"><a href="{{ 'ajax'|page }}">AJAX framework</a></li>
-                <li class="{% if this.page.id == 'plugins' %}active{% endif %}"><a href="{{ 'plugins'|page }}">Plugin components</a></li>
+        <a href="{{ 'home'|page }}" class="navbar-brand"><span class="logo-p1">Spasti</span><span class="logo-p2">ka</span></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item text-center {% if this.page.id == 'plugins' %}active{% endif %}">
+                    <a class="nav-link" href="{{ 'plugins'|page }}">Инсульт</a>
+                </li>
+                <li class="nav-item text-center {% if this.page.id == 'home' %}active{% endif %}">
+                    <a class="nav-link" href="{{ 'home'|page }}">Спастичность</a>
+                </li>
+                <li class="nav-item text-center {% if this.page.id == 'ajax' %}active{% endif %}">
+                    <a class="nav-link" href="{{ 'ajax'|page }}">Реабилитация</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-toggler-right">
+                <a href="#" class="btn btn-primary" role="button">On-line помощь</a>
             </ul>
         </div>
     </div>

@@ -13,14 +13,18 @@
 
     $('#minim_chat_window').click(function() {
         if (!$('#minim_chat_window').hasClass('panel-collapsed')) {
-            $('.chat').animate({ height: "95px" }, "slow", function() {
+            $('.chat').animate({
+                height: "95px"
+            }, "slow", function() {
                 $('#minim_chat_window').addClass('panel-collapsed');
-                $('#minim_chat_window').removeClass('fa-window-minimize-thin').addClass('fa-plus');
+                $('#minim_chat_window div').removeClass('window-minimize-thin').addClass('window-maximize-thin');
             });
         } else {
-            $('.chat').animate({ height: "80vh" }, "slow", function() {
+            $('.chat').animate({
+                height: "80vh"
+            }, "slow", function() {
                 $('#minim_chat_window').removeClass('panel-collapsed');
-                $('#minim_chat_window').removeClass('fa-plus').addClass('fa-window-minimize-thin');
+                $('#minim_chat_window div').removeClass('window-maximize-thin').addClass('window-minimize-thin');
             });
         }
         return false;
@@ -39,7 +43,10 @@
     });
 
     function updateScrollbar() {
-        $messages.mCustomScrollbar("update").mCustomScrollbar('scrollTo', 'bottom', { scrollInertia: 10, timeout: 0 });
+        $messages.mCustomScrollbar("update").mCustomScrollbar('scrollTo', 'bottom', {
+            scrollInertia: 10,
+            timeout: 0
+        });
     }
 
     function setDate() {
