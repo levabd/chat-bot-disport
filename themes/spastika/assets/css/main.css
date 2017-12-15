@@ -33,8 +33,14 @@ font-family: 'Open Sans', sans-serif; (700)
 
 /*------------------- General --------------------*/
 
+body,
+html {
+    color: #4a5665;
+}
+
 .btn-primary {
     background-color: #f5a98a !important;
+    text-transform: uppercase;
     border: none;
     border-bottom: 4px solid #d5724b;
     border-radius: .25rem;
@@ -48,6 +54,60 @@ font-family: 'Open Sans', sans-serif; (700)
 .btn-primary:hover {
     background-color: #d5724b !important;
     border-bottom: 4px solid #b33a00;
+}
+
+.btn-outline-secondary {
+    border-color: #ccc;
+    border-radius: .25rem;
+    color: #515151;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: .65rem 2.1rem;
+    line-height: 1.875;
+}
+
+.btn-outline-secondary:hover i {
+    color: #fff;
+}
+
+.btn-outline-secondary i {
+    color: #808080;
+    font-size: 20px;
+    padding-left: .65rem;
+    line-height: 1.5;
+    vertical-align: middle;
+}
+
+.page-block {
+    padding: 5rem 0;
+}
+
+.page-block::before {
+    content: "";
+    display: block;
+    width: 65px;
+    margin: 0 47%;
+    margin: 0 calc(50% - 32px);
+    margin: 0 -webkit-calc(50% - 32px);
+    margin: 0 -moz-calc(50% - 32px);
+    margin: 0 -o-calc(50% - 32px);
+    margin: 0 expression(50% - 32px);
+    border-top: 2px solid #63dafd;
+}
+
+.page-block .title {
+    font-family: 'Vollkorn', serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1.4rem 0 1.875rem;
+}
+
+.more {
+    text-align: center;
+    margin: 3.75rem 0 0;
 }
 
 
@@ -66,12 +126,224 @@ font-family: 'Open Sans', sans-serif; (700)
 }
 
 
+/*------------------- Spastika -------------------*/
+
+.jumbotron {
+    background: url("../images/spastika_head.png") no-repeat scroll center top transparent;
+    height: 700px;
+    margin-bottom: 0;
+}
+
+.jumbotron .row {
+    font-family: 'Vollkorn', serif;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 2.875rem;
+    margin-top: 7.25rem;
+}
+
+.jumbotron .row b {
+    font-size: 3.75rem;
+}
+
+.jumbotron .btn-primary {
+    margin: 30px 15px;
+}
+
+#causes .row:first-of-type {
+    margin-bottom: 30px;
+}
+
+#causes .row .col-3 {
+    text-align: center;
+    max-width: 120px;
+    margin-bottom: 60px;
+}
+
+#causes .row .col-9 {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1;
+    font-size: 22px;
+    margin-bottom: 60px;
+}
+
+#causes .row .col-9 b {
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+#causes .row .col-9 span {
+    font-size: 16px;
+    line-height: .1;
+    font-weight: 300;
+}
+
+#causes .more {
+    margin-top: 1.825rem;
+}
+
+#hand-position {
+    background-color: #f0f5f5;
+    padding: 5rem 30px;
+}
+
+#hand-position .union {
+    padding: 0;
+    margin: 50px 30px 45px;
+    width: 90%;
+    width: calc(100% - 60px);
+    width: -webkit-calc(100% - 60px);
+    width: -moz-calc(100% - 60px);
+    width: -o-calc(100% - 60px);
+    width: expression(100% - 60px);
+    -ms-flex: 0 0 90%;
+    flex: 0 0 90%;
+    -ms-flex: 0 0 calc(100% - 60px);
+    flex: 0 0 calc(100% - 60px);
+    -ms-flex: 0 0 -webkit-calc(100% - 60px);
+    flex: 0 0 -webkit-calc(100% - 60px);
+    -ms-flex: 0 0 -moz-calc(100% - 60px);
+    flex: 0 0 -moz-calc(100% - 60px);
+    -ms-flex: 0 0 -o-calc(100% - 60px);
+    flex: 0 0 -o-calc(100% - 60px);
+    -ms-flex: 0 0 expression(100% - 60px);
+    flex: 0 0 expression(100% - 60px);
+    position: relative;
+    border: none;
+    height: 12px;
+    border-top: 1px solid #96a3b4;
+    border-left: 1px solid #96a3b4;
+    border-right: 1px solid #96a3b4;
+    text-align: center;
+}
+
+#hand-position .union div {
+    position: absolute;
+    left: 40%;
+    left: calc(50% - 75px);
+    left: -webkit-calc(50% - 75px);
+    left: -moz-calc(50% - 75px);
+    left: -o-calc(50% - 75px);
+    left: expression(50% - 75px);
+    top: -40px;
+    width: 150px;
+    background-color: #f0f5f5;
+    font: 400 16px/1 'Ubuntu', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#hand-position .union div b {
+    letter-spacing: normal;
+    font: 700 36px/1.5 'Open Sans', sans-serif;
+}
+
+#hand-position .hand {
+    text-align: center;
+    font: 700 28px/1 'Open Sans', sans-serif;
+}
+
+#hand-position hr {
+    position: relative;
+    border: none;
+    border-top: 1px solid #96a3b4;
+    margin: 1.25rem 10px 1.625rem;
+}
+
+#hand-position hr::before,
+#hand-position hr::after {
+    content: "\f096";
+    display: inline-block;
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 9px;
+    color: #96a3b4;
+    left: -7px;
+    top: -5px;
+}
+
+#hand-position hr::after {
+    right: -7px;
+    left: auto;
+}
+
+#hand-normal {
+    background: url("../images/spastika/hand-normal-bkg.png") no-repeat scroll center top #44b9ea;
+    height: 440px;
+    margin-bottom: 0;
+    padding-top: 6rem;
+}
+
+#hand-normal img {
+    height: 222px;
+    width: 222px;
+    margin-bottom: 30px;
+    display: block;
+    float: left;
+}
+
+#hand-normal .row {
+    font: 300 22px/1 'Ubuntu', serif;
+    color: #fff;
+}
+
+#hand-normal .row div div {
+    padding: 1px 0 0 260px;
+    text-indent: -45px;
+}
+
+#hand-normal .row div div::before {
+    content: "“";
+    position: relative;
+    left: -25px;
+    top: 20px;
+    font: 700 80px/1 'STIXGeneral-Bold';
+}
+
+#hand-normal .row div div a {
+    margin-top: 35px;
+    text-indent: 0;
+}
+
+#sympthoms {
+    padding-top: 8.5rem;
+}
+
+#sympthoms::before {
+    margin: 0 53%;
+    margin: 0 calc(50% + 32px);
+    margin: 0 -webkit-calc(50% + 32px);
+    margin: 0 -moz-calc(50% + 32px);
+    margin: 0 -o-calc(50% + 32px);
+    margin: 0 expression(50% + 32px);
+}
+
+#sympthoms .container .col:first-of-type {
+    margin-top: -3.5rem;
+}
+
+#sympthoms .title {
+    text-align: left;
+    line-height: 1;
+    margin: 1.4rem 18px 1.875rem;
+}
+
+#sympthoms li {
+    line-height: 1;
+    margin-bottom: 35px;
+}
+
+#complications .complication {
+    margin-top: 40px;
+}
+
+
 /*-------------------- Header --------------------*/
 
 .navbar-brand .logo-p1,
 .navbar-brand .logo-p2 {
-    font-size: 26px;
     color: #4a5665;
+    font-size: 26px;
 }
 
 nav .container {
@@ -143,9 +415,34 @@ nav .container {
 
 /*-------------------- Footer --------------------*/
 
+#footer .upper {
+    position: relative;
+    height: 0;
+}
+
+#footer .upper a {
+    position: absolute;
+    bottom: 68px;
+    right: -55px;
+    height: 40px;
+    width: 40px;
+    background: #ececec;
+    border-radius: 10px;
+}
+
+#footer .upper a i {
+    color: #2d2d2d;
+    font-size: 30px;
+    padding: 3px 0 0 11px;
+}
+
+#footer .upper a:hover i {
+    color: #2d2d2d;
+}
+
 #footer {
     background-color: #2d2d2d;
-    height: 310px;
+    min-height: 310px;
     padding: 35px 0;
 }
 

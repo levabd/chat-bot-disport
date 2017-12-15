@@ -23,6 +23,11 @@
         });
     });
 
+    $("#upper").click(function(e) {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        e.preventDefault();
+    });
+
     // Scrolling navbar effects
     var fixed = false;
     $(document).scroll(function() {
