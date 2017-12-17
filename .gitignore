@@ -9,3 +9,7 @@ storage/cms/cache/
 storage/framework/sessions/
 storage/cms/twig/
 themes/spastika/design_layouts/spasticity_step_1.psd
+themes/spastika/design_layouts/spasticity_muscle.psd
+themes/spastika/design_layouts/spasticity_step_2.psd
+themes/spastika/design_layouts/spasticity_doctor_clinic.psd
+themes/spastika/design_layouts/spasticity_step_3.psd

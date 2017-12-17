@@ -47,7 +47,8 @@
     <link rel="stylesheet" href="{{ 'assets/vendor/bootstrap/css/bootstrap.min.css'|theme }}">
     <link rel="stylesheet" href="{{ 'assets/vendor/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.min.css'|theme }}">
     <link rel="stylesheet" href="{{ 'assets/css/main.css'|theme }}">
-    <link rel="stylesheet" href="{{ 'assets/css/chat.css'|theme }}"> {% styles %}
+    <link rel="stylesheet" href="{{ 'assets/css/chat.css'|theme }}">
+    <link rel="stylesheet" href="{{ 'assets/vendor/animate.min.css'|theme }}"> {% styles %}
 </head>
 
 <body>
@@ -56,6 +57,9 @@
     <header id="layout-header" class="container">
         {% partial 'site/header' %}
     </header>
+    <div class="scroll-bar">
+        <div class="fill"></div>
+    </div>
 
     <!-- Content -->
     <section id="layout-content">
@@ -78,6 +82,8 @@
     <script src="{{ 'assets/javascript/chat.js'|theme }}"></script>
     <script src="{{ 'assets/vendor/popper.min.js'|theme }}"></script>
     <script src="{{ 'assets/vendor/bootstrap/js/bootstrap.min.js'|theme }}"></script>
+    <script src="{{ 'assets/javascript/generalised.clinics.js'|theme }}"></script>
+    <script src="{{ 'assets/javascript/regional.clinics.js'|theme }}"></script>
     <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
     {% framework extras %} {% scripts %}
 
