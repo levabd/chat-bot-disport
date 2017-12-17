@@ -25,12 +25,6 @@
 }
 
 
-/*
-font-family: 'Vollkorn', serif; (400, 700)
-font-family: 'Open Sans', sans-serif; (700)
-*/
-
-
 /*------------------- General --------------------*/
 
 body,
@@ -98,10 +92,11 @@ html {
 
 .page-block .title {
     font-family: 'Vollkorn', serif;
-    font-size: 2.25rem;
+    font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+    line-height: 1;
     margin: 1.4rem 0 1.875rem;
 }
 
@@ -129,7 +124,7 @@ html {
 /*------------------- Spastika -------------------*/
 
 .jumbotron {
-    background: url("../images/spastika_head.png") no-repeat scroll center top transparent;
+    background: url("../images/spastika/spastika_head.png") no-repeat scroll center top transparent;
     height: 700px;
     margin-bottom: 0;
 }
@@ -138,7 +133,7 @@ html {
     font-family: 'Vollkorn', serif;
     line-height: 1;
     text-transform: uppercase;
-    font-size: 2.875rem;
+    font-size: 3rem;
     margin-top: 7.25rem;
 }
 
@@ -164,18 +159,19 @@ html {
     font-family: 'Ubuntu', sans-serif;
     line-height: 1;
     font-size: 22px;
+    font-weight: 300;
     margin-bottom: 60px;
 }
 
 #causes .row .col-9 b {
     font-size: 34px;
     line-height: 1.2;
+    font-weight: 700;
 }
 
 #causes .row .col-9 span {
     font-size: 16px;
     line-height: .1;
-    font-weight: 300;
 }
 
 #causes .more {
@@ -335,6 +331,229 @@ html {
 
 #complications .complication {
     margin-top: 40px;
+}
+
+#complications .col-12 {
+    margin-left: 40px;
+}
+
+#complications .complication img {
+    width: 100%;
+}
+
+#complications .complication div {
+    border: none;
+    border-bottom: 5px solid;
+    box-shadow: 0 6px 16px rgba(25, 55, 63, 0.15);
+    font: 700 16px/1 'Ubuntu', serif;
+    text-transform: uppercase;
+}
+
+#complications .complication span {
+    display: block;
+    min-height: 5rem;
+    padding: 1rem 2rem 1rem 1.5rem;
+}
+
+#complications .container .row .complication:nth-of-type(4n+2) div {
+    border-bottom-color: #f79168
+}
+
+#complications .container .row .complication:nth-of-type(4n) div {
+    border-bottom-color: #63dafd;
+}
+
+#life-quality .title {
+    margin-bottom: 5rem;
+}
+
+#life-quality .carousel-caption {
+    text-align: left;
+    left: 8.333333%;
+}
+
+#life-quality .carousel-caption p {
+    font: 700 18px/1.2 'Ubuntu', serif;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+#life-quality .carousel-indicators {
+    bottom: -70px;
+}
+
+#life-quality .carousel-indicators .active {
+    background-color: transparent;
+    color: #f7936b;
+}
+
+#life-quality .carousel-indicators li {
+    background-color: transparent;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    font: 400 18px/1 FontAwesome;
+    text-indent: 0;
+    color: #c6c6c6;
+}
+
+#life-quality .carousel-indicators li::before {
+    content: "\f10c";
+}
+
+#life-quality .carousel-indicators .active::before {
+    content: "\f192";
+}
+
+#treatment {
+    background: url("../images/spastika/treatment-bkg.png") no-repeat scroll center top #44b9ea;
+    height: 440px;
+    margin-bottom: 0;
+    padding-top: 5rem;
+    margin-top: 5rem;
+}
+
+#treatment img {
+    height: 222px;
+    width: 222px;
+    margin-bottom: 30px;
+    display: block;
+    float: left;
+}
+
+#treatment .row {
+    font: 300 18px/1.4 'Ubuntu', serif;
+    color: #fff;
+}
+
+#treatment .row div strong {
+    font-weight: 700;
+}
+
+#treatment .row div h3 {
+    font: 700 2.125rem/1.1 'Vollkorn', serif;
+    text-transform: uppercase;
+    margin-bottom: 1.75rem;
+}
+
+#treatment .col-11:last-of-type {
+    padding-top: 1rem;
+}
+
+#treatment .row div div {
+    font-size: 22px;
+    padding: 1px 0 0 260px;
+    line-height: 1.4;
+    text-indent: -45px;
+}
+
+#treatment .row div div::before {
+    content: "“";
+    position: relative;
+    vertical-align: text-bottom;
+    left: -25px;
+    top: 22px;
+    font: 700 80px/1 'STIXGeneral-Bold';
+}
+
+#treatment .row div div a {
+    margin-top: 35px;
+    text-indent: 0;
+}
+
+#faq .card {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    border-radius: 0;
+    padding-top: .25rem;
+}
+
+#faq .card:first-of-type {
+    border-top: none;
+}
+
+#faq .card-header a.collapsed {
+    margin: 2.5rem 0;
+    display: block;
+}
+
+#faq .card-header {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+#faq .card-body {
+    padding: 1.25rem 0 2rem;
+}
+
+#faq .card-header a {
+    color: #4a5665;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#faq .col-1:before {
+    content: '';
+    display: inline-block;
+    height: 100px;
+    vertical-align: middle;
+    margin-right: -0.25em;
+}
+
+#faq .col-1 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    padding-top: 10px;
+}
+
+#faq .show.col-1:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+}
+
+#faq .show.col-1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#faq .fa-circle-thinner:before {
+    box-sizing: border-box;
+    display: block;
+    width: 32px;
+    height: 32px;
+    padding-top: 0.3em;
+    text-align: center;
+    border-radius: 100%;
+    border: 2px solid #c1c1c1;
+}
+
+#faq .show .fa-circle-thinner:before {
+    background-color: #f79168;
+    border-color: #f79168;
+}
+
+#faq .show .fa-minus::before {
+    content: "-";
+    font: 300 2em/.1 'Ubuntu', serif;
+    color: #fff;
+}
+
+#faq .fa-minus::before {
+    content: "+";
+    font: 300 26px/.4 'Ubuntu', serif;
+}
+
+#faq a .fa {
+    color: #c1c1c1;
+}
+
+#faq a:hover {
+    text-decoration: unset;
 }
 
 
