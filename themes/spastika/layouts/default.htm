@@ -82,9 +82,22 @@
     <script src="{{ 'assets/javascript/chat.js'|theme }}"></script>
     <script src="{{ 'assets/vendor/popper.min.js'|theme }}"></script>
     <script src="{{ 'assets/vendor/bootstrap/js/bootstrap.min.js'|theme }}"></script>
-    <script src="{{ 'assets/javascript/generalised.clinics.js'|theme }}"></script>
-    <script src="{{ 'assets/javascript/regional.clinics.js'|theme }}"></script>
     <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+    <script type="text/javascript">
+        // Base animations
+        function doAnimations(elems) {
+            var animEndEv = 'webkitAnimationEnd animationend';
+
+            elems.each(function() {
+                var $this = $(this),
+                    $animationType = $this.data('animation');
+
+                $this.addClass($animationType).one(animEndEv, function() {
+                    $this.removeClass($animationType);
+                });
+            });
+        }
+    </script>
     {% framework extras %} {% scripts %}
 
 </body>

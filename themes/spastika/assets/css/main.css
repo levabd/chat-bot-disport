@@ -729,6 +729,77 @@ html {
     content: "\f105";
 }
 
+.types-tab-content .videos:first-of-type {
+    margin-top: 2.5rem;
+}
+
+.types-tab-content .videos {
+    margin-top: 1rem;
+}
+
+.types-tab-content iframe {
+    box-shadow: 0 6px 16px rgba(25, 55, 63, 0.35);
+}
+
+.types-tab-content .container .row .col-11 .videos .col-6 {
+    font-weight: 700 !important;
+    font-size: 14px !important;
+}
+
+.types-tab-content .videos i {
+    position: absolute;
+    top: 30%;
+    top: calc(50% - 46px);
+    top: -webkit-calc(50% - 46px);
+    top: -moz-calc(50% - 46px);
+    top: -o-calc(50% - 46px);
+    top: expression(50% - 46px);
+    left: 30%;
+    left: calc(50% - 46px);
+    left: -webkit-calc(50% - 46px);
+    left: -moz-calc(50% - 46px);
+    left: -o-calc(50% - 46px);
+    left: expression(50% - 46px);
+    cursor: pointer;
+    background: rgba(101, 189, 215, .55);
+    border-radius: 50%;
+    width: 92px;
+    height: 92px;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+}
+
+.types-tab-content .videos i:hover {
+    background: rgba(101, 189, 215, .85);
+}
+
+.types-tab-content .videos i:hover::before {
+    background: #3eb4d7;
+}
+
+.types-tab-content .videos i::before {
+    display: block;
+    color: #fff;
+    font-size: 32px;
+    padding-left: 8px;
+    line-height: 76px;
+    width: 76px;
+    height: 76px;
+    top: 8px;
+    left: 8px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: #63dafd;
+    position: absolute;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+}
+
 .types-tab-content .container .row div strong {
     font: 400 22px/1 'Ubuntu', serif;
 }
@@ -747,6 +818,131 @@ html {
 
 .types-tab-content .tab-pane.show {
     display: block;
+}
+
+#muscules svg .marker:hover path {
+    fill: #d5724b;
+    cursor: pointer;
+}
+
+#muscules svg,
+#muscules svg image {
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -ms-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+}
+
+#muscules.page-block {
+    padding: 5rem 0 0;
+}
+
+#muscules .title {
+    margin-bottom: 4.5rem;
+}
+
+#muscules h3 {
+    font: 700 22px/1 'Ubuntu', serif;
+    margin-bottom: 2.375rem;
+    margin-top: 2rem;
+}
+
+#muscules .card {
+    border: none;
+}
+
+#muscules .card-body {
+    font: 300 16px/1.3 'Ubuntu', serif;
+    padding: 0 3rem 1rem;
+}
+
+#muscules .card-header {
+    padding: .5rem 0;
+    background-color: transparent;
+    border: none;
+}
+
+#muscules .card-header span {
+    display: inline-block;
+    border-radius: 100%;
+    width: 30px;
+    text-align: center;
+    margin-right: .8rem;
+    color: #fff;
+    background: #f5a98a;
+    font: 400 18px/1.65 'Ubuntu', serif;
+}
+
+#muscules .card-header .collapsed span {
+    color: #f5a98a;
+    background: none;
+    border: 1px solid #f5a98a;
+}
+
+#muscules .card-header a:hover span {
+    color: #f5a98a;
+    background: none;
+    border: 1px solid #f5a98a;
+}
+
+#muscules .card-header a {
+    font: 700 18px/1.6 'Ubuntu', serif;
+    color: #4a5665;
+}
+
+#muscules .card-header a:hover {
+    text-decoration: none;
+}
+
+#botylinotherapy {
+    padding-bottom: 9.25rem;
+}
+
+#botylinotherapy .col-6 span {
+    text-transform: uppercase;
+    font: 700 16px/1 'Ubuntu', serif;
+}
+
+#botylinotherapy .col-6 svg {
+    margin-bottom: -28%;
+}
+
+#botylinotherapy .col-6 {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+#botylinotherapy-advantages .col-4 {
+    margin-top: 3.75rem;
+    text-align: center;
+    font: 300 16px/1 'Ubuntu', serif;
+}
+
+#botylinotherapy-advantages .col-4 img {
+    margin-bottom: 2.375rem;
+}
+
+#botylinotherapy-advantages .col-4 hr {
+    border-top: 2px solid #f5a98a;
+    margin: 1.5rem 40% 2.375rem;
+}
+
+#botylinotherapy-advantages .col-4 strong {
+    font: 700 16px/1 'Ubuntu', serif;
+}
+
+.types-tab-content #botylinotherapy-advantages .container .row div a {
+    margin-top: 4.5rem;
+}
+
+#clinic-selection {
+    background: #f0f5f5;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    /*padding: 5rem 30px;*/
 }
 
 #clinic-selection {
