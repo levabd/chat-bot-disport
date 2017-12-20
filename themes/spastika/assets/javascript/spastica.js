@@ -20,8 +20,29 @@
                 }
             });
         },
+        function() {}
+    );
+
+    $('#muscules svg .marker').click(
         function() {
-            pauseMusculeSlide = false;
+            pauseMusculeSlide = true;
+            var currentId = $(this).attr('id');
+            var currentAccordion = $(this).data("accordion");
+            $('#muscules svg image').attr('xlink:href', $(this).data("image"));
+            $('#muscule1-accordion').hide();
+            $('#muscule2-accordion').hide();
+            $('#muscule3-accordion').hide();
+            $('#muscule4-accordion').hide();
+            $musculeSlides.forEach(function(item, index) {
+                if (item == currentId) {
+                    currentMusculeSlide = index;
+                    $('#' + currentAccordion).show();
+                    doAnimations($('#' + currentAccordion));
+                    $('#muscules svg #' + item + ' path').css({ fill: "#d5724b" });
+                } else {
+                    $('#muscules svg #' + item + ' path').css({ fill: "#656e79" });
+                }
+            });
         }
     );
 
@@ -29,17 +50,25 @@
         if (!pauseMusculeSlide) {
             currentMusculeSlide++;
             var currentId = $musculeSlides[currentMusculeSlide % 4];
-            $('#muscules svg image').attr('xlink:href', $('#muscules svg #' + currentId).data("image"));
+            var $currentItem = $('#muscules svg #' + currentId);
+            var currentAccordion = $currentItem.data("accordion");
+            $('#muscules svg image').attr('xlink:href', $currentItem.data("image"));
+            $('#muscule1-accordion').hide();
+            $('#muscule2-accordion').hide();
+            $('#muscule3-accordion').hide();
+            $('#muscule4-accordion').hide();
             $musculeSlides.forEach(function(item, index) {
                 if (item == currentId) {
                     currentMusculeSlide = index;
+                    $('#' + currentAccordion).show();
+                    doAnimations($('#' + currentAccordion));
                     $('#muscules svg #' + item + ' path').css({ fill: "#d5724b" });
                 } else {
                     $('#muscules svg #' + item + ' path').css({ fill: "#656e79" });
                 }
             });
         }
-    }, 1500);
+    }, 4000);
 
     // Youtube script
     var tag = document.createElement('script');
@@ -127,8 +156,8 @@
             resultBlock: $('#first-clinic-result'),
             resultList: $("#first-clinic-result ul"),
             searchDescription: $('#first-clinic-description'),
-            resultListItem: $("#first-clinic-result li"),
-            resultMoreButton: $("#next-first-clinic")
+            resultListItemSelector: "#first-clinic-result li",
+            resultMoreButtonSelector: "#next-first-clinic"
         },
         {
             dropdownText: $('#dropdownClinicRegional'),
@@ -136,8 +165,8 @@
             resultBlock: $('#second-clinic-result'),
             resultList: $("#second-clinic-result ul"),
             searchDescription: $('#second-clinic-description'),
-            resultListItem: $("#second-clinic-result li"),
-            resultMoreButton: $("#next-second-clinic")
+            resultListItemSelector: "#second-clinic-result li",
+            resultMoreButtonSelector: "#next-second-clinic"
         }
     ];
 
@@ -159,7 +188,7 @@
                     if ($selectedRegionClinics.length > 0) {
                         createQuestionElements($selectedRegionClinics, item.resultList);
                         item.searchDescription.html("Выберите <b>регион</b> в котором вы ищите клинику");
-                        cropList(item.resultListItem, item.resultMoreButton);
+                        cropList($(item.resultListItemSelector), $(item.resultMoreButtonSelector));
                         item.resultBlock.show();
                         item.resultBlock.animate({
                             "opacity": '1',
@@ -206,4 +235,13 @@
             doAnimations($animatingElems);
         })
     });
+
+    // Spasity causes animation
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 600) {
+            var $animatingElems = $('#causes').find("[data-animation ^= 'animated']");
+            doAnimations($animatingElems);
+        }
+    });
+
 })();
