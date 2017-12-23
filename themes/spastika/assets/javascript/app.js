@@ -26,7 +26,7 @@
     });
 
     // Scrolls to the selected menu item on the page
-    $(function() {
+    /*$(function() {
         $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
                 var target = $(this.hash);
@@ -39,7 +39,7 @@
                 }
             }
         });
-    });
+    });*/
 
     $("#upper").click(function(e) {
         $("html, body").animate({ scrollTop: 0 }, "slow");
