@@ -60,4 +60,5 @@
   'bedard\\analyticsextension\\Plugin' => 'plugins\\bedard\\analyticsextension\\Plugin.php',
   'rainlab\\googleanalytics\\Plugin' => 'plugins\\rainlab\\googleanalytics\\Plugin.php',
   'RainLab\\GoogleAnalytics\\Models\\Settings' => 'plugins\\rainlab\\googleanalytics\\models\\Settings.php',
+  'RainLab\\GoogleAnalytics\\Components\\Tracker' => 'plugins\\rainlab\\googleanalytics\\components\\Tracker.php',
 );

@@ -30,7 +30,7 @@
         return false;
     });
 
-    $('#chat_toggle').click(function() {
+    function openChat() {
         $messages.mCustomScrollbar();
         $('.chat').show();
         $('#chat_toggle').hide();
@@ -39,6 +39,15 @@
                 typeBotMessage('');
             }, 100);
         }
+    }
+
+    $('.open-chat-toggle').click(function() {
+        openChat();
+        return false;
+    });
+
+    $('#chat_toggle').click(function() {
+        openChat();
         return false;
     });
 
