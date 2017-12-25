@@ -106,6 +106,84 @@
 }
 
 
+/*------------- SVG Circle Carousel --------------*/
+
+.svg-circle-carousel svg .marker:hover path {
+    fill: #d5724b;
+    cursor: pointer;
+}
+
+.svg-circle-carousel svg,
+.svg-circle-carousel svg image {
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -ms-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+}
+
+.svg-circle-carousel.page-block {
+    padding: 5rem 0 0;
+}
+
+.svg-circle-carousel .title {
+    margin-bottom: 4.5rem;
+}
+
+.svg-circle-carousel h3 {
+    font: 300 22px/1 'Ubuntu', serif;
+    text-transform: uppercase;
+    margin-bottom: 2.375rem;
+    margin-top: 2rem;
+}
+
+.svg-circle-carousel .card {
+    border: none;
+}
+
+.svg-circle-carousel .card-body {
+    font: 300 16px/1.3 'Ubuntu', serif;
+    padding: 0 3rem 1rem;
+}
+
+.svg-circle-carousel .card-header {
+    padding: .5rem 0;
+    background-color: transparent;
+    border: none;
+}
+
+.svg-circle-carousel .card-header span {
+    display: inline-block;
+    border-radius: 100%;
+    width: 30px;
+    text-align: center;
+    margin-right: .8rem;
+    color: #fff;
+    background: #f5a98a;
+    font: 400 18px/1.65 'Ubuntu', serif;
+}
+
+.svg-circle-carousel .card-header .collapsed span {
+    color: #f5a98a;
+    background: none;
+    border: 1px solid #f5a98a;
+}
+
+.svg-circle-carousel .card-header a:hover span {
+    color: #fff;
+    background: #f5a98a;
+}
+
+.svg-circle-carousel .card-header a {
+    font: 700 18px/1.6 'Ubuntu', serif;
+    color: #4a5665;
+}
+
+.svg-circle-carousel .card-header a:hover {
+    text-decoration: none;
+}
+
+
 /*------------------- General --------------------*/
 
 body,
@@ -187,6 +265,25 @@ html {
     -o-transition: .5s ease-in-out;
 }
 
+.jumbotron {
+    height: 700px;
+    margin-bottom: 0;
+}
+
+.jumbotron .row {
+    font: 400 3rem/1 'Vollkorn', serif;
+    text-transform: uppercase;
+    margin-top: 7.25rem;
+}
+
+.jumbotron .row b {
+    font-size: 3.75rem;
+}
+
+.jumbotron .btn-primary {
+    margin: 30px 15px;
+}
+
 
 /*------------------- Brochure -------------------*/
 
@@ -222,6 +319,60 @@ html {
 }
 
 
+/*-------------------- Insult --------------------*/
+
+.jumbotron.insult {
+    background: url("../images/insult/insult_head.png") no-repeat scroll center top transparent;
+}
+
+#insult-description {
+    padding-top: 6.25rem;
+}
+
+#insult-description.page-block::before {
+    border: none;
+}
+
+#insult-description.page-block .title::before {
+    content: "";
+    display: block;
+    width: 65px;
+    margin: 3.5rem 0 1.6rem;
+    border-top: 2px solid #63dafd;
+}
+
+#insult-description.page-block .title {
+    margin-bottom: 2.5rem
+}
+
+#insult-description img {
+    max-width: 296px;
+}
+
+#insult-description .more {
+    margin-top: 6rem;
+}
+
+#brains,
+#brains #brain1-accordion,
+#brains #brain2-accordion,
+#brains.svg-circle-carousel .card {
+    background-color: #f0f5f5;
+}
+
+#brains .more {
+    padding-left: 0;
+}
+
+#brains.svg-circle-carousel.page-block {
+    padding-bottom: 5rem;
+}
+
+#brains .title {
+    margin-bottom: 3.4rem;
+}
+
+
 /*------------------- Spastika -------------------*/
 
 .source-tip {
@@ -242,22 +393,6 @@ html {
 
 .jumbotron.spastika {
     background: url("../images/spastika/spastika_head.png") no-repeat scroll center top transparent;
-    height: 700px;
-    margin-bottom: 0;
-}
-
-.jumbotron.spastika .row {
-    font: 400 3rem/1 'Vollkorn', serif;
-    text-transform: uppercase;
-    margin-top: 7.25rem;
-}
-
-.jumbotron.spastika .row b {
-    font-size: 3.75rem;
-}
-
-.jumbotron.spastika .btn-primary {
-    margin: 30px 15px;
 }
 
 #causes .row:first-of-type {
@@ -911,81 +1046,6 @@ html {
     display: block;
 }
 
-#muscules svg .marker:hover path {
-    fill: #d5724b;
-    cursor: pointer;
-}
-
-#muscules svg,
-#muscules svg image {
-    -webkit-transition: all 2s ease-out;
-    -moz-transition: all 2s ease-out;
-    -ms-transition: all 2s ease-out;
-    -o-transition: all 2s ease-out;
-    transition: all 2s ease-out;
-}
-
-#muscules.page-block {
-    padding: 5rem 0 0;
-}
-
-#muscules .title {
-    margin-bottom: 4.5rem;
-}
-
-#muscules h3 {
-    font: 300 22px/1 'Ubuntu', serif;
-    text-transform: uppercase;
-    margin-bottom: 2.375rem;
-    margin-top: 2rem;
-}
-
-#muscules .card {
-    border: none;
-}
-
-#muscules .card-body {
-    font: 300 16px/1.3 'Ubuntu', serif;
-    padding: 0 3rem 1rem;
-}
-
-#muscules .card-header {
-    padding: .5rem 0;
-    background-color: transparent;
-    border: none;
-}
-
-#muscules .card-header span {
-    display: inline-block;
-    border-radius: 100%;
-    width: 30px;
-    text-align: center;
-    margin-right: .8rem;
-    color: #fff;
-    background: #f5a98a;
-    font: 400 18px/1.65 'Ubuntu', serif;
-}
-
-#muscules .card-header .collapsed span {
-    color: #f5a98a;
-    background: none;
-    border: 1px solid #f5a98a;
-}
-
-#muscules .card-header a:hover span {
-    color: #fff;
-    background: #f5a98a;
-}
-
-#muscules .card-header a {
-    font: 700 18px/1.6 'Ubuntu', serif;
-    color: #4a5665;
-}
-
-#muscules .card-header a:hover {
-    text-decoration: none;
-}
-
 #botylinotherapy {
     padding-bottom: 9.25rem;
 }
@@ -1145,6 +1205,24 @@ html {
 #clinic-selection .dropdown .btn-outline-secondary:hover {
     color: #fff;
     background-color: #f5a98a;
+}
+
+#first-clinic-result,
+#second-clinic-result {
+    background: #f0f5f5;
+    padding-bottom: 5rem;
+    margin-bottom: -5rem;
+}
+
+#first-clinic-result .col-12,
+#second-clinic-result .col-12 {
+    text-align: left;
+}
+
+#first-clinic-result .col-12 .row,
+#second-clinic-result .col-12 .row {
+    -webkit-padding-start: 40px;
+    -moz-padding-start: 40px;
 }
 
 .clinic-result {

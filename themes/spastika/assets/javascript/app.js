@@ -1,5 +1,8 @@
 (function() {
 
+    // Tips
+    $('[data-toggle="popover"]').popover();
+
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
         e.preventDefault();
@@ -24,22 +27,6 @@
 
 
     });
-
-    // Scrolls to the selected menu item on the page
-    /*$(function() {
-        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top - 60
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });*/
 
     $("#upper").click(function(e) {
         $("html, body").animate({ scrollTop: 0 }, "slow");
