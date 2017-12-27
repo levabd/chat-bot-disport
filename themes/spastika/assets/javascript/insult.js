@@ -59,16 +59,6 @@
         }
     }, 4000);
 
-    // Carousel animations
-    var $animatingBloks = [$('#carousel-life-quality'), $('#carousel-generalised-spastik'), $('#carousel-regional-spastik'), $('#carousel-focal-spastik')]
-
-    $animatingBloks.forEach(function(item) {
-        item.on('slide.bs.carousel', function(e) {
-            var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
-            doAnimations($animatingElems);
-        })
-    });
-
     // Spasity causes animation
     var spasityCausesAnimated = false;
 

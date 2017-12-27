@@ -372,6 +372,294 @@ html {
     margin-bottom: 3.4rem;
 }
 
+#frequency img {
+    margin-bottom: 1.5rem;
+}
+
+#frequency .justify-content-between .col-lg-3 {
+    margin-top: -18rem;
+}
+
+#frequency h5 {
+    font: 700 16px/1 'Ubuntu', sans-serif;
+    padding-bottom: 16px;
+    margin-bottom: 1.6rem;
+    position: relative;
+}
+
+#frequency h5:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 26px;
+    content: "";
+    border-bottom: 4px solid #7dceef;
+}
+
+#frequency .col-lg-3:last-of-type h5:before {
+    border-bottom-color: #F69165;
+}
+
+#frequency .col-lg-3 div {
+    font: 300 16px/1.3 'Ubuntu', sans-serif;
+    padding-bottom: 1rem;
+}
+
+#frequency .col-lg-3 div b {
+    font-weight: 700;
+}
+
+#frequency ul {
+    padding-left: 0;
+    line-height: 1.3;
+    list-style-position: inside;
+}
+
+#frequency ul li {
+    padding-bottom: 1rem;
+}
+
+#frequency li .tip {
+    color: #06f;
+    text-decoration: underline;
+}
+
+#frequency li .popover-symbol:after {
+    content: "\f08e";
+    display: inline-block;
+    padding-left: 5px;
+    font: normal normal normal 12px/1 FontAwesome;
+    text-decoration: none;
+}
+
+#incidence-rate {
+    background-color: #f0f5f5;
+}
+
+#incidence-rate .title {
+    margin-bottom: 4rem;
+}
+
+#incidence-rate h3 {
+    font: 300 22px/1.1 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    height: 48px;
+    margin-bottom: 1.5rem;
+}
+
+#incidence-rate .col-md-6 .row .col-6 {
+    margin: .875rem 0 .6rem;
+    padding-bottom: 1rem;
+    font: 700 16px/1.1 'Ubuntu', sans-serif;
+    position: relative;
+}
+
+#incidence-rate .col-md-6 .row .col-6:after {
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    height: 1px;
+    width: 26px;
+    content: "";
+    border-bottom: 4px solid #7dceef;
+}
+
+#incidence-rate .col-md-6 .row .col-6:first-of-type:after {
+    border-bottom-color: #F69165;
+}
+
+#insult-effects .title {
+    margin-bottom: 6rem;
+}
+
+#insult-effects .media:first-of-type {
+    margin-bottom: 32px;
+}
+
+#insult-effects .media img {
+    margin-right: 2rem;
+}
+
+#insult-effects .media-body {
+    padding-top: 1rem;
+    font: 400 22px/1.1 'Ubuntu', sans-serif;
+}
+
+#insult-effects .media-body b {
+    font: 700 34px/1.1 'Ubuntu', sans-serif;
+}
+
+#insult-effects .media-body span {
+    font: 300 16px/1.1 'Ubuntu', sans-serif;
+}
+
+#insult-effects .efficiency-wrapper {
+    min-height: 332px;
+}
+
+#insult-effects .col-lg-6:last-of-type div:last-of-type {
+    margin: 3.75rem 0 0;
+    padding-left: 10.7%;
+    font: 300 16px/1.1 'Ubuntu', sans-serif;
+}
+
+#insult-effects .col-lg-6:last-of-type div:last-of-type b {
+    font-weight: 700;
+}
+
+#insult-effects .more {
+    text-align: inherit;
+    margin-bottom: 10px;
+}
+
+#insult-effects .more .btn-outline-secondary {
+    padding: .65rem 2.52rem;
+}
+
+#insult-detect img {
+    -ms-flex: 0 0 24.999997%;
+    flex: 0 0 24.999997%;
+    max-width: 24.999997%;
+}
+
+#insult-detect .text-left {
+    margin-left: 24.999997%;
+}
+
+#insult-detect .order-1 img {
+    max-height: 91px;
+}
+
+#insult-detect .order-2 img {
+    max-height: 94px;
+}
+
+#insult-detect .order-3 img {
+    max-height: 80px;
+}
+
+#insult-detect .order-4 img {
+    max-height: 70px;
+}
+
+#insult-detect .order-5 img {
+    max-height: 80px;
+}
+
+#insult-detect .col-10 {
+    margin-bottom: 2.25rem;
+}
+
+#insult-detect .media-body h3 {
+    padding-bottom: 1rem;
+    font: 400 22px/1.1 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+}
+
+#insult-detect .media-body {
+    font: 300 16px/1.3 'Ubuntu', sans-serif;
+}
+
+#insult-suspicion {
+    background: url("../images/insult/insult_suspicion.png") no-repeat scroll center top #f69165;
+    height: 440px;
+    margin-bottom: 0;
+    padding-top: 6rem;
+}
+
+#insult-suspicion img {
+    height: 222px;
+    width: 222px;
+    margin-bottom: 30px;
+    border-radius: 100%;
+    border: 8px solid rgba(255, 201, 178, 0.5);
+    display: block;
+    float: left;
+}
+
+#insult-suspicion .row {
+    font: 700 22px/1 'Ubuntu', serif;
+    color: #fff;
+}
+
+#insult-suspicion .row p {
+    margin-top: 1.75rem;
+    font-weight: 300;
+    line-height: 1.35;
+    text-indent: 0;
+}
+
+#insult-suspicion .tip {
+    text-decoration: underline;
+    display: inline-block;
+    text-indent: 0;
+}
+
+#insult-suspicion .popover-symbol:after {
+    content: "\f08e";
+    display: inline-block;
+    text-indent: 0;
+    padding-left: 3px;
+    padding-top: 2px;
+    font: normal normal normal 18px/1 FontAwesome;
+    text-decoration: none;
+}
+
+#insult-suspicion .row div div {
+    padding: 1px 0 0 260px;
+    text-indent: -45px;
+}
+
+#insult-suspicion .row div div::before {
+    content: "“";
+    position: relative;
+    left: -25px;
+    top: 20px;
+    font: 700 80px/1 'STIXGeneral-Bold';
+}
+
+#insult-suspicion .row div div a {
+    margin-top: 35px;
+    text-indent: 0;
+}
+
+#insult-therapy .more .btn-outline-secondary {
+    padding: .65rem 2.52rem;
+}
+
+#insult-therapy .more {
+    text-align: inherit;
+    margin-bottom: 10px;
+}
+
+#insult-therapy img {
+    height: 108px;
+}
+
+#insult-therapy img {
+    height: 108px;
+}
+
+#insult-therapy .title {
+    margin-bottom: 4.75rem;
+}
+
+#insult-therapy .col {
+    font: 700 26px/1 'Ubuntu', serif;
+    color: #F69165;
+}
+
+#insult-therapy .col img {
+    margin-bottom: 2.8rem;
+}
+
+#insult-therapy .col p {
+    padding-top: 2.25rem;
+    font: 300 16px/1.3 'Ubuntu', serif;
+    color: #4a5665;
+}
+
 
 /*------------------- Spastika -------------------*/
 
@@ -1761,6 +2049,19 @@ nav .container {
 #footer .logo-p2 {
     font-size: 26px;
     color: #e6e6e6;
+}
+
+@media only screen and (max-width: 992px) {
+    #frequency .justify-content-between .col-lg-3 {
+        margin-top: 0 !important;
+    }
+    #insult-effects .efficiency-wrapper {
+        margin-top: 2rem;
+        margin-left: -10.7%;
+    }
+    #insult-effects .col-lg-6:last-of-type div:last-of-type {
+        padding-left: 0;
+    }
 }
 
 @media only screen and (max-width: 768px) {
