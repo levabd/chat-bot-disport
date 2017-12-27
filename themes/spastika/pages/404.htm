@@ -2,9 +2,16 @@ title = "Page not found (404)"
 url = "/404"
 layout = "default"
 ==
-<div class="jumbotron">
+<div id="error404">
     <div class="container">
-        <h1>Page not found</h1>
-        <p>We're sorry, but the page you requested cannot be found.</p>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-4">
+                <h3>Страница не найдена</h3>
+				<b>Ошибка 404.</b> Неверный адрес, либо страница не существует
+            </div>
+			<div class="col-4">
+                <img src="{{ 'assets/images/404.svg'|theme }}" />
+            </div>
+        </div>
     </div>
 </div>
