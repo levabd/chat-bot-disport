@@ -2,9 +2,16 @@ title = "Error page (500)"
 url = "/error"
 layout = "default"
 ==
-<div class="jumbotron">
+<div id="error404">
     <div class="container">
-        <h1>Error</h1>
-        <p>We're sorry, but something went wrong and the page cannot be displayed.</p>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-4">
+                <h3>Ошибка на сервере</h3>
+				<b>Ошибка 500.</b> Что-то пошло не так, но наши инженеры уже исправляют ситуацию
+            </div>
+			<div class="col-4">
+                <img src="{{ 'assets/images/404.svg'|theme }}" />
+            </div>
+        </div>
     </div>
 </div>
