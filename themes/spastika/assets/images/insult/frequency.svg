@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 794 545">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 794 545" width="95%">
 	
 	<defs>
 		<symbol id="brain" viewBox="0 0 736 737">
@@ -20,10 +20,10 @@
 	<use xlink:href="#brain" transform="matrix( -0.15, 0, 0, 0.15, 600, 120)" fill="#F69165"  />
 	
 	<g>
-		<path fill-rule="evenodd"  stroke="rgb(118, 127, 139)" stroke-width="3px" stroke-dasharray="8.3, 0.5, 0" stroke-linecap="butt" stroke-linejoin="bevel" fill="none" d="M224.049,121.500 L224.049,82.500 L294.042,82.500 "/>
-		<path fill-rule="evenodd"  stroke="rgb(118, 127, 139)" stroke-width="3px" stroke-dasharray="8.3, 0.5, 0" stroke-linecap="butt" stroke-linejoin="bevel" fill="none" d="M224.049,201.500 L224.049,275.500"/>
-		<path fill-rule="evenodd"  stroke="rgb(118, 127, 139)" stroke-width="3px" stroke-dasharray="8.3, 0.5, 0" stroke-linecap="butt" stroke-linejoin="bevel" fill="none" d="M540.049,121.500 L540.049,82.500 L464.042,82.500 "/>
-		<path fill-rule="evenodd"  stroke="rgb(118, 127, 139)" stroke-width="3px" stroke-dasharray="8.3, 0.5, 0" stroke-linecap="butt" stroke-linejoin="bevel" fill="none" d="M540.049,201.500 L540.049,275.500"/>
+		<path fill-rule="evenodd"  stroke="rgb(191, 191, 191)" stroke-width="3px" stroke-dasharray="8.3, 0.5, 0" stroke-linecap="butt" stroke-linejoin="bevel" fill="none" d="M224.049,121.500 L224.049,82.500 L294.042,82.500 "/>
+		<path fill-rule="evenodd"  stroke="rgb(191, 191, 191)" stroke-width="3px" stroke-dasharray="8.3, 0.5, 0" stroke-linecap="butt" stroke-linejoin="bevel" fill="none" d="M224.049,201.500 L224.049,275.500"/>
+		<path fill-rule="evenodd"  stroke="rgb(191, 191, 191)" stroke-width="3px" stroke-dasharray="8.3, 0.5, 0" stroke-linecap="butt" stroke-linejoin="bevel" fill="none" d="M540.049,121.500 L540.049,82.500 L464.042,82.500 "/>
+		<path fill-rule="evenodd"  stroke="rgb(191, 191, 191)" stroke-width="3px" stroke-dasharray="8.3, 0.5, 0" stroke-linecap="butt" stroke-linejoin="bevel" fill="none" d="M540.049,201.500 L540.049,275.500"/>
 	</g>
 	 
 	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 0.9986158818343, 0, 0, 1.00190576782008,588.641180052902, 131.423763202563)" font-weight="300" font-size="22px">
@@ -50,10 +50,10 @@
 		<path d="M125,0A125,125 0 1,1 -101.12712429686843,-73.47315653655913L0,0Z" transform="translate(544,410)" fill="rgb(193,86,35)" />
 		<path d="M-101.12712429686842,-73.47315653655916A125,125 0 0,1 125,0L0,0Z" transform="translate(544,410)" fill="rgb(245,169,138)" />
 		<path fill-rule="evenodd"  stroke="rgb(191, 191, 191)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" transform="translate(20,0)" d="M524.527,277.060 C597.942,277.060 657.458,336.580 657.458,410.000 C657.458,483.421 597.942,542.939 524.527,542.939 C451.111,542.939 391.596,483.421 391.596,410.000 C391.596,336.580 451.111,277.060 524.527,277.060 Z"/>
-		<text font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 0.99942357755931, 0, 0, 1.0001141731696,506.012104871254, 484.426907134421)" font-weight="bold" font-size="22px">
+		<text font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 0.99942357755931, 0, 0, 1.0001141731696,506.012104871254, 484.426907134421)" font-weight="bold" font-size="17px">
 			60%
 		</text>
-		<text font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 0.99942357755931, 0, 0, 1.0001141731696,549.012104871254, 366.428907362767)" font-weight="bold" font-size="22px">	
+		<text font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 0.99942357755931, 0, 0, 1.0001141731696,549.012104871254, 366.428907362767)" font-weight="bold" font-size="17px">	
 			40%
 		</text>
 	</g>
@@ -63,16 +63,16 @@
 		<path d="M-38.627124296868416,-118.8820645368942A125,125 0 0,1 111.37581552354598,-56.748812467443344L0,0Z" transform="translate(225,410)" fill="rgb(125,206,239)" />
 		<path d="M111.37581552354598,-56.748812467443344A125,125 0 0,1 125,0L0,0Z" transform="translate(225,410)" fill="rgb(245,169,138)" />
 		<path fill-rule="evenodd"  stroke="rgb(191, 191, 191)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M225.546,277.060 C298.962,277.060 358.477,336.580 358.477,410.000 C358.477,483.421 298.962,542.939 225.546,542.939 C152.131,542.939 92.615,483.421 92.615,410.000 C92.615,336.580 152.131,277.060 225.546,277.060 Z"/>
-		<text font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 0.99942357755931, 0, 0, 1.0001141731696,210.012104871254, 484.426907134421)" font-weight="bold" font-size="22px">
+		<text font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 0.99942357755931, 0, 0, 1.0001141731696,210.012104871254, 484.426907134421)" font-weight="bold" font-size="17px">
 			30-40%
 		</text>
-		<text font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 0.99942357755931, 0, 0, 1.0001141731696,123.012104871254, 398.426907134421)" font-weight="bold" font-size="22px">
+		<text font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 0.99942357755931, 0, 0, 1.0001141731696,123.012104871254, 398.426907134421)" font-weight="bold" font-size="17px">
 			25-30%
 		</text>
-		<text font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 0.99942357755931, 0, 0, 1.0001141731696,220.012104871254, 339.428907362767)" font-weight="bold" font-size="22px">
+		<text font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 0.99942357755931, 0, 0, 1.0001141731696,220.012104871254, 339.428907362767)" font-weight="bold" font-size="17px">
 			20-25%
 		</text>
-		<text font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 0.99942357755931, 0, 0, 1.0001141731696,280, 402)" font-weight="bold" font-size="22px">
+		<text font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 0.99942357755931, 0, 0, 1.0001141731696,280, 402)" font-weight="bold" font-size="17px">
 			5-10%
 		</text>
 	</g>

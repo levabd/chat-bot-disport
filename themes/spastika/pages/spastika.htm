@@ -24,7 +24,7 @@ is_hidden = 0
         </div>
         <div class="row">
             <div class="col-md-2 col-3">
-                <img data-animation="animated bounceInLeft" src="{{ 'assets/images/spastika/causes1.svg'|theme }}" />
+                <img data-animation="animated" src="{{ 'assets/images/spastika/causes1.svg'|theme }}" />
             </div>
             <div class="col-md-2 col-9">
                 ИНСУЛЬТ:<br />
@@ -32,7 +32,7 @@ is_hidden = 0
                 <span>случаев</span>
             </div>
             <div class="col-md-2 offset-md-3 col-3">
-                <img data-animation="animated bounceInRight" src="{{ 'assets/images/spastika/causes2.svg'|theme }}" />
+                <img data-animation="animated" src="{{ 'assets/images/spastika/causes2.svg'|theme }}" />
             </div>
             <div class="col-md-3 col-9">
                 ТРАВМА СПИННОГО МОЗГА:<br />
@@ -42,7 +42,7 @@ is_hidden = 0
         </div>
         <div class="row">
             <div class="col-md-2 col-3">
-                <img data-animation="animated bounceInLeft" src="{{ 'assets/images/spastika/causes3.svg'|theme }}" />
+                <img data-animation="animated" src="{{ 'assets/images/spastika/causes3.svg'|theme }}" />
             </div>
             <div class="col-md-2 col-9">
                 РАССЕЯНЫЙ СКЛЕРОЗ:<br />
@@ -50,7 +50,7 @@ is_hidden = 0
                 <span>случаев</span>
             </div>
             <div class="col-md-2 offset-md-3 col-3">
-                <img data-animation="animated bounceInRight" src="{{ 'assets/images/spastika/causes4.svg'|theme }}" />
+                <img data-animation="animated" src="{{ 'assets/images/spastika/causes4.svg'|theme }}" />
             </div>
             <div class="col-md-3 col-9">
                 ЧЕРЕПНО-МОЗГОВАЯ ТРАВМА:<br />
@@ -60,7 +60,7 @@ is_hidden = 0
         </div>
         <div class="row justify-content-center">
             <div class="col-12 more">
-                <span class="btn btn-outline-secondary tip" role="button" data-toggle="popover" data-placement="top" title="Источники информации" data-trigger='hover focus click' data-html="true" data-content="<ul class='source-tip'><li>Ссылка 11 fdsgfdglkl;fddkflkd flk;sdkgldfjkl dfjkljdfkljl kdfjlkdfjlkd fjklbdf klbmlkdf gbmlkgfdnbj kngfjkbnk fjgdnbjkdfg nbjkfngjkbnf</li><li>Ссылка 12</li><li>Ссылка 13</li></ul>"><i class="fa fa-link fa-flip-horizontal"></i>Ссылка на источник</span>
+                <span class="btn btn-outline-secondary tip" role="button" data-toggle="popover" data-placement="top" title="Источники информации" data-trigger='hover focus click' data-html="true" data-content="<ul class='source-tip'><li>Глазачев С. Н., Косоножкин В. И. СРАВНИТЕЛЬНАЯ ХАРАКТЕРИСТИКА ПРИРОДНЫХ ЭКОСИСТЕМ И АНТРОПОЭКОСИСТЕМ // ЭПНИ «Вестник Международной академии наук. Русская секция» (Электронный ресурс), 2012. №1: 30—33. Шифр Информрегистра: 13576578998877</li><li>Глазачев С. Н., Косоножкин В. И. СРАВНИТЕЛЬНАЯ ХАРАКТЕРИСТИКА ПРИРОДНЫХ ЭКОСИСТЕМ И АНТРОПОЭКОСИСТЕМ // ЭПНИ «Вестник Международной академии наук. Русская секция» (Электронный ресурс), 2012. №1: 30—33. Шифр Информрегистра: 13576578998877</li></ul>"><i class="fa fa-link fa-flip-horizontal"></i>Ссылка на источник</span>
             </div>
         </div>
     </div>
@@ -128,10 +128,11 @@ is_hidden = 0
 <div class="page-block" id="sympthoms">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col">
+            <div class="col-md-1 col-lg-2 d-none d-md-block order-1"></div>
+			<div class="col-md-5 col-lg-4 col-10 order-3 order-md-2">
                 <img src="{{ 'assets/images/spastika/sympthoms.png'|theme }}" />
             </div>
-            <div class="col">
+            <div class="col-md-6 col-10 order-2 order-md-3">
                 <div class="title">
                     Симптомы спастичности:
                 </div>
@@ -260,192 +261,188 @@ is_hidden = 0
                 Виды спастичности
             </div>
         </div>
-	</div>
+    </div>
 </div>
 
 <div class="types-menu">
-	<div class="container">
-		<ul class="nav nav-tabs row" id="spastik-tab" role="tablist">
-			<li class="nav-item col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-				<a class="nav-link" id="generalised-tab" data-toggle="tab" href="#generalised" role="tab" aria-controls="generalised" aria-selected="false">Генерализированная</a>
-			</li>
-			<li class="nav-item col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-				<a class="nav-link active" id="focal-tab" data-toggle="tab" href="#focal" role="tab" aria-controls="focal" aria-selected="true">Мультифокальная и фокальная</a>
-			</li>
-			<li class="nav-item col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-				<a class="nav-link" id="regional-tab" data-toggle="tab" href="#regional" role="tab" aria-controls="regional" aria-selected="false">Регионарная</a>
-			</li>
-		</ul>
+    <div class="container">
+        <ul class="nav nav-tabs row" id="spastik-tab" role="tablist">
+            <li class="nav-item col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                <a class="nav-link" id="generalised-tab" data-toggle="tab" href="#generalised" role="tab" aria-controls="generalised" aria-selected="false">Генерализированная</a>
+            </li>
+            <li class="nav-item col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                <a class="nav-link active" id="focal-tab" data-toggle="tab" href="#focal" role="tab" aria-controls="focal" aria-selected="true">Мультифокальная и фокальная</a>
+            </li>
+            <li class="nav-item col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                <a class="nav-link" id="regional-tab" data-toggle="tab" href="#regional" role="tab" aria-controls="regional" aria-selected="false">Регионарная</a>
+            </li>
+        </ul>
     </div>
 </div>
 
 <div class="types-tab-content" id="spastik-tab-content">
-	<div class="tab-pane fade" id="generalised" role="tabpanel" aria-labelledby="generalised-tab">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div id="carousel-generalised-spastik" class="carousel slide col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12" data-ride="carousel" data-interval="3000">
-					<ol class="carousel-indicators">
-						<li data-target="#carousel-generalised-spastik" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel-generalised-spastik" data-slide-to="1"></li>
-					</ol>
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<div class="row justify-content-center">
-								<div class="d-block d-md-none d-lg-none d-xl-none col-1"></div>
-								<div class="col-xl-10 col-lg-10 col-md-10 col-sm-11 col-11">
-									<img data-animation="animated bounceInLeft" src="{{ 'assets/images/spastika/generalised_spastik1.png'|theme }}" alt="Лечение генерализированной спастичности">
-								</div>
-							</div>
-						</div>
-						<div class="carousel-item">
-							<div class="row justify-content-center">
-								<div class="d-block d-md-none d-lg-none d-xl-none col-1"></div>
-								<div class="col-xl-10 col-lg-10 col-md-10 col-sm-11 col-11">
-									<img data-animation="animated bounceInLeft" src="{{ 'assets/images/spastika/generalised_spastik1.png'|theme }}" alt="Лечение генерализированной спастичности">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-1"></div>
-				<div class="d-block col-xl-6 col-lg-6 col-md-6 col-sm-11 col-11">
-					<div>
-						<strong>Лечение генерализированной спастичности<br /><br /></strong>
-						Лечение пероральные миорелаксанты (баклофен, тизанидин, дартролен, производные бензодиазепина).<br />
-						<a href="#" class="btn btn-primary" id="generalised-where" role="button">Где лечить?</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="page-block" id="clinic-selection">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-12 title">
-						Выбор клиники
-					</div>
-					<div class="col-12 dropdown">
-						<button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownClinicGeneralised" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <div class="tab-pane fade" id="generalised" role="tabpanel" aria-labelledby="generalised-tab">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div id="carousel-generalised-spastik" class="carousel slide col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12" data-ride="carousel" data-interval="3000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-generalised-spastik" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-generalised-spastik" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="d-block d-md-none d-lg-none d-xl-none col-1"></div>
+                                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-11 col-11">
+                                    <img data-animation="animated bounceInLeft" src="{{ 'assets/images/spastika/generalised_spastik1.png'|theme }}" alt="Лечение генерализированной спастичности">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="d-block d-md-none d-lg-none d-xl-none col-1"></div>
+                                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-11 col-11">
+                                    <img data-animation="animated bounceInLeft" src="{{ 'assets/images/spastika/generalised_spastik1.png'|theme }}" alt="Лечение генерализированной спастичности">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="d-block col-xl-6 col-lg-6 col-md-6 col-sm-11 col-11">
+                    <div>
+                        <strong>Лечение генерализированной спастичности<br /><br /></strong> Лечение пероральные миорелаксанты (баклофен, тизанидин, дартролен, производные бензодиазепина).<br />
+                        <a href="#" class="btn btn-primary" id="generalised-where" role="button">Где лечить?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-block" id="clinic-selection">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 title">
+                        Выбор клиники
+                    </div>
+                    <div class="col-12 dropdown">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownClinicGeneralised" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Выбор региона
 						</button>
-						<div class="dropdown-menu" id="dropdownClinicListGeneralised" aria-labelledby="dropdownClinicGeneralised">
-							<a class="dropdown-item" href="#" data-region="1">г. Киев</a>
-							<a class="dropdown-item" href="#" data-region="2">Винницкая область</a>
-							<a class="dropdown-item" href="#" data-region="3">Волынская область</a>
-							<a class="dropdown-item" href="#" data-region="4">Днепропетровская область</a>
-							<a class="dropdown-item" href="#" data-region="5">Донецкая область</a>
-							<a class="dropdown-item" href="#" data-region="6">Житомирская область</a>
-							<a class="dropdown-item" href="#" data-region="7">Закарпатская область</a>
-							<a class="dropdown-item" href="#" data-region="8">Запорожская область</a>
-							<a class="dropdown-item" href="#" data-region="9">Ивано-Франковская область</a>
-							<a class="dropdown-item" href="#" data-region="10">Киевская область</a>
-							<a class="dropdown-item" href="#" data-region="11">Кировоградская область</a>
-							<a class="dropdown-item" href="#" data-region="12">Луганская область</a>
-							<a class="dropdown-item" href="#" data-region="13">Львовская область</a>
-							<a class="dropdown-item" href="#" data-region="14">Николаевская область</a>
-							<a class="dropdown-item" href="#" data-region="15">Одесская область</a>
-							<a class="dropdown-item" href="#" data-region="16">Полтавская область</a>
-							<a class="dropdown-item" href="#" data-region="17">Ровненская область</a>
-							<a class="dropdown-item" href="#" data-region="18">Сумская областьь</a>
-							<a class="dropdown-item" href="#" data-region="19">Тернопольская область</a>
-							<a class="dropdown-item" href="#" data-region="20">Харьковская область</a>
-							<a class="dropdown-item" href="#" data-region="21">Херсонская область</a>
-							<a class="dropdown-item" href="#" data-region="22">Хмельницкая область</a>
-							<a class="dropdown-item" href="#" data-region="23">Черкасская область</a>
-							<a class="dropdown-item" href="#" data-region="24">Черниговская область</a>
-							<a class="dropdown-item" href="#" data-region="25">Черновицкая область</a>
-							<a class="dropdown-item" href="#" data-region="26">Севастополь</a>
-							<a class="dropdown-item" href="#" data-region="27">Автономная Республика Крым</a>
-						</div>
-					</div>
-					<div class="col-12 clinic-description" id="first-clinic-description">
-						Выберите <b>регион</b> в котором вы ищите клинику
-					</div>
-					<div class="col-12 clinic-result" id="first-clinic-result">
-						<div class="row justify-content-center">
-							<div class="col-md-8 col-sm-10 col-12">
-								<ul class="clinic-list">
-								</ul>
-								<div class="row">
-									<div class="col-6">
-										<a href="#" id="next-first-clinic" class="btn btn-primary" role="button">Показать еще</a>
-									</div>
-									<div class="col-6">
-										<a href="#" class="brochure">Скачать брошюру</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="tab-pane fade show active" id="focal" role="tabpanel" aria-labelledby="focal-tab">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div id="carousel-focal-spastik" class="carousel slide col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12" data-ride="carousel" data-interval="3000">
-					<ol class="carousel-indicators">
-						<li data-target="#carousel-focal-spastik" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel-focal-spastik" data-slide-to="1"></li>
-					</ol>
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<div class="row justify-content-center">
-								<div class="d-block d-md-none d-lg-none d-xl-none col-1"></div>
-								<div class="col-xl-10 col-lg-10 col-md-10 col-sm-11 col-11">
-									<img data-animation="animated bounceInLeft" src="{{ 'assets/images/spastika/generalised_spastik1.png'|theme }}" alt="Лечение генерализированной спастичности">
-								</div>
-							</div>
-						</div>
-						<div class="carousel-item">
-							<div class="row justify-content-center">
-								<div class="d-block d-md-none d-lg-none d-xl-none col-1"></div>
-								<div class="col-xl-10 col-lg-10 col-md-10 col-sm-11 col-11">
-									<img data-animation="animated bounceInLeft" src="{{ 'assets/images/spastika/generalised_spastik1.png'|theme }}" alt="Лечение генерализированной спастичности">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-1"></div>
-				<div class="d-block col-xl-6 col-lg-6 col-md-6 col-sm-11 col-11">
-					<div>
-						<strong>Лечение генерализированной спастичности<br /><br /></strong>
-						Ботулинотерапия. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-						<div class="row videos">
-							<div class="col-6">
-								<div id="focal-player1"></div>
-								<i class="fa fa-play" aria-hidden="true" id="start-focal-player1"></i>
-							</div>
-							<div class="col-6">
-								Mungo Jerry - In the summertime.<br />
-								Lorem Ipsum passages, and more recently with desktop publishing software.
-							</div>
-						</div>
-						<div class="row videos">
-							<div class="col-6">
-								<div id="focal-player2"></div>
-								<i class="fa fa-play" aria-hidden="true" id="start-focal-player1"></i>
-							</div>
-							<div class="col-6">
-								The Animals - The House of the Rising Sun.<br />
-								Lorem Ipsum passages, and more recently with desktop publishing software.
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="page-block svg-circle-carousel" id="muscules">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-12 title">
-						В каких мышцах<br />
-						можно снизить спастичность?
-					</div>
-					<div class="d-block d-md-none d-lg-none d-xl-none col-1"></div>
-					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-11 col-11">
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 518 545">
+                        <div class="dropdown-menu" id="dropdownClinicListGeneralised" aria-labelledby="dropdownClinicGeneralised">
+                            <a class="dropdown-item" href="#" data-region="1">г. Киев</a>
+                            <a class="dropdown-item" href="#" data-region="2">Винницкая область</a>
+                            <a class="dropdown-item" href="#" data-region="3">Волынская область</a>
+                            <a class="dropdown-item" href="#" data-region="4">Днепропетровская область</a>
+                            <a class="dropdown-item" href="#" data-region="5">Донецкая область</a>
+                            <a class="dropdown-item" href="#" data-region="6">Житомирская область</a>
+                            <a class="dropdown-item" href="#" data-region="7">Закарпатская область</a>
+                            <a class="dropdown-item" href="#" data-region="8">Запорожская область</a>
+                            <a class="dropdown-item" href="#" data-region="9">Ивано-Франковская область</a>
+                            <a class="dropdown-item" href="#" data-region="10">Киевская область</a>
+                            <a class="dropdown-item" href="#" data-region="11">Кировоградская область</a>
+                            <a class="dropdown-item" href="#" data-region="12">Луганская область</a>
+                            <a class="dropdown-item" href="#" data-region="13">Львовская область</a>
+                            <a class="dropdown-item" href="#" data-region="14">Николаевская область</a>
+                            <a class="dropdown-item" href="#" data-region="15">Одесская область</a>
+                            <a class="dropdown-item" href="#" data-region="16">Полтавская область</a>
+                            <a class="dropdown-item" href="#" data-region="17">Ровненская область</a>
+                            <a class="dropdown-item" href="#" data-region="18">Сумская областьь</a>
+                            <a class="dropdown-item" href="#" data-region="19">Тернопольская область</a>
+                            <a class="dropdown-item" href="#" data-region="20">Харьковская область</a>
+                            <a class="dropdown-item" href="#" data-region="21">Херсонская область</a>
+                            <a class="dropdown-item" href="#" data-region="22">Хмельницкая область</a>
+                            <a class="dropdown-item" href="#" data-region="23">Черкасская область</a>
+                            <a class="dropdown-item" href="#" data-region="24">Черниговская область</a>
+                            <a class="dropdown-item" href="#" data-region="25">Черновицкая область</a>
+                            <a class="dropdown-item" href="#" data-region="26">Севастополь</a>
+                            <a class="dropdown-item" href="#" data-region="27">Автономная Республика Крым</a>
+                        </div>
+                    </div>
+                    <div class="col-12 clinic-description" id="first-clinic-description">
+                        Выберите <b>регион</b> в котором вы ищите клинику
+                    </div>
+                    <div class="col-12 clinic-result" id="first-clinic-result">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col-sm-10 col-12">
+                                <ul class="clinic-list">
+                                </ul>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" id="next-first-clinic" class="btn btn-primary" role="button">Показать еще</a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="brochure">Скачать брошюру</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade show active" id="focal" role="tabpanel" aria-labelledby="focal-tab">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div id="carousel-focal-spastik" class="carousel slide col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12" data-ride="carousel" data-interval="3000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-focal-spastik" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-focal-spastik" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="d-block d-md-none d-lg-none d-xl-none col-1"></div>
+                                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-11 col-11">
+                                    <img data-animation="animated bounceInLeft" src="{{ 'assets/images/spastika/generalised_spastik1.png'|theme }}" alt="Лечение генерализированной спастичности">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="d-block d-md-none d-lg-none d-xl-none col-1"></div>
+                                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-11 col-11">
+                                    <img data-animation="animated bounceInLeft" src="{{ 'assets/images/spastika/generalised_spastik1.png'|theme }}" alt="Лечение генерализированной спастичности">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="d-block col-xl-6 col-lg-6 col-md-6 col-sm-11 col-11">
+                    <div>
+                        <strong>Лечение генерализированной спастичности<br /><br /></strong> Ботулинотерапия. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+                        the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        <div class="row videos">
+                            <div class="col-6">
+                                <div id="focal-player1"></div>
+                                <i class="fa fa-play" aria-hidden="true" id="start-focal-player1"></i>
+                            </div>
+                            <div class="col-6">
+                                Mungo Jerry - In the summertime.<br /> Lorem Ipsum passages, and more recently with desktop publishing software.
+                            </div>
+                        </div>
+                        <div class="row videos">
+                            <div class="col-6">
+                                <div id="focal-player2"></div>
+                                <i class="fa fa-play" aria-hidden="true" id="start-focal-player1"></i>
+                            </div>
+                            <div class="col-6">
+                                The Animals - The House of the Rising Sun.<br /> Lorem Ipsum passages, and more recently with desktop publishing software.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-block svg-circle-carousel" id="muscules">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 title">
+                        В каких мышцах<br /> можно снизить спастичность?
+                    </div>
+                    <div class="d-block d-md-none d-lg-none d-xl-none col-1"></div>
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-11 col-11">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 518 545" width="95%">
 							<path fill-rule="evenodd"  stroke="rgb(216, 216, 216)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M258.500,1.285 C400.996,1.285 516.511,116.801 516.511,259.297 C516.511,401.792 400.996,517.307 258.500,517.307 C116.005,517.307 0.489,401.792 0.489,259.297 C0.489,116.801 116.005,1.285 258.500,1.285 Z"/>
 							<path fill-rule="evenodd"  stroke="rgb(216, 216, 216)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M258.500,41.277 C378.909,41.277 476.519,138.888 476.519,259.297 C476.519,379.705 378.909,477.316 258.500,477.316 C138.091,477.316 40.481,379.705 40.481,259.297 C40.481,138.888 138.091,41.277 258.500,41.277 Z"/>
 							<path fill-rule="evenodd"  stroke="rgb(216, 216, 216)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M258.500,81.284 C356.814,81.284 436.513,160.983 436.513,259.297 C436.513,357.610 356.814,437.309 258.500,437.309 C160.186,437.309 80.487,357.610 80.487,259.297 C80.487,160.983 160.186,81.284 258.500,81.284 Z"/>
@@ -454,259 +451,244 @@ is_hidden = 0
 							<image data-animation="animated fadeIn" x="14.285%" y="2.477%" width="70.85%" height="97.4312%" xlink:href="{{ 'assets/images/spastika/muskules1.png'|theme }}" />
 
 							<g class="marker" id="right-top" data-image="{{ 'assets/images/spastika/muskules2.png'|theme }}" data-accordion="muscule2-accordion">
-								<path data-animation="animated bounceIn" fill="#656e79" fill-opacity=".22" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M460.7945897672591,125.77693745937279 C460.7945897672591,115.4852375461139 469.2186873148273,107.14896061637431 479.61880774392404,107.14896061637431 C490.01892817302075,107.14896061637431 498.44302572058893,115.4852375461139 498.44302572058893,125.77693745937279 C498.44302572058893,136.06863737263168 490.01892817302075,144.4049143023713 479.61880774392404,144.4049143023713 C469.2186873148273,144.4049143023713 460.7945897672591,136.06863737263168 460.7945897672591,125.77693745937279 z" />
-								<path data-animation="animated bounceIn" fill="#656e79" fill-opacity=".55" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M468.7749310323706,125.79405668943102 C468.7749310323706,119.79915026207966 473.56325898912877,114.94327605592511 479.47477498512654,114.94327605592511 C485.3862909811244,114.94327605592511 490.1746189378825,119.79915026207966 490.1746189378825,125.79405668943102 C490.1746189378825,131.78896311678238 485.3862909811244,136.64483732293692 479.47477498512654,136.64483732293692 C473.56325898912877,136.64483732293692 468.7749310323706,131.78896311678238 468.7749310323706,125.79405668943102 z" />
-								<path data-animation="animated bounceIn" fill="#656e79" fill-opacity="1" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M474.58054053783417,125.70054051280022 C474.58054053783417,122.9381095735737 476.81810959860763,120.70054051280022 479.58054053783417,120.70054051280022 C482.3429714770607,120.70054051280022 484.58054053783417,122.9381095735737 484.58054053783417,125.70054051280022 C484.58054053783417,128.46297145202675 482.3429714770607,130.70054051280022 479.58054053783417,130.70054051280022 C476.81810959860763,130.70054051280022 474.58054053783417,128.46297145202675 474.58054053783417,125.70054051280022 z" />
+								<path fill="#656e79" fill-opacity=".22" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M460.7945897672591,125.77693745937279 C460.7945897672591,115.4852375461139 469.2186873148273,107.14896061637431 479.61880774392404,107.14896061637431 C490.01892817302075,107.14896061637431 498.44302572058893,115.4852375461139 498.44302572058893,125.77693745937279 C498.44302572058893,136.06863737263168 490.01892817302075,144.4049143023713 479.61880774392404,144.4049143023713 C469.2186873148273,144.4049143023713 460.7945897672591,136.06863737263168 460.7945897672591,125.77693745937279 z" />
+								<path fill="#656e79" fill-opacity=".55" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M468.7749310323706,125.79405668943102 C468.7749310323706,119.79915026207966 473.56325898912877,114.94327605592511 479.47477498512654,114.94327605592511 C485.3862909811244,114.94327605592511 490.1746189378825,119.79915026207966 490.1746189378825,125.79405668943102 C490.1746189378825,131.78896311678238 485.3862909811244,136.64483732293692 479.47477498512654,136.64483732293692 C473.56325898912877,136.64483732293692 468.7749310323706,131.78896311678238 468.7749310323706,125.79405668943102 z" />
+								<path fill="#656e79" fill-opacity="1" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M474.58054053783417,125.70054051280022 C474.58054053783417,122.9381095735737 476.81810959860763,120.70054051280022 479.58054053783417,120.70054051280022 C482.3429714770607,120.70054051280022 484.58054053783417,122.9381095735737 484.58054053783417,125.70054051280022 C484.58054053783417,128.46297145202675 482.3429714770607,130.70054051280022 479.58054053783417,130.70054051280022 C476.81810959860763,130.70054051280022 474.58054053783417,128.46297145202675 474.58054053783417,125.70054051280022 z" />
 							</g>
 
 							<g class="marker" id="left-top" data-image="{{ 'assets/images/spastika/muskules1.png'|theme }}" data-accordion="muscule1-accordion">
-								<path data-animation="animated bounceIn" fill="#656e79" fill-opacity=".22" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M19.794589767259083,124.7997978970044 C19.794589767259083,114.5080979837455 28.21868731482732,106.17182105400592 38.61880774392404,106.17182105400592 C49.018928173020754,106.17182105400592 57.443025720588935,114.5080979837455 57.443025720588935,124.7997978970044 C57.443025720588935,135.0914978102633 49.018928173020754,143.42777474000292 38.61880774392404,143.42777474000292 C28.21868731482732,143.42777474000292 19.794589767259083,135.0914978102633 19.794589767259083,124.7997978970044 z" />
-								<path data-animation="animated bounceIn" fill="#656e79" fill-opacity=".55" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M27.774931032370603,124.81691712706262 C27.774931032370603,118.82201069971126 32.56325898912877,113.96613649355672 38.474774985126544,113.96613649355672 C44.386290981124375,113.96613649355672 49.174618937882485,118.82201069971126 49.174618937882485,124.81691712706262 C49.174618937882485,130.811823554414 44.386290981124375,135.66769776056853 38.474774985126544,135.66769776056853 C32.56325898912877,135.66769776056853 27.774931032370603,130.811823554414 27.774931032370603,124.81691712706262 z" />
-								<path data-animation="animated bounceIn" fill="#656e79" fill-opacity="1" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M33.58054053783417,124.72340095043182 C33.58054053783417,121.96097001120529 35.818109598607634,119.72340095043182 38.58054053783417,119.72340095043182 C41.3429714770607,119.72340095043182 43.58054053783417,121.96097001120529 43.58054053783417,124.72340095043182 C43.58054053783417,127.48583188965836 41.3429714770607,129.72340095043182 38.58054053783417,129.72340095043182 C35.818109598607634,129.72340095043182 33.58054053783417,127.48583188965836 33.58054053783417,124.72340095043182 z" />
+								<path fill="#656e79" fill-opacity=".22" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M19.794589767259083,124.7997978970044 C19.794589767259083,114.5080979837455 28.21868731482732,106.17182105400592 38.61880774392404,106.17182105400592 C49.018928173020754,106.17182105400592 57.443025720588935,114.5080979837455 57.443025720588935,124.7997978970044 C57.443025720588935,135.0914978102633 49.018928173020754,143.42777474000292 38.61880774392404,143.42777474000292 C28.21868731482732,143.42777474000292 19.794589767259083,135.0914978102633 19.794589767259083,124.7997978970044 z" />
+								<path fill="#656e79" fill-opacity=".55" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M27.774931032370603,124.81691712706262 C27.774931032370603,118.82201069971126 32.56325898912877,113.96613649355672 38.474774985126544,113.96613649355672 C44.386290981124375,113.96613649355672 49.174618937882485,118.82201069971126 49.174618937882485,124.81691712706262 C49.174618937882485,130.811823554414 44.386290981124375,135.66769776056853 38.474774985126544,135.66769776056853 C32.56325898912877,135.66769776056853 27.774931032370603,130.811823554414 27.774931032370603,124.81691712706262 z" />
+								<path fill="#656e79" fill-opacity="1" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M33.58054053783417,124.72340095043182 C33.58054053783417,121.96097001120529 35.818109598607634,119.72340095043182 38.58054053783417,119.72340095043182 C41.3429714770607,119.72340095043182 43.58054053783417,121.96097001120529 43.58054053783417,124.72340095043182 C43.58054053783417,127.48583188965836 41.3429714770607,129.72340095043182 38.58054053783417,129.72340095043182 C35.818109598607634,129.72340095043182 33.58054053783417,127.48583188965836 33.58054053783417,124.72340095043182 z" />
 							</g>
 
 							<g class="marker" id="left-bottom" data-image="{{ 'assets/images/spastika/muskules4.png'|theme }}" data-accordion="muscule4-accordion">
-								<path data-animation="animated bounceIn" fill="#656e79" fill-opacity=".22" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M19.19458980302187,392.6969373866551 C19.19458980302187,382.40523747339626 27.618687350590108,374.06896054365666 38.018807779686824,374.06896054365666 C48.41892820878354,374.06896054365666 56.84302575635172,382.40523747339626 56.84302575635172,392.6969373866551 C56.84302575635172,402.988637299914 48.41892820878354,411.32491422965364 38.018807779686824,411.32491422965364 C27.618687350590108,411.32491422965364 19.19458980302187,402.988637299914 19.19458980302187,392.6969373866551 z" />
-								<path data-animation="animated bounceIn" fill="#656e79" fill-opacity=".55" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M27.17493106813339,392.7140566167134 C27.17493106813339,386.719150189362 31.963259024891556,381.8632759832075 37.87477502088933,381.8632759832075 C43.78629101688716,381.8632759832075 48.57461897364527,386.719150189362 48.57461897364527,392.7140566167134 C48.57461897364527,398.7089630440647 43.78629101688716,403.5648372502193 37.87477502088933,403.5648372502193 C31.963259024891556,403.5648372502193 27.17493106813339,398.7089630440647 27.17493106813339,392.7140566167134 z" />
-								<path data-animation="animated bounceIn" fill="#656e79" fill-opacity="1" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M32.980540573596954,392.62054044008255 C32.980540573596954,389.858109500856 35.21810963437042,387.62054044008255 37.980540573596954,387.62054044008255 C40.74297151282349,387.62054044008255 42.980540573596954,389.858109500856 42.980540573596954,392.62054044008255 C42.980540573596954,395.3829713793091 40.74297151282349,397.62054044008255 37.980540573596954,397.62054044008255 C35.21810963437042,397.62054044008255 32.980540573596954,395.3829713793091 32.980540573596954,392.62054044008255 z" />
+								<path fill="#656e79" fill-opacity=".22" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M19.19458980302187,392.6969373866551 C19.19458980302187,382.40523747339626 27.618687350590108,374.06896054365666 38.018807779686824,374.06896054365666 C48.41892820878354,374.06896054365666 56.84302575635172,382.40523747339626 56.84302575635172,392.6969373866551 C56.84302575635172,402.988637299914 48.41892820878354,411.32491422965364 38.018807779686824,411.32491422965364 C27.618687350590108,411.32491422965364 19.19458980302187,402.988637299914 19.19458980302187,392.6969373866551 z" />
+								<path fill="#656e79" fill-opacity=".55" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M27.17493106813339,392.7140566167134 C27.17493106813339,386.719150189362 31.963259024891556,381.8632759832075 37.87477502088933,381.8632759832075 C43.78629101688716,381.8632759832075 48.57461897364527,386.719150189362 48.57461897364527,392.7140566167134 C48.57461897364527,398.7089630440647 43.78629101688716,403.5648372502193 37.87477502088933,403.5648372502193 C31.963259024891556,403.5648372502193 27.17493106813339,398.7089630440647 27.17493106813339,392.7140566167134 z" />
+								<path fill="#656e79" fill-opacity="1" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M32.980540573596954,392.62054044008255 C32.980540573596954,389.858109500856 35.21810963437042,387.62054044008255 37.980540573596954,387.62054044008255 C40.74297151282349,387.62054044008255 42.980540573596954,389.858109500856 42.980540573596954,392.62054044008255 C42.980540573596954,395.3829713793091 40.74297151282349,397.62054044008255 37.980540573596954,397.62054044008255 C35.21810963437042,397.62054044008255 32.980540573596954,395.3829713793091 32.980540573596954,392.62054044008255 z" />
 							</g>
 
 							<g class="marker" id="right-bottom" data-image="{{ 'assets/images/spastika/muskules3.png'|theme }}" data-accordion="muscule3-accordion">
-								<path data-animation="animated bounceIn" fill="#656e79" fill-opacity=".22" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M461.67458982209536,391.4969374581807 C461.67458982209536,381.20523754492183 470.0986873696636,372.86896061518223 480.4988077987603,372.86896061518223 C490.898928227857,372.86896061518223 499.3230257754252,381.20523754492183 499.3230257754252,391.4969374581807 C499.3230257754252,401.78863737143956 490.898928227857,410.1249143011792 480.4988077987603,410.1249143011792 C470.0986873696636,410.1249143011792 461.67458982209536,401.78863737143956 461.67458982209536,391.4969374581807 z" />
-								<path data-animation="animated bounceIn" fill="#656e79" fill-opacity=".55" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M469.6549310872069,391.51405668823895 C469.6549310872069,385.51915026088756 474.44325904396504,380.66327605473305 480.3547750399628,380.66327605473305 C486.26629103596065,380.66327605473305 491.05461899271876,385.51915026088756 491.05461899271876,391.51405668823895 C491.05461899271876,397.5089631155903 486.26629103596065,402.36483732174486 480.3547750399628,402.36483732174486 C474.44325904396504,402.36483732174486 469.6549310872069,397.5089631155903 469.6549310872069,391.51405668823895 z" />
-								<path data-animation="animated bounceIn" fill="#656e79" fill-opacity="1" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M475.46054059267044,391.4205405116081 C475.46054059267044,388.6581095723816 477.6981096534439,386.4205405116081 480.46054059267044,386.4205405116081 C483.222971531897,386.4205405116081 485.46054059267044,388.6581095723816 485.46054059267044,391.4205405116081 C485.46054059267044,394.18297145083466 483.222971531897,396.4205405116081 480.46054059267044,396.4205405116081 C477.6981096534439,396.4205405116081 475.46054059267044,394.18297145083466 475.46054059267044,391.4205405116081 z" />
+								<path fill="#656e79" fill-opacity=".22" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M461.67458982209536,391.4969374581807 C461.67458982209536,381.20523754492183 470.0986873696636,372.86896061518223 480.4988077987603,372.86896061518223 C490.898928227857,372.86896061518223 499.3230257754252,381.20523754492183 499.3230257754252,391.4969374581807 C499.3230257754252,401.78863737143956 490.898928227857,410.1249143011792 480.4988077987603,410.1249143011792 C470.0986873696636,410.1249143011792 461.67458982209536,401.78863737143956 461.67458982209536,391.4969374581807 z" />
+								<path fill="#656e79" fill-opacity=".55" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M469.6549310872069,391.51405668823895 C469.6549310872069,385.51915026088756 474.44325904396504,380.66327605473305 480.3547750399628,380.66327605473305 C486.26629103596065,380.66327605473305 491.05461899271876,385.51915026088756 491.05461899271876,391.51405668823895 C491.05461899271876,397.5089631155903 486.26629103596065,402.36483732174486 480.3547750399628,402.36483732174486 C474.44325904396504,402.36483732174486 469.6549310872069,397.5089631155903 469.6549310872069,391.51405668823895 z" />
+								<path fill="#656e79" fill-opacity="1" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M475.46054059267044,391.4205405116081 C475.46054059267044,388.6581095723816 477.6981096534439,386.4205405116081 480.46054059267044,386.4205405116081 C483.222971531897,386.4205405116081 485.46054059267044,388.6581095723816 485.46054059267044,391.4205405116081 C485.46054059267044,394.18297145083466 483.222971531897,396.4205405116081 480.46054059267044,396.4205405116081 C477.6981096534439,396.4205405116081 475.46054059267044,394.18297145083466 475.46054059267044,391.4205405116081 z" />
 							</g>
 
 						</svg>
-					</div>
-					<div class="col-1"></div>
-					<div class="col-xl-5 col-lg-5 col-md-5 col-sm-11 col-11">
-						<div id="muscule1-accordion" role="tablist" data-animation="animated slideInRight" >
-							<h3>Мышцы предплечья</h3>
-							<div class="card">
-								<div class="card-header" role="tab" id="muscule1headingOne">
-									<h5 class="mb-0">
-										<a data-toggle="collapse" href="#muscule1CollapseOne" aria-expanded="true" aria-controls="muscule1CollapseOne">
-											<span>1</span>
-											Широчайшая мышца спины
-										</a>
-									</h5>
-								</div>
-								<div id="muscule1CollapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#muscule1-accordion">
-									<div class="card-body">
-										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-										on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-										farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-header" role="tab" id="muscule1headingTwo">
-									<h5 class="mb-0">
-										<a class="collapsed" data-toggle="collapse" href="#muscule1CollapseTwo" aria-expanded="false" aria-controls="muscule1CollapseTwo">
-											<span>2</span>
-											Трёхглава мышца плеча
-										</a>
-									</h5>
-								</div>
-								<div id="muscule1CollapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#muscule1-accordion">
-									<div class="card-body">
-										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-										on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-										farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-header" role="tab" id="muscule1headingThree">
-									<h5 class="mb-0">
-										<a class="collapsed" data-toggle="collapse" href="#muscule1CollapseThree" aria-expanded="false" aria-controls="muscule1CollapseThree">
-											<span>3</span>
-											Большая грудная мышца
-										</a>
-									</h5>
-								</div>
-								<div id="muscule1CollapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#muscule1-accordion">
-									<div class="card-body">
-										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-										on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-										farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="muscule2-accordion" role="tablist" style="display: none;" data-animation="animated slideInRight" >
-							<h3>Мышцы предплечья</h3>
-							<div class="card">
-								<div class="card-header" role="tab" id="muscule2headingOne">
-									<h5 class="mb-0">
-										<a data-toggle="collapse" href="#muscule2CollapseOne" aria-expanded="true" aria-controls="muscule2CollapseOne">
-											<span>1</span>
-											Бицепс/ двуглавая мышца плеча
-										</a>
-									</h5>
-								</div>
-								<div id="muscule2CollapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#muscule2-accordion">
-									<div class="card-body">
-										m. biceps brachii. Сгибает плечо в плечевом суставе, предплечье в локтевом
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-header" role="tab" id="muscule2headingTwo">
-									<h5 class="mb-0">
-										<a class="collapsed" data-toggle="collapse" href="#muscule2CollapseTwo" aria-expanded="false" aria-controls="muscule2CollapseTwo">
-											<span>2</span>
-											Плечевая мышца
-										</a>
-									</h5>
-								</div>
-								<div id="muscule2CollapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#muscule2-accordion">
-									<div class="card-body">
-										m. biceps brachii. Сгибает плечо в плечевом суставе, предплечье в локтевом
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-header" role="tab" id="muscule2headingThree">
-									<h5 class="mb-0">
-										<a class="collapsed" data-toggle="collapse" href="#muscule2CollapseThree" aria-expanded="false" aria-controls="muscule2CollapseThree">
-											<span>3</span>
-											Плечелучевая мышца
-										</a>
-									</h5>
-								</div>
-								<div id="muscule2CollapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#muscule2-accordion">
-									<div class="card-body">
-										m. biceps brachii. Сгибает плечо в плечевом суставе, предплечье в локтевом
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-header" role="tab" id="muscule2headingFour">
-									<h5 class="mb-0">
-										<a class="collapsed" data-toggle="collapse" href="#muscule2CollapseFour" aria-expanded="false" aria-controls="muscule2CollapseFour">
-											<span>4</span>
-											Круглый пронатор
-										</a>
-									</h5>
-								</div>
-								<div id="muscule2CollapseFour" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#muscule2-accordion">
-									<div class="card-body">
-										m. biceps brachii. Сгибает плечо в плечевом суставе, предплечье в локтевом
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="muscule3-accordion" role="tablist" style="display: none;" data-animation="animated slideInRight" >
-							<h3>Мышцы запястья</h3>
-							<div class="card">
-								<div class="card-header" role="tab" id="muscule3headingOne">
-									<h5 class="mb-0">
-										<a data-toggle="collapse" href="#muscule3CollapseOne" aria-expanded="true" aria-controls="muscule3CollapseOne">
-											<span>1</span>
-											Лучевой сгибатель запястья
-										</a>
-									</h5>
-								</div>
-								<div id="muscule3CollapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#muscule3-accordion">
-									<div class="card-body">
-										Это основная группа мышц влияющих на положение и подвижность лучезапястного сустава: m. flexor carpi radialis. Производит сгибание и отведение кисти.
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-header" role="tab" id="muscule3headingTwo">
-									<h5 class="mb-0">
-										<a class="collapsed" data-toggle="collapse" href="#muscule3CollapseTwo" aria-expanded="false" aria-controls="muscule3CollapseTwo">
-											<span>2</span>
-											Локтевой сгибатель запястья
-										</a>
-									</h5>
-								</div>
-								<div id="muscule3CollapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#muscule3-accordion">
-									<div class="card-body">
-										Это основная группа мышц влияющих на положение и подвижность лучезапястного сустава: m. flexor carpi radialis. Производит сгибание и отведение кисти.
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="muscule4-accordion" role="tablist" style="display: none;" data-animation="animated slideInRight" >
-							<h3>Мышцы пальцев рук</h3>
-							<div class="card">
-								<div class="card-header" role="tab" id="muscule4headingOne">
-									<h5 class="mb-0">
-										<a data-toggle="collapse" href="#muscule4CollapseOne" aria-expanded="true" aria-controls="muscule4CollapseOne">
-											<span>1</span>
-											Поверхностный сгибатель пальцев
-										</a>
-									</h5>
-								</div>
-								<div id="muscule4CollapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#muscule4-accordion">
-									<div class="card-body">
-										Это основная группа мышц влияющих на положение и подвижность суставов пальцев рук: m. flexor digorum superficialis. Сгибает средние фаланги четырёх пальцев кисти от мизинца до указательного пальца.
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-header" role="tab" id="muscule4headingTwo">
-									<h5 class="mb-0">
-										<a class="collapsed" data-toggle="collapse" href="#muscule4CollapseTwo" aria-expanded="false" aria-controls="muscule4CollapseTwo">
-											<span>2</span>
-											Длинный сгибатель большого пальца кисти
-										</a>
-									</h5>
-								</div>
-								<div id="muscule4CollapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#muscule4-accordion">
-									<div class="card-body">
-										Это основная группа мышц влияющих на положение и подвижность суставов пальцев рук: m. flexor digorum superficialis. Сгибает средние фаланги четырёх пальцев кисти от мизинца до указательного пальца.
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-header" role="tab" id="muscule4headingThree">
-									<h5 class="mb-0">
-										<a class="collapsed" data-toggle="collapse" href="#muscule4CollapseThree" aria-expanded="false" aria-controls="muscule4CollapseThree">
-											<span>3</span>
-											Глубокий сгибатель пальцев
-										</a>
-									</h5>
-								</div>
-								<div id="muscule4CollapseThree" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#muscule4-accordion">
-									<div class="card-body">
-										Это основная группа мышц влияющих на положение и подвижность суставов пальцев рук: m. flexor digorum superficialis. Сгибает средние фаланги четырёх пальцев кисти от мизинца до указательного пальца.
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-header" role="tab" id="muscule4headingFour">
-									<h5 class="mb-0">
-										<a class="collapsed" data-toggle="collapse" href="#muscule4CollapseFour" aria-expanded="false" aria-controls="muscule4CollapseFour">
-											<span>4</span>
-											Мышца, приводящая большой палец кисти
-										</a>
-									</h5>
-								</div>
-								<div id="muscule4CollapseFour" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#muscule4-accordion">
-									<div class="card-body">
-										Это основная группа мышц влияющих на положение и подвижность суставов пальцев рук: m. flexor digorum superficialis. Сгибает средние фаланги четырёх пальцев кисти от мизинца до указательного пальца.
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="page-block" id="botylinotherapy">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-12 title">
-						До и после<br />
-						ботулинотерапии
-					</div>
-					<div class="col-6 col-lg-5">
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 463 450">
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-11 col-11">
+                        <div id="muscule1-accordion" role="tablist" data-animation="animated slideInRight">
+                            <h3>Мышцы предплечья</h3>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="muscule1headingOne">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" href="#muscule1CollapseOne" aria-expanded="true" aria-controls="muscule1CollapseOne">
+                                            <span>1</span> Широчайшая мышца спины
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="muscule1CollapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#muscule1-accordion">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                        on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                        craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="muscule1headingTwo">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" href="#muscule1CollapseTwo" aria-expanded="false" aria-controls="muscule1CollapseTwo">
+                                            <span>2</span> Трёхглава мышца плеча
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="muscule1CollapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#muscule1-accordion">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                        on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                        craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="muscule1headingThree">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" href="#muscule1CollapseThree" aria-expanded="false" aria-controls="muscule1CollapseThree">
+                                            <span>3</span> Большая грудная мышца
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="muscule1CollapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#muscule1-accordion">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                        on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                        craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="muscule2-accordion" role="tablist" style="display: none;" data-animation="animated slideInRight">
+                            <h3>Мышцы предплечья</h3>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="muscule2headingOne">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" href="#muscule2CollapseOne" aria-expanded="true" aria-controls="muscule2CollapseOne">
+                                            <span>1</span> Бицепс/ двуглавая мышца плеча
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="muscule2CollapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#muscule2-accordion">
+                                    <div class="card-body">
+                                        m. biceps brachii. Сгибает плечо в плечевом суставе, предплечье в локтевом
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="muscule2headingTwo">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" href="#muscule2CollapseTwo" aria-expanded="false" aria-controls="muscule2CollapseTwo">
+                                            <span>2</span> Плечевая мышца
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="muscule2CollapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#muscule2-accordion">
+                                    <div class="card-body">
+                                        m. biceps brachii. Сгибает плечо в плечевом суставе, предплечье в локтевом
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="muscule2headingThree">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" href="#muscule2CollapseThree" aria-expanded="false" aria-controls="muscule2CollapseThree">
+                                            <span>3</span> Плечелучевая мышца
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="muscule2CollapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#muscule2-accordion">
+                                    <div class="card-body">
+                                        m. biceps brachii. Сгибает плечо в плечевом суставе, предплечье в локтевом
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="muscule2headingFour">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" href="#muscule2CollapseFour" aria-expanded="false" aria-controls="muscule2CollapseFour">
+                                            <span>4</span> Круглый пронатор
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="muscule2CollapseFour" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#muscule2-accordion">
+                                    <div class="card-body">
+                                        m. biceps brachii. Сгибает плечо в плечевом суставе, предплечье в локтевом
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="muscule3-accordion" role="tablist" style="display: none;" data-animation="animated slideInRight">
+                            <h3>Мышцы запястья</h3>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="muscule3headingOne">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" href="#muscule3CollapseOne" aria-expanded="true" aria-controls="muscule3CollapseOne">
+                                            <span>1</span> Лучевой сгибатель запястья
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="muscule3CollapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#muscule3-accordion">
+                                    <div class="card-body">
+                                        Это основная группа мышц влияющих на положение и подвижность лучезапястного сустава: m. flexor carpi radialis. Производит сгибание и отведение кисти.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="muscule3headingTwo">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" href="#muscule3CollapseTwo" aria-expanded="false" aria-controls="muscule3CollapseTwo">
+                                            <span>2</span> Локтевой сгибатель запястья
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="muscule3CollapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#muscule3-accordion">
+                                    <div class="card-body">
+                                        Это основная группа мышц влияющих на положение и подвижность лучезапястного сустава: m. flexor carpi radialis. Производит сгибание и отведение кисти.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="muscule4-accordion" role="tablist" style="display: none;" data-animation="animated slideInRight">
+                            <h3>Мышцы пальцев рук</h3>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="muscule4headingOne">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" href="#muscule4CollapseOne" aria-expanded="true" aria-controls="muscule4CollapseOne">
+                                            <span>1</span> Поверхностный сгибатель пальцев
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="muscule4CollapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#muscule4-accordion">
+                                    <div class="card-body">
+                                        Это основная группа мышц влияющих на положение и подвижность суставов пальцев рук: m. flexor digorum superficialis. Сгибает средние фаланги четырёх пальцев кисти от мизинца до указательного пальца.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="muscule4headingTwo">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" href="#muscule4CollapseTwo" aria-expanded="false" aria-controls="muscule4CollapseTwo">
+                                            <span>2</span> Длинный сгибатель большого пальца кисти
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="muscule4CollapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#muscule4-accordion">
+                                    <div class="card-body">
+                                        Это основная группа мышц влияющих на положение и подвижность суставов пальцев рук: m. flexor digorum superficialis. Сгибает средние фаланги четырёх пальцев кисти от мизинца до указательного пальца.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="muscule4headingThree">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" href="#muscule4CollapseThree" aria-expanded="false" aria-controls="muscule4CollapseThree">
+                                            <span>3</span> Глубокий сгибатель пальцев
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="muscule4CollapseThree" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#muscule4-accordion">
+                                    <div class="card-body">
+                                        Это основная группа мышц влияющих на положение и подвижность суставов пальцев рук: m. flexor digorum superficialis. Сгибает средние фаланги четырёх пальцев кисти от мизинца до указательного пальца.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="muscule4headingFour">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" href="#muscule4CollapseFour" aria-expanded="false" aria-controls="muscule4CollapseFour">
+                                            <span>4</span> Мышца, приводящая большой палец кисти
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="muscule4CollapseFour" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#muscule4-accordion">
+                                    <div class="card-body">
+                                        Это основная группа мышц влияющих на положение и подвижность суставов пальцев рук: m. flexor digorum superficialis. Сгибает средние фаланги четырёх пальцев кисти от мизинца до указательного пальца.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-block" id="botylinotherapy">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 title">
+                        До и после<br /> ботулинотерапии
+                    </div>
+                    <div class="col-6 col-lg-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 463 450" width="95%">
 							<defs>
 								<clipPath id="cut-off-bottom">
 									<rect x="0" y="0" width="100%" height="66%" />
@@ -729,11 +711,11 @@ is_hidden = 0
 							<path opacity="0.8" fill="#3194C5" d="M410.68399999999997,169.325 L209.167,241.473 l214,0.0010000000000000005 C423.16700000000003,216.156 418.756,191.869 410.68399999999997,169.325 z" id="svg_12" class="" />
 							<text font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix(1.1979898767713102,0,0,1.20158292642342,364.3142938176534,220.4263442430062) " font-size="13.32px" id="svg_13" class="" y="0" x="0">&lt; 90°</text>
 						</svg>
-						<span>До ботулинотерапии</span>
-					</div>
-					<div class="d-none d-xl-block d-lg-block col-1"></div>
-					<div class="col-6 col-lg-5">
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 463 450">
+                        <span>До ботулинотерапии</span>
+                    </div>
+                    <div class="d-none d-xl-block d-lg-block col-1"></div>
+                    <div class="col-6 col-lg-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 463 450" width="95%">
 							<defs>
 								<clipPath id="cut-off-bottom">
 									<rect x="0" y="0" width="100%" height="66%" />
@@ -758,203 +740,198 @@ is_hidden = 0
 							<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix(1.19798987677131,0,0,1.2015829264234197,210.08483630583953,16.38712855906943) " font-size="13.32px" id="svg_10" class="" y="0" x="0">0°</text>
 							<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix(1.19798987677131,0,0,1.2015829264234197,435.5711155348279,239.85771676631404) " font-size="13.32px" id="svg_11" class="" y="0" x="0">90°</text>
 						</svg>
-						<span>После ботулинотерапии</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="page-block" id="botylinotherapy-advantages">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-12 title">
-						Преимущества<br />
-						бутулинтерапии
-					</div>
-					<div class="col-4">
-						<img src="{{ 'assets/images/spastika/botylinotherapy-advantages1.png'|theme }}" /><br />
-						<strong>Длительный контроль<br />симптомов спастичности<br />между инъекциями</strong>
-						<hr />
-						до 5 месяцев
-					</div>
-					<div class="col-4">
-						<img src="{{ 'assets/images/spastika/botylinotherapy-advantages2.png'|theme }}" /><br />
-						<strong>Увеличение<br />повседневной<br />активности</strong>
-						<hr />
-						уменьшение зависимости от окружающих снижение бремени ухода, которое лежит на родных и близких
-						<a href="#" class="btn btn-primary" id="focal-consult" role="button">Консультация</a>
-					</div>
-					<div class="col-4">
-						<img src="{{ 'assets/images/spastika/botylinotherapy-advantages3.png'|theme }}" /><br />
-						<strong>Безопасность<br />применения<br />ботулинотерапии</strong>
-						<hr />
-						подтверждена в ходе 11<br />международных клинических<br />исследований
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="page-block" id="clinic-selection">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-12 title">
-						Выбор Специалиста
-					</div>
-					<div class="col-12 dropdown">
-						<button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownDoctor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>После ботулинотерапии</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-block" id="botylinotherapy-advantages">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 title">
+                        Преимущества<br /> бутулинтерапии
+                    </div>
+                    <div class="col-4">
+                        <img src="{{ 'assets/images/spastika/botylinotherapy-advantages1.png'|theme }}" /><br />
+                        <strong>Длительный контроль<br />симптомов спастичности<br />между инъекциями</strong>
+                        <hr /> до 5 месяцев
+                    </div>
+                    <div class="col-4">
+                        <img src="{{ 'assets/images/spastika/botylinotherapy-advantages2.png'|theme }}" /><br />
+                        <strong>Увеличение<br />повседневной<br />активности</strong>
+                        <hr /> уменьшение зависимости от окружающих снижение бремени ухода, которое лежит на родных и близких
+                        <a href="#" class="btn btn-primary" id="focal-consult" role="button">Консультация</a>
+                    </div>
+                    <div class="col-4">
+                        <img src="{{ 'assets/images/spastika/botylinotherapy-advantages3.png'|theme }}" /><br />
+                        <strong>Безопасность<br />применения<br />ботулинотерапии</strong>
+                        <hr /> подтверждена в ходе 11<br />международных клинических<br />исследований
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-block" id="clinic-selection">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 title">
+                        Выбор Специалиста
+                    </div>
+                    <div class="col-12 dropdown">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownDoctor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Выбор региона
 						</button>
-						<div class="dropdown-menu" id="dropdownDoctor" aria-labelledby="dropdownDoctor">
-							<a class="dropdown-item" href="#" data-region="1">г. Киев</a>
-							<a class="dropdown-item" href="#" data-region="2">Винницкая область</a>
-							<a class="dropdown-item" href="#" data-region="3">Волынская область</a>
-							<a class="dropdown-item" href="#" data-region="4">Днепропетровская область</a>
-							<a class="dropdown-item" href="#" data-region="5">Донецкая область</a>
-							<a class="dropdown-item" href="#" data-region="6">Житомирская область</a>
-							<a class="dropdown-item" href="#" data-region="7">Закарпатская область</a>
-							<a class="dropdown-item" href="#" data-region="8">Запорожская область</a>
-							<a class="dropdown-item" href="#" data-region="9">Ивано-Франковская область</a>
-							<a class="dropdown-item" href="#" data-region="10">Киевская область</a>
-							<a class="dropdown-item" href="#" data-region="11">Кировоградская область</a>
-							<a class="dropdown-item" href="#" data-region="12">Луганская область</a>
-							<a class="dropdown-item" href="#" data-region="13">Львовская область</a>
-							<a class="dropdown-item" href="#" data-region="14">Николаевская область</a>
-							<a class="dropdown-item" href="#" data-region="15">Одесская область</a>
-							<a class="dropdown-item" href="#" data-region="16">Полтавская область</a>
-							<a class="dropdown-item" href="#" data-region="17">Ровненская область</a>
-							<a class="dropdown-item" href="#" data-region="18">Сумская областьь</a>
-							<a class="dropdown-item" href="#" data-region="19">Тернопольская область</a>
-							<a class="dropdown-item" href="#" data-region="20">Харьковская область</a>
-							<a class="dropdown-item" href="#" data-region="21">Херсонская область</a>
-							<a class="dropdown-item" href="#" data-region="22">Хмельницкая область</a>
-							<a class="dropdown-item" href="#" data-region="23">Черкасская область</a>
-							<a class="dropdown-item" href="#" data-region="24">Черниговская область</a>
-							<a class="dropdown-item" href="#" data-region="25">Черновицкая область</a>
-							<a class="dropdown-item" href="#" data-region="26">Севастополь</a>
-							<a class="dropdown-item" href="#" data-region="27">Автономная Республика Крым</a>
-						</div>
-					</div>
-					<div class="col-12 clinic-description" id="doctor-description">
-						В первую очередь выберите <b>регион</b> в котором вы ищите специалиста
-					</div>
-					<div class="col-12 doctor-result" id="doctor-result" style="display:none;">
-						<div class="row justify-content-center">
-							<div class="col-md-12 col-sm-10 col-8" id="doctorsSlider">
-								<div class="MS-content">
-								</div>
-								<div class="MS-controls">
-									<button class="MS-left"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-									<button class="MS-right"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 clinic-description">
-							Далее, выберите <b>специалиста</b> невролога
-						</div>
-						<div class="row justify-content-center" id="doctor-details" style="display:none;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="tab-pane fade" id="regional" role="tabpanel" aria-labelledby="regional-tab">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div id="carousel-regional-spastik" class="carousel slide col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12" data-ride="carousel" data-interval="3000">
-					<ol class="carousel-indicators">
-						<li data-target="#carousel-regional-spastik" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel-regional-spastik" data-slide-to="1"></li>
-					</ol>
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<div class="row justify-content-center">
-								<div class="d-block d-md-none d-lg-none d-xl-none col-1"></div>
-								<div class="col-xl-10 col-lg-10 col-md-10 col-sm-11 col-11">
-									<img data-animation="animated bounceInLeft" src="{{ 'assets/images/spastika/generalised_spastik1.png'|theme }}" alt="Лечение генерализированной спастичности">
-								</div>
-							</div>
-						</div>
-						<div class="carousel-item">
-							<div class="row justify-content-center">
-								<div class="d-block d-md-none d-lg-none d-xl-none col-1"></div>
-								<div class="col-xl-10 col-lg-10 col-md-10 col-sm-11 col-11">
-									<img data-animation="animated bounceInLeft" src="{{ 'assets/images/spastika/generalised_spastik1.png'|theme }}" alt="Лечение генерализированной спастичности">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-1"></div>
-				<div class="d-block col-xl-6 col-lg-6 col-md-6 col-sm-11 col-11">
-					<div>
-						<strong>Лечение регионарной спастичности<br /><br /></strong>
-						Пероральные миорелаксанты (баклофен, тизанидин, дартролен, производные бензодиазепина)<br />
-						<a href="#" class="btn btn-primary" id="regional-where" role="button">Где лечить?</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="page-block" id="clinic-selection">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-12 title">
-						Выбор клиники
-					</div>
-					<div class="col-12 dropdown">
-						<button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownClinicRegional" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-menu" id="dropdownDoctor" aria-labelledby="dropdownDoctor">
+                            <a class="dropdown-item" href="#" data-region="1">г. Киев</a>
+                            <a class="dropdown-item" href="#" data-region="2">Винницкая область</a>
+                            <a class="dropdown-item" href="#" data-region="3">Волынская область</a>
+                            <a class="dropdown-item" href="#" data-region="4">Днепропетровская область</a>
+                            <a class="dropdown-item" href="#" data-region="5">Донецкая область</a>
+                            <a class="dropdown-item" href="#" data-region="6">Житомирская область</a>
+                            <a class="dropdown-item" href="#" data-region="7">Закарпатская область</a>
+                            <a class="dropdown-item" href="#" data-region="8">Запорожская область</a>
+                            <a class="dropdown-item" href="#" data-region="9">Ивано-Франковская область</a>
+                            <a class="dropdown-item" href="#" data-region="10">Киевская область</a>
+                            <a class="dropdown-item" href="#" data-region="11">Кировоградская область</a>
+                            <a class="dropdown-item" href="#" data-region="12">Луганская область</a>
+                            <a class="dropdown-item" href="#" data-region="13">Львовская область</a>
+                            <a class="dropdown-item" href="#" data-region="14">Николаевская область</a>
+                            <a class="dropdown-item" href="#" data-region="15">Одесская область</a>
+                            <a class="dropdown-item" href="#" data-region="16">Полтавская область</a>
+                            <a class="dropdown-item" href="#" data-region="17">Ровненская область</a>
+                            <a class="dropdown-item" href="#" data-region="18">Сумская областьь</a>
+                            <a class="dropdown-item" href="#" data-region="19">Тернопольская область</a>
+                            <a class="dropdown-item" href="#" data-region="20">Харьковская область</a>
+                            <a class="dropdown-item" href="#" data-region="21">Херсонская область</a>
+                            <a class="dropdown-item" href="#" data-region="22">Хмельницкая область</a>
+                            <a class="dropdown-item" href="#" data-region="23">Черкасская область</a>
+                            <a class="dropdown-item" href="#" data-region="24">Черниговская область</a>
+                            <a class="dropdown-item" href="#" data-region="25">Черновицкая область</a>
+                            <a class="dropdown-item" href="#" data-region="26">Севастополь</a>
+                            <a class="dropdown-item" href="#" data-region="27">Автономная Республика Крым</a>
+                        </div>
+                    </div>
+                    <div class="col-12 clinic-description" id="doctor-description">
+                        В первую очередь выберите <b>регион</b> в котором вы ищите специалиста
+                    </div>
+                    <div class="col-12 doctor-result" id="doctor-result" style="display:none;">
+                        <div class="row justify-content-center">
+                            <div class="col-md-12 col-sm-10 col-8" id="doctorsSlider">
+                                <div class="MS-content">
+                                </div>
+                                <div class="MS-controls">
+                                    <button class="MS-left"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                                    <button class="MS-right"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 clinic-description">
+                            Далее, выберите <b>специалиста</b> невролога
+                        </div>
+                        <div class="row justify-content-center" id="doctor-details" style="display:none;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="regional" role="tabpanel" aria-labelledby="regional-tab">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div id="carousel-regional-spastik" class="carousel slide col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12" data-ride="carousel" data-interval="3000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-regional-spastik" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-regional-spastik" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="d-block d-md-none d-lg-none d-xl-none col-1"></div>
+                                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-11 col-11">
+                                    <img data-animation="animated bounceInLeft" src="{{ 'assets/images/spastika/generalised_spastik1.png'|theme }}" alt="Лечение генерализированной спастичности">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="d-block d-md-none d-lg-none d-xl-none col-1"></div>
+                                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-11 col-11">
+                                    <img data-animation="animated bounceInLeft" src="{{ 'assets/images/spastika/generalised_spastik1.png'|theme }}" alt="Лечение генерализированной спастичности">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="d-block col-xl-6 col-lg-6 col-md-6 col-sm-11 col-11">
+                    <div>
+                        <strong>Лечение регионарной спастичности<br /><br /></strong> Пероральные миорелаксанты (баклофен, тизанидин, дартролен, производные бензодиазепина)<br />
+                        <a href="#" class="btn btn-primary" id="regional-where" role="button">Где лечить?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-block" id="clinic-selection">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 title">
+                        Выбор клиники
+                    </div>
+                    <div class="col-12 dropdown">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownClinicRegional" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Выбор региона
 						</button>
-						<div class="dropdown-menu" id="dropdownClinicListRegional" aria-labelledby="dropdownClinicRegional">
-							<a class="dropdown-item" href="#" data-region="1">г. Киев</a>
-							<a class="dropdown-item" href="#" data-region="2">Винницкая область</a>
-							<a class="dropdown-item" href="#" data-region="3">Волынская область</a>
-							<a class="dropdown-item" href="#" data-region="4">Днепропетровская область</a>
-							<a class="dropdown-item" href="#" data-region="5">Донецкая область</a>
-							<a class="dropdown-item" href="#" data-region="6">Житомирская область</a>
-							<a class="dropdown-item" href="#" data-region="7">Закарпатская область</a>
-							<a class="dropdown-item" href="#" data-region="8">Запорожская область</a>
-							<a class="dropdown-item" href="#" data-region="9">Ивано-Франковская область</a>
-							<a class="dropdown-item" href="#" data-region="10">Киевская область</a>
-							<a class="dropdown-item" href="#" data-region="11">Кировоградская область</a>
-							<a class="dropdown-item" href="#" data-region="12">Луганская область</a>
-							<a class="dropdown-item" href="#" data-region="13">Львовская область</a>
-							<a class="dropdown-item" href="#" data-region="14">Николаевская область</a>
-							<a class="dropdown-item" href="#" data-region="15">Одесская область</a>
-							<a class="dropdown-item" href="#" data-region="16">Полтавская область</a>
-							<a class="dropdown-item" href="#" data-region="17">Ровненская область</a>
-							<a class="dropdown-item" href="#" data-region="18">Сумская областьь</a>
-							<a class="dropdown-item" href="#" data-region="19">Тернопольская область</a>
-							<a class="dropdown-item" href="#" data-region="20">Харьковская область</a>
-							<a class="dropdown-item" href="#" data-region="21">Херсонская область</a>
-							<a class="dropdown-item" href="#" data-region="22">Хмельницкая область</a>
-							<a class="dropdown-item" href="#" data-region="23">Черкасская область</a>
-							<a class="dropdown-item" href="#" data-region="24">Черниговская область</a>
-							<a class="dropdown-item" href="#" data-region="25">Черновицкая область</a>
-							<a class="dropdown-item" href="#" data-region="26">Севастополь</a>
-							<a class="dropdown-item" href="#" data-region="27">Автономная Республика Крым</a>
-						</div>
-					</div>
-					<div class="col-12 clinic-description" id="second-clinic-description">
-						Выберите <b>регион</b> в котором вы ищите клинику
-					</div>
-					<div class="col-12 clinic-result" id="second-clinic-result">
-						<div class="row justify-content-center">
-							<div class="col-md-8 col-sm-10 col-12">
-								<ul class="clinic-list">
-								</ul>
-								<div class="row">
-									<div class="col-6">
-										<a href="#" id="next-second-clinic" class="btn btn-primary" role="button">Показать еще</a>
-									</div>
-									<div class="col-6">
-										<a href="#" class="brochure">Скачать брошюру</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                        <div class="dropdown-menu" id="dropdownClinicListRegional" aria-labelledby="dropdownClinicRegional">
+                            <a class="dropdown-item" href="#" data-region="1">г. Киев</a>
+                            <a class="dropdown-item" href="#" data-region="2">Винницкая область</a>
+                            <a class="dropdown-item" href="#" data-region="3">Волынская область</a>
+                            <a class="dropdown-item" href="#" data-region="4">Днепропетровская область</a>
+                            <a class="dropdown-item" href="#" data-region="5">Донецкая область</a>
+                            <a class="dropdown-item" href="#" data-region="6">Житомирская область</a>
+                            <a class="dropdown-item" href="#" data-region="7">Закарпатская область</a>
+                            <a class="dropdown-item" href="#" data-region="8">Запорожская область</a>
+                            <a class="dropdown-item" href="#" data-region="9">Ивано-Франковская область</a>
+                            <a class="dropdown-item" href="#" data-region="10">Киевская область</a>
+                            <a class="dropdown-item" href="#" data-region="11">Кировоградская область</a>
+                            <a class="dropdown-item" href="#" data-region="12">Луганская область</a>
+                            <a class="dropdown-item" href="#" data-region="13">Львовская область</a>
+                            <a class="dropdown-item" href="#" data-region="14">Николаевская область</a>
+                            <a class="dropdown-item" href="#" data-region="15">Одесская область</a>
+                            <a class="dropdown-item" href="#" data-region="16">Полтавская область</a>
+                            <a class="dropdown-item" href="#" data-region="17">Ровненская область</a>
+                            <a class="dropdown-item" href="#" data-region="18">Сумская областьь</a>
+                            <a class="dropdown-item" href="#" data-region="19">Тернопольская область</a>
+                            <a class="dropdown-item" href="#" data-region="20">Харьковская область</a>
+                            <a class="dropdown-item" href="#" data-region="21">Херсонская область</a>
+                            <a class="dropdown-item" href="#" data-region="22">Хмельницкая область</a>
+                            <a class="dropdown-item" href="#" data-region="23">Черкасская область</a>
+                            <a class="dropdown-item" href="#" data-region="24">Черниговская область</a>
+                            <a class="dropdown-item" href="#" data-region="25">Черновицкая область</a>
+                            <a class="dropdown-item" href="#" data-region="26">Севастополь</a>
+                            <a class="dropdown-item" href="#" data-region="27">Автономная Республика Крым</a>
+                        </div>
+                    </div>
+                    <div class="col-12 clinic-description" id="second-clinic-description">
+                        Выберите <b>регион</b> в котором вы ищите клинику
+                    </div>
+                    <div class="col-12 clinic-result" id="second-clinic-result">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col-sm-10 col-12">
+                                <ul class="clinic-list">
+                                </ul>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" id="next-second-clinic" class="btn btn-primary" role="button">Показать еще</a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="brochure">Скачать брошюру</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="page-block" id="faq">
@@ -964,141 +941,141 @@ is_hidden = 0
                 Частые вопросы<br /> о спастичности
             </div>
         </div>
-		<div class="row justify-content-center">
-			<div class="col-sm-10 col-12" id="accordion" role="tablist">
-				<div class="card">
-					<div class="row">
-						<div class="col-10">
-							<div class="card-header" role="tab" id="faqheadingOne">
-								<h5 class="mb-0">
-									<a data-toggle="collapse" href="#faqCollapseOne" data-target=".faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne faqCollapseOneIndicator">
+        <div class="row justify-content-center">
+            <div class="col-sm-10 col-12" id="accordion" role="tablist">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="card-header" role="tab" id="faqheadingOne">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#faqCollapseOne" data-target=".faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne faqCollapseOneIndicator">
 										Що таке спастичність?
 									</a>
-								</h5>
-							</div>
-							<div id="faqCollapseOne" class="collapse faqCollapseOne show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-								<div class="card-body">
-									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-									on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-									farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-								</div>
-							</div>
-						</div>
-						<div class="col-2 collapse faqCollapseOne show" id="faqCollapseOneIndicator">
-							<a data-toggle="collapse" href="#faqCollapseOne" data-target=".faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne faqCollapseOneIndicator">
-								<i class="fa fa-minus fa-circle-thinner"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="row">
-						<div class="col-10">
-							<div class="card-header" role="tab" id="faqheadingTwo">
-								<h5 class="mb-0">
-									<a class="collapsed" data-toggle="collapse" href="#faqCollapseTwo" data-target=".faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo faqCollapseTwoIndicator">
+                                </h5>
+                            </div>
+                            <div id="faqCollapseOne" class="collapse faqCollapseOne show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 collapse faqCollapseOne show" id="faqCollapseOneIndicator">
+                            <a data-toggle="collapse" href="#faqCollapseOne" data-target=".faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne faqCollapseOneIndicator">
+                                <i class="fa fa-minus fa-circle-thinner"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="card-header" role="tab" id="faqheadingTwo">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#faqCollapseTwo" data-target=".faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo faqCollapseTwoIndicator">
 										Що таке спастичність?
 									</a>
-								</h5>
-							</div>
-							<div id="faqCollapseTwo" class="collapse faqCollapseTwo" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-								<div class="card-body">
-									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-									on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-									farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-								</div>
-							</div>
-						</div>
-						<div class="col-2 collapse faqCollapseTwo" id="faqCollapseTwoIndicator">
-							<a class="collapsed" data-toggle="collapse" href="#faqCollapseTwo" data-target=".faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo faqCollapseTwoIndicator">
-								<i class="fa fa-minus fa-circle-thinner"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="row">
-						<div class="col-10">
-							<div class="card-header" role="tab" id="faqheadingThree">
-								<h5 class="mb-0">
-									<a class="collapsed" data-toggle="collapse" href="#faqCollapseThree" data-target=".faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree faqCollapseThreeIndicator">
+                                </h5>
+                            </div>
+                            <div id="faqCollapseTwo" class="collapse faqCollapseTwo" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 collapse faqCollapseTwo" id="faqCollapseTwoIndicator">
+                            <a class="collapsed" data-toggle="collapse" href="#faqCollapseTwo" data-target=".faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo faqCollapseTwoIndicator">
+                                <i class="fa fa-minus fa-circle-thinner"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="card-header" role="tab" id="faqheadingThree">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#faqCollapseThree" data-target=".faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree faqCollapseThreeIndicator">
 										Що таке спастичність?
 									</a>
-								</h5>
-							</div>
-							<div id="faqCollapseThree" class="collapse faqCollapseThree" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-								<div class="card-body">
-									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-									on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-									farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-								</div>
-							</div>
-						</div>
-						<div class="col-2 collapse faqCollapseThree" id="faqCollapseThreeIndicator">
-							<a class="collapsed" data-toggle="collapse" href="#faqCollapseThree" data-target=".faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree faqCollapseThreeIndicator">
-								<i class="fa fa-minus fa-circle-thinner"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="row">
-						<div class="col-10">
-							<div class="card-header" role="tab" id="faqheadingFour">
-								<h5 class="mb-0">
-									<a class="collapsed" data-toggle="collapse" href="#faqCollapseFour" data-target=".faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour faqCollapseFourIndicator">
+                                </h5>
+                            </div>
+                            <div id="faqCollapseThree" class="collapse faqCollapseThree" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 collapse faqCollapseThree" id="faqCollapseThreeIndicator">
+                            <a class="collapsed" data-toggle="collapse" href="#faqCollapseThree" data-target=".faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree faqCollapseThreeIndicator">
+                                <i class="fa fa-minus fa-circle-thinner"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="card-header" role="tab" id="faqheadingFour">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#faqCollapseFour" data-target=".faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour faqCollapseFourIndicator">
 										Що таке спастичність?
 									</a>
-								</h5>
-							</div>
-							<div id="faqCollapseFour" class="collapse faqCollapseFour" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
-								<div class="card-body">
-									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-									on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-									farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-								</div>
-							</div>
-						</div>
-						<div class="col-2 collapse faqCollapseFour" id="faqCollapseFourIndicator">
-							<a class="collapsed" data-toggle="collapse" href="#faqCollapseFour" data-target=".faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour faqCollapseFourIndicator">
-								<i class="fa fa-minus fa-circle-thinner"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="row">
-						<div class="col-10">
-							<div class="card-header" role="tab" id="faqheadingFive">
-								<h5 class="mb-0">
-									<a class="collapsed" data-toggle="collapse" href="#faqCollapseFive" data-target=".faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive faqCollapseFiveIndicator">
+                                </h5>
+                            </div>
+                            <div id="faqCollapseFour" class="collapse faqCollapseFour" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 collapse faqCollapseFour" id="faqCollapseFourIndicator">
+                            <a class="collapsed" data-toggle="collapse" href="#faqCollapseFour" data-target=".faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour faqCollapseFourIndicator">
+                                <i class="fa fa-minus fa-circle-thinner"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="card-header" role="tab" id="faqheadingFive">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#faqCollapseFive" data-target=".faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive faqCollapseFiveIndicator">
 										Що таке спастичність?
 									</a>
-								</h5>
-							</div>
-							<div id="faqCollapseFive" class="collapse faqCollapseFive" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
-								<div class="card-body">
-									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-									on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-									farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-								</div>
-							</div>
-						</div>
-						<div class="col-2 collapse faqCollapseFive" id="faqCollapseFiveIndicator">
-							<a class="collapsed" data-toggle="collapse" href="#faqCollapseFive" data-target=".faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive faqCollapseFiveIndicator">
-								<i class="fa fa-minus fa-circle-thinner"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+                                </h5>
+                            </div>
+                            <div id="faqCollapseFive" class="collapse faqCollapseFive" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 collapse faqCollapseFive" id="faqCollapseFiveIndicator">
+                            <a class="collapsed" data-toggle="collapse" href="#faqCollapseFive" data-target=".faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive faqCollapseFiveIndicator">
+                                <i class="fa fa-minus fa-circle-thinner"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 {% put scripts %}
-	<script src="{{ 'assets/javascript/generalised.clinics.js'|theme }}"></script>
-	<script src="{{ 'assets/javascript/regional.clinics.js'|theme }}"></script>
-	<script src="{{ 'assets/javascript/doctors.js'|theme }}"></script>
-	<script src="{{ 'assets/javascript/spastica.js'|theme }}"></script>
+<script src="{{ 'assets/javascript/generalised.clinics.js'|theme }}"></script>
+<script src="{{ 'assets/javascript/regional.clinics.js'|theme }}"></script>
+<script src="{{ 'assets/javascript/doctors.js'|theme }}"></script>
+<script src="{{ 'assets/javascript/spastica.js'|theme }}"></script>
 {% endput %}

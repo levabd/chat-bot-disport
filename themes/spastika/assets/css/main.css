@@ -52,9 +52,25 @@
 /*------------------- Tooltip --------------------*/
 
 .popover {
-    max-width: 776px;
+    max-width: 576px;
     margin: 0 10px;
-    font: 300 1rem/1.3 'Ubuntu', sans-serif;
+    font: 300 1rem/1.5 'Ubuntu', sans-serif;
+}
+
+.source-tip {
+    padding: .2rem .5rem;
+    margin-bottom: 0;
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.source-tip li {
+    padding-bottom: 20px;
+}
+
+.source-tip li:last-of-type {
+    padding-bottom: 0;
 }
 
 .tip,
@@ -127,7 +143,7 @@
 }
 
 .svg-circle-carousel .title {
-    margin-bottom: 4.5rem;
+    margin-bottom: 4.5rem !important;
 }
 
 .svg-circle-carousel h3 {
@@ -147,7 +163,7 @@
 }
 
 .svg-circle-carousel .card-header {
-    padding: .5rem 0;
+    padding: .1rem 0;
     background-color: transparent;
     border: none;
 }
@@ -190,6 +206,37 @@ body,
 html {
     color: #4a5665;
 }
+
+
+/*.col {
+    flex: 1 0 50%;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.row {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+div[class^=col-] {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.row:before,
+.row:after {
+    display: none;
+    content: normal;
+}*/
 
 .btn-primary {
     background-color: #f5a98a !important;
@@ -245,7 +292,7 @@ html {
 }
 
 .page-block .title {
-    font: 700 3rem/1 'Vollkorn', serif;
+    font: 700 2.3rem/1 'Vollkorn', serif;
     text-transform: uppercase;
     text-align: center;
     margin: 1.4rem 0 1.875rem;
@@ -407,7 +454,7 @@ html {
 
 .reabilitation img {
     margin-bottom: 2.5rem;
-    width: 100%;
+    max-height: 600px;
 }
 
 .reabilitation ul {
@@ -696,6 +743,10 @@ html {
     padding: .65rem 2.52rem;
 }
 
+#insult-detect .row:first-of-type {
+    margin-bottom: 40px;
+}
+
 #insult-detect img {
     -ms-flex: 0 0 24.999997%;
     flex: 0 0 24.999997%;
@@ -813,11 +864,7 @@ html {
 }
 
 #insult-therapy img {
-    height: 108px;
-}
-
-#insult-therapy img {
-    height: 108px;
+    height: 87px;
 }
 
 #insult-therapy .title {
@@ -841,22 +888,6 @@ html {
 
 
 /*------------------- Spastika -------------------*/
-
-.source-tip {
-    padding: .2rem .5rem;
-    margin-bottom: 0;
-    list-style-type: none;
-    font-size: 14px;
-    line-height: 1;
-}
-
-.source-tip li {
-    padding-bottom: 10px;
-}
-
-.source-tip li:last-of-type {
-    padding-bottom: 0;
-}
 
 .jumbotron.spastika {
     background: url("../images/spastika/spastika_head.png") no-repeat scroll center top transparent;
@@ -953,6 +984,11 @@ html {
     font: 700 28px/1 'Open Sans', sans-serif;
 }
 
+#hand-position .hand img {
+    max-width: 177px;
+    max-height: 250px;
+}
+
 #hand-position hr {
     position: relative;
     border: none;
@@ -1042,7 +1078,12 @@ html {
 
 #sympthoms li {
     line-height: 1;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
+}
+
+#sympthoms img {
+    max-height: 470px;
+    margin-top: -70px;
 }
 
 #complications .complication {
@@ -1145,7 +1186,7 @@ html {
 }
 
 #treatment .row div strong {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 #treatment .row div h3 {
@@ -1514,7 +1555,7 @@ html {
 }
 
 #botylinotherapy {
-    padding-bottom: 9.25rem;
+    padding-bottom: 4.25rem;
 }
 
 #botylinotherapy .col-6 span {
@@ -1527,14 +1568,14 @@ html {
 }
 
 #botylinotherapy .col-6 {
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
     text-align: center;
 }
 
 #botylinotherapy-advantages .col-4 {
     margin-top: 3.75rem;
     text-align: center;
-    font: 300 16px/1 'Ubuntu', serif;
+    font: 300 16px/1.3 'Ubuntu', serif;
 }
 
 #botylinotherapy-advantages .col-4 img {
@@ -2260,6 +2301,15 @@ nav .container {
         left: -o-calc(50% - 360px);
         left: expression(50% - 360px);
     }
+    #treatment .row {
+        line-height: 1;
+    }
+    #insult-suspicion .row {
+        font-size: 16px;
+    }
+    #reabilitation-consult {
+        line-height: 1.3;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -2276,6 +2326,10 @@ nav .container {
         left: -moz-calc(50% - 270px);
         left: -o-calc(50% - 270px);
         left: expression(50% - 270px);
+    }
+    #sympthoms img {
+        max-height: 470px;
+        margin-top: 0;
     }
 }
 
