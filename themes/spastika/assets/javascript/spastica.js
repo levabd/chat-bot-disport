@@ -121,7 +121,7 @@
                             "<div class='col-lg-5 col-md-7 col-sm-12 '><div class='main doctor-photo' " + mainPhotoCss + "><img src= '" + mainBase64Photo + "' alt='" + doctor.main.name +
                             "'/></div>" + assistantPhoto + "</div><div class='col-lg-5 col-10'><div class='row justify-content-start'><div class='col-12 doctor-names'><div><h5>" +
                             doctor.main.name + "</h5>" + doctor.main.position + "</div>" + assistantDetails +
-                            "</div><div class='col-6'><a href='#' class='btn btn-primary'role='button'>Записаться</a></div><div class='col-6'><a href='#' class='brochure'>Скачать брошюру</a></div></div></div>");
+                            "</div><div class='col-6'><a href='#' class='btn btn-primary' role='button'>Записаться</a></div><div class='col-6'><a href='#' class='btn btn-primary brochure-button' role='button'>Скачать брошюру</a></div></div></div>");
                         $('#doctor-details').show();
                         $('#doctor-details').animate({
                             "opacity": '1',

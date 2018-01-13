@@ -171,12 +171,12 @@
 .svg-circle-carousel .card-header span {
     display: inline-block;
     border-radius: 100%;
-    width: 30px;
+    width: 24px;
     text-align: center;
     margin-right: .8rem;
     color: #fff;
     background: #f5a98a;
-    font: 400 18px/1.65 'Ubuntu', serif;
+    font: 400 14px/1.65 'Ubuntu', serif;
 }
 
 .svg-circle-carousel .card-header .collapsed span {
@@ -602,6 +602,10 @@ div[class^=col-] {
     margin-bottom: 1.5rem;
 }
 
+#frequency .row:first-of-type {
+    margin-bottom: 40px;
+}
+
 #frequency .justify-content-between .col-lg-3 {
     margin-top: -18rem;
 }
@@ -705,6 +709,7 @@ div[class^=col-] {
 
 #insult-effects .media img {
     margin-right: 2rem;
+    max-height: 130px;
 }
 
 #insult-effects .media-body {
@@ -725,9 +730,9 @@ div[class^=col-] {
 }
 
 #insult-effects .col-lg-6:last-of-type div:last-of-type {
-    margin: 3.75rem 0 0;
+    margin: 0;
     padding-left: 10.7%;
-    font: 300 16px/1.1 'Ubuntu', sans-serif;
+    font: 300 18px/1.3 'Ubuntu', sans-serif;
 }
 
 #insult-effects .col-lg-6:last-of-type div:last-of-type b {
@@ -740,11 +745,16 @@ div[class^=col-] {
 }
 
 #insult-effects .more .btn-outline-secondary {
-    padding: .65rem 2.52rem;
+    padding: .65rem 1.35rem;
 }
 
 #insult-detect .row:first-of-type {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+}
+
+#insult-detect .more .btn-outline-secondary {
+    padding: .65rem 1.7rem;
+    margin-bottom: .4rem;
 }
 
 #insult-detect img {
@@ -855,7 +865,7 @@ div[class^=col-] {
 }
 
 #insult-therapy .more .btn-outline-secondary {
-    padding: .65rem 2.52rem;
+    padding: .65rem 1.3rem;
 }
 
 #insult-therapy .more {
@@ -1402,6 +1412,10 @@ div[class^=col-] {
     margin-top: 5rem;
 }
 
+.types-tab-content .more {
+    margin: 0 0 2.75rem;
+}
+
 .types-tab-content .carousel {
     margin-bottom: 3.25rem;
 }
@@ -1591,8 +1605,16 @@ div[class^=col-] {
     font: 700 16px/1 'Ubuntu', serif;
 }
 
-.types-tab-content #botylinotherapy-advantages .container .row div a {
-    margin-top: 4.5rem;
+.types-tab-content #botylinotherapy-advantages .more {
+    margin: 4.5rem 0 0;
+}
+
+.types-tab-content #botylinotherapy-advantages .more a {
+    margin-top: .3rem;
+}
+
+.types-tab-content #botylinotherapy-advantages .more span {
+    padding: .65rem .85rem;
 }
 
 #clinic-selection {
@@ -1745,6 +1767,9 @@ div[class^=col-] {
 .clinic-result .btn-primary {
     padding: .8rem 4.5rem .8rem 2.35rem;
     border-bottom: none;
+}
+
+.clinic-result .btn-primary.more-clinic {
     background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' enable-background='new 0 0 1190.549 841.891' viewBox='0 0 1190.549 841.891' xml:space='preserve' style=''%3E%3Cpath fill='%23FFFFFF' d='M390.596,46.794 c-6.729,-3.172 -14.757,-0.276 -17.915,6.459 c-3.173,6.735 -0.276,14.757 6.459,17.922 c81.266,38.202 133.779,120.889 133.779,210.655 c0,128.276 -104.36,232.645 -232.645,232.645 S47.629999999999995,410.113 47.629999999999995,281.83 c0,-117.185 87.112,-214.366 199.966,-230.301 l-21.593,22.624 c-5.132,5.381 -4.931,13.908 0.44400000000000006,19.047 c2.613,2.492 5.961,3.725 9.301,3.725 c3.55,0 7.1,-1.401 9.746,-4.1690000000000005 l45.597,-47.779 c2.855,-2.99 4.176,-7.132 3.583,-11.228 c-0.5930000000000001,-4.095 -3.023,-7.691 -6.606,-9.752 l-59.27,-34.106 c-6.452,-3.7110000000000003 -14.683,-1.482 -18.394,4.957 c-3.7110000000000003,6.452 -1.495,14.683 4.95,18.394 l21.943,12.628 C114.55000000000001,46.41 20.689999999999998,153.337 20.689999999999998,281.83 c0,143.135 116.45,259.585 259.585,259.585 S539.86,424.965 539.86,281.83 C539.86,181.678 481.27099999999996,89.42099999999999 390.596,46.794 z' id='svg' class='' transform='rotate(98.34017944335938 280.2750244140625,264.7552490234375) '/%3E%3C/svg%3E") no-repeat #f5a98a;
     background-position: 4.65rem .5rem;
     background-position: calc(100% - .25rem) .5rem;
@@ -1754,8 +1779,8 @@ div[class^=col-] {
     background-position: expression(100% - .25rem) .5rem;
 }
 
-.clinic-result .btn:not([disabled]):not(.disabled).active,
-.clinic-result .btn:not([disabled]):not(.disabled):active {
+.clinic-result .btn.more-clinic:first-of-type:not([disabled]):not(.disabled).active,
+.clinic-result .btn.more-clinic:first-of-type:not([disabled]):not(.disabled):active {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' enable-background='new 0 0 1190.549 841.891' viewBox='0 0 1190.549 841.891' xml:space='preserve' style=''%3E%3Cpath fill='%23FFFFFF' d='M390.596,46.794 c-6.729,-3.172 -14.757,-0.276 -17.915,6.459 c-3.173,6.735 -0.276,14.757 6.459,17.922 c81.266,38.202 133.779,120.889 133.779,210.655 c0,128.276 -104.36,232.645 -232.645,232.645 S47.629999999999995,410.113 47.629999999999995,281.83 c0,-117.185 87.112,-214.366 199.966,-230.301 l-21.593,22.624 c-5.132,5.381 -4.931,13.908 0.44400000000000006,19.047 c2.613,2.492 5.961,3.725 9.301,3.725 c3.55,0 7.1,-1.401 9.746,-4.1690000000000005 l45.597,-47.779 c2.855,-2.99 4.176,-7.132 3.583,-11.228 c-0.5930000000000001,-4.095 -3.023,-7.691 -6.606,-9.752 l-59.27,-34.106 c-6.452,-3.7110000000000003 -14.683,-1.482 -18.394,4.957 c-3.7110000000000003,6.452 -1.495,14.683 4.95,18.394 l21.943,12.628 C114.55000000000001,46.41 20.689999999999998,153.337 20.689999999999998,281.83 c0,143.135 116.45,259.585 259.585,259.585 S539.86,424.965 539.86,281.83 C539.86,181.678 481.27099999999996,89.42099999999999 390.596,46.794 z' id='svg' class='' transform='rotate(98.34017944335938 280.2750244140625,264.7552490234375) '/%3E%3C/svg%3E");
 }
 
@@ -2039,6 +2064,10 @@ div[class^=col-] {
     margin-top: 1.25rem;
 }
 
+.types-tab-content .container #doctor-details .brochure-button {
+    padding: 1.1rem 2.9rem;
+}
+
 .types-tab-content .container #doctor-details .row div a {
     margin-top: 1rem;
 }
@@ -2066,9 +2095,7 @@ nav .container {
 }
 
 .navbar-collapse {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
+    font: 700 14px'Ubuntu', sans-serif;
     text-transform: uppercase;
 }
 
@@ -2107,8 +2134,9 @@ nav .container {
 }
 
 .navbar-collapse .btn-primary {
-    padding: .8rem 2.35rem;
+    padding: .8rem 1.35rem;
     border-bottom: none;
+    font-size: 13px;
 }
 
 .navbar {
