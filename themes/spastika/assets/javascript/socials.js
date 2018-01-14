@@ -11,7 +11,7 @@
     };
 
     $("#share").jsSocials({
-        shares: ["facebook", "vkontakte", "odnoklasssniki", "twitter", "telegram"],
+        shares: ["facebook", "twitter"],
         text: "Реабилитация после инсульта возможна",
         showLabel: false,
         showCount: false,

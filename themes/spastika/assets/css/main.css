@@ -437,7 +437,7 @@ div[class^=col-] {
 
 .reabilitation .title {
     font: 700 2.25rem/1 'Vollkorn', serif;
-    margin: 5rem 0 2.5rem;
+    margin: 5rem 0 1.25rem;
 }
 
 .reabilitation .main-title {
@@ -651,7 +651,7 @@ div[class^=col-] {
 }
 
 #frequency li .tip {
-    color: #06f;
+    color: rgb(49, 148, 197);
     text-decoration: underline;
 }
 
@@ -1088,6 +1088,7 @@ div[class^=col-] {
 
 #sympthoms li {
     line-height: 1;
+    font-size: 18px;
     margin-bottom: 15px;
 }
 

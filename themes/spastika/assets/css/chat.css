@@ -81,7 +81,8 @@
     overflow: hidden;
     margin: 0;
     padding: 0;
-    border: 2px solid rgba(255, 255, 255, 0.24);
+    /*border: 2px solid rgba(255, 255, 255, 0.24);*/
+    border: none;
 }
 
 .chat-title .avatar img {
@@ -534,17 +535,28 @@
 }
 
 .img-circle {
+    border: 4px solid #23abd5;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+    position: absolute;
+    background: -webkit-linear-gradient(top, #fff 48%, #ECEBFA 49%, #ECEBFA 51%, #fff 52%);
+    background: -moz-linear-gradient(top, #fff 48%, #ECEBFA 49%, #ECEBFA 51%, #fff 52%);
+    background: linear-gradient(to bottom, #fff 48%, #ECEBFA 49%, #ECEBFA 51%, #fff 52%);
+    -webkit-animation: turning_cw 5s infinite;
+    -moz-animation: turning_cw 5s infinite;
+    animation: turning_cw 5s infinite;
     box-sizing: content-box;
     -webkit-box-sizing: content-box;
     width: 72px;
     height: 72px;
     bottom: 14px;
-    right: 49px;
-    position: absolute;
+    right: 48px;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    border: 2px solid transparent;
     opacity: .7;
 }
 
@@ -556,16 +568,70 @@
     background-image: url("../images/main_avatar.png");
     background-position: center center;
     background-repeat: no-repeat;
-    /*animation-name: tossing;
-    -webkit-animation-name: tossing;*/
-    animation-duration: 1.5s;
-    -webkit-animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
+    border-radius: 50%;
+    -webkit-animation: turning_acw 5s infinite;
+    -moz-animation: turning_acw 5s infinite;
+    animation: turning_acw 5s infinite;
 }
 
 .img-circle:hover {
     opacity: 1;
+}
+
+@-webkit-keyframes turning_cw {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes turning_acw {
+    0% {
+        -webkit-transform: rotate(360deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@keyframes border {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    25% {
+        width: 100%;
+        height: 0;
+    }
+    50% {
+        width: 100%;
+        height: 100%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@keyframes borderColor {
+    0% {
+        border-bottom-color: #f00;
+        border-left-color: #f00;
+    }
+    50% {
+        border-bottom-color: #f00;
+        border-left-color: #f00;
+    }
+    51% {
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100% {
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
 }
 
 @keyframes pulse {
