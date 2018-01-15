@@ -12,13 +12,32 @@
 
     var currentBrainSlide = -1;
     var pauseBrainSlide = false;
+    var currentBrain1 = "";
+
+    $('#brain1-accordion').on('show.bs.collapse', function(e) {
+        var currentImageUrl = $('#brains svg image').attr('xlink:href');
+        var urlPrefix = currentImageUrl.substr(0, currentImageUrl.lastIndexOf('/'));
+        if (e.target.getAttribute('id') == "brain1CollapseOne") {
+            currentBrain1 = urlPrefix + "/brain1_1.png";
+        } else if ((e.target.getAttribute('id') == "brain1CollapseTwo") || (e.target.getAttribute('id') == "brain1CollapseThree") || (e.target.getAttribute('id') == "brain1CollapseFour")) {
+            currentBrain1 = urlPrefix + "/brain1_2.png";
+        }
+        $('#brains svg image').attr('xlink:href', currentBrain1);
+        doAnimations($('#brains svg image'));
+    });
 
     function slideBrain(element, manual) {
         pauseBrainSlide = manual;
         var currentId = element.attr('id');
         var currentAccordion = element.data("accordion");
         doAnimations($('#brains svg image'));
-        $('#brains svg image').attr('xlink:href', element.data("image"));
+        var imageUrl = element.data("image");
+        if (currentId == "left") {
+            if (currentBrain1) {
+                imageUrl = currentBrain1;
+            }
+        }
+        $('#brains svg image').attr('xlink:href', imageUrl);
         $('#brain1-accordion').hide();
         $('#brain2-accordion').hide();
         ['left', 'right'].forEach(function(item, index) {

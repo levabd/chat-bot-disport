@@ -125,6 +125,7 @@
                         $('#doctor-details').show();
                         $('#doctor-details').animate({
                             "opacity": '1',
+                            "padding-bottom": doctor.hasOwnProperty('assistant') ? "3.05rem" : "5.75rem",
                             "display": 'block'
                         }, 500);
                     });

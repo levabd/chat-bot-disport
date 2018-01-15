@@ -29,16 +29,16 @@
 	<use xlink:href="#tip" transform="translate(303, 55) scale(0.15,0.15)" fill="#f5a989" />
 	<use xlink:href="#tip" transform="translate(469, 55) scale(0.15,0.15)" fill="#f5a989" />
 
-	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 153, 298.5)" font-size="16px">
+	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 153, 305)" font-size="12px">
 		1 месяц
 	</text>
-	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 327, 298)" font-size="16px">
+	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 327, 305)" font-size="12px">
 		1 год
 	</text>
-	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 487, 298)" font-size="16px">
+	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 487, 305)" font-size="12px">
 		2 года
 	</text>
-	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 0, 128)" font-size="16px">
+	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 10, 128)" font-size="12px">
 		КПД
 	</text>
 	<text text-anchor="middle" font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 1, 0, 0, 1, 180, 72)" font-weight="bold" font-size="12px">

@@ -25,6 +25,35 @@
 }
 
 
+/*---------------- Rotate Screen ----------------*/
+
+#rotate640 {
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: 0;
+    z-index: -1;
+    text-align: center;
+}
+
+#rotate640 .status {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: left;
+    background: url("../images/turn-the-device.svg") center center no-repeat;
+}
+
+
 /*--------------- Scroll Indicator ---------------*/
 
 .dropdown-item {
@@ -55,6 +84,11 @@
     max-width: 576px;
     margin: 0 10px;
     font: 300 1rem/1.5 'Ubuntu', sans-serif;
+}
+
+.popover-header {
+    background-color: #868e96;
+    color: #fff;
 }
 
 .source-tip {
@@ -149,7 +183,7 @@
 .svg-circle-carousel h3 {
     font: 300 22px/1 'Ubuntu', serif;
     text-transform: uppercase;
-    margin-bottom: 2.375rem;
+    margin-bottom: 1rem;
     margin-top: 2rem;
 }
 
@@ -254,6 +288,16 @@ div[class^=col-] {
     border-bottom: 4px solid #b33a00;
 }
 
+.btn-primary.brochure-button {
+    background-color: #63dafd !important;
+    border-bottom: 4px solid #17a9d4;
+}
+
+.btn-primary.brochure-button:hover {
+    background-color: #4ac6ea !important;
+    border-bottom: 4px solid #17a9d4;
+}
+
 .btn-outline-secondary {
     border-color: #ccc;
     border-radius: .25rem;
@@ -275,7 +319,7 @@ div[class^=col-] {
 }
 
 .page-block {
-    padding: 5rem 0;
+    padding: 5rem 0 1rem;
 }
 
 .page-block::before {
@@ -552,7 +596,7 @@ div[class^=col-] {
 }
 
 #insult-description {
-    padding-top: 6.25rem;
+    padding-top: 3.75rem;
 }
 
 #insult-description.page-block::before {
@@ -563,7 +607,7 @@ div[class^=col-] {
     content: "";
     display: block;
     width: 65px;
-    margin: 3.5rem 0 1.6rem;
+    margin: -1rem 0 1.6rem;
     border-top: 2px solid #63dafd;
 }
 
@@ -576,7 +620,8 @@ div[class^=col-] {
 }
 
 #insult-description .more {
-    margin-top: 6rem;
+    margin: 3.75rem 0 4rem;
+    padding-left: 0;
 }
 
 #brains,
@@ -596,6 +641,10 @@ div[class^=col-] {
 
 #brains .title {
     margin-bottom: 3.4rem;
+}
+
+#frequency .more {
+    margin: 1rem 0 3.25rem;
 }
 
 #frequency img {
@@ -667,6 +716,10 @@ div[class^=col-] {
     background-color: #f0f5f5;
 }
 
+#incidence-rate .more {
+    margin: 1rem 0 3.25rem;
+}
+
 #incidence-rate .title {
     margin-bottom: 4rem;
 }
@@ -729,32 +782,46 @@ div[class^=col-] {
     min-height: 332px;
 }
 
-#insult-effects .col-lg-6:last-of-type div:last-of-type {
-    margin: 0;
+#insult-effects .col-lg-7:last-of-type div:last-of-type {
+    margin: 20px 0 0;
     padding-left: 10.7%;
     font: 300 18px/1.3 'Ubuntu', sans-serif;
 }
 
-#insult-effects .col-lg-6:last-of-type div:last-of-type b {
+#insult-effects .col-lg-7:last-of-type div:last-of-type b {
     font-weight: 700;
 }
 
 #insult-effects .more {
     text-align: inherit;
+    margin-top: 5.3rem;
     margin-bottom: 10px;
 }
 
 #insult-effects .more .btn-outline-secondary {
-    padding: .65rem 1.35rem;
+    padding: .65rem 2rem;
+}
+
+#insult-effects .btn-primary {
+    padding: 1.1rem 4.65rem;
 }
 
 #insult-detect .row:first-of-type {
     margin-bottom: 80px;
 }
 
+#insult-detect .more {
+    margin-top: .75rem;
+}
+
 #insult-detect .more .btn-outline-secondary {
-    padding: .65rem 1.7rem;
+    padding: .65rem 2rem;
     margin-bottom: .4rem;
+}
+
+#insult-detect .btn-primary {
+    padding: 1.1rem 4.3rem;
+    margin-bottom: 3.5rem;
 }
 
 #insult-detect img {
@@ -788,7 +855,7 @@ div[class^=col-] {
 }
 
 #insult-detect .col-10 {
-    margin-bottom: 2.25rem;
+    margin-bottom: 4rem;
 }
 
 #insult-detect .media-body h3 {
@@ -865,12 +932,18 @@ div[class^=col-] {
 }
 
 #insult-therapy .more .btn-outline-secondary {
-    padding: .65rem 1.3rem;
+    padding: .65rem 2rem;
+}
+
+#insult-therapy .btn-primary {
+    padding: 1.1rem 4.6625rem;
+    margin-bottom: 3rem;
 }
 
 #insult-therapy .more {
     text-align: inherit;
     margin-bottom: 10px;
+    margin-top: 2rem;
 }
 
 #insult-therapy img {
@@ -930,7 +1003,8 @@ div[class^=col-] {
 }
 
 #causes .more {
-    margin-top: 1.825rem;
+    margin-top: -1rem;
+    margin-bottom: 3rem;
 }
 
 #hand-position {
@@ -1064,7 +1138,8 @@ div[class^=col-] {
 }
 
 #sympthoms {
-    padding-top: 8.5rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
 }
 
 #sympthoms::before {
@@ -1087,14 +1162,37 @@ div[class^=col-] {
 }
 
 #sympthoms li {
-    line-height: 1;
+    line-height: 1.3;
     font-size: 18px;
     margin-bottom: 15px;
 }
 
+#sympthoms .more {
+    padding-left: 33px;
+}
+
+
+/*#sympthoms li {
+    display: inline-block;
+    border-radius: 100%;
+    width: 24px;
+    text-align: center;
+    margin-right: .8rem;
+    color: #fff;
+    background: #f5a98a;
+    font: 400 14px/1.65 'Ubuntu', serif;
+}*/
+
 #sympthoms img {
     max-height: 470px;
-    margin-top: -70px;
+}
+
+#complications {
+    padding-bottom: 0;
+}
+
+#complications .title {
+    margin-bottom: 0;
 }
 
 #complications .complication {
@@ -1132,7 +1230,7 @@ div[class^=col-] {
 }
 
 #life-quality .title {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 #life-quality .carousel-caption {
@@ -1254,13 +1352,15 @@ div[class^=col-] {
 }
 
 #faq .card-body {
-    padding: 1.25rem 0 2rem;
+    padding: 1rem 0 1.5rem;
 }
 
 #faq .card-header a {
     color: #4a5665;
     font-size: 18px;
     font-weight: 700;
+    margin: 1rem 0 0;
+    display: block;
 }
 
 #faq .col-2:before {
@@ -1362,7 +1462,7 @@ div[class^=col-] {
 }
 
 #types .title {
-    margin-bottom: -2.25rem;
+    margin-bottom: 0;
 }
 
 .types-menu {
@@ -1570,7 +1670,8 @@ div[class^=col-] {
 }
 
 #botylinotherapy {
-    padding-bottom: 4.25rem;
+    padding-bottom: 0;
+    padding-top: 2.5rem;
 }
 
 #botylinotherapy .col-6 span {
@@ -1583,8 +1684,17 @@ div[class^=col-] {
 }
 
 #botylinotherapy .col-6 {
-    margin-top: 3.5rem;
+    margin-top: 2rem;
     text-align: center;
+}
+
+#botylinotherapy-advantages {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+#botylinotherapy-advantages .title {
+    margin-bottom: 0;
 }
 
 #botylinotherapy-advantages .col-4 {
@@ -1599,7 +1709,7 @@ div[class^=col-] {
 
 #botylinotherapy-advantages .col-4 hr {
     border-top: 2px solid #f5a98a;
-    margin: 1.5rem 40% 2.375rem;
+    margin: 1.5rem 40% 1.375rem;
 }
 
 #botylinotherapy-advantages .col-4 strong {
@@ -1612,10 +1722,11 @@ div[class^=col-] {
 
 .types-tab-content #botylinotherapy-advantages .more a {
     margin-top: .3rem;
+    padding: 1.1rem 5.3625rem;
 }
 
 .types-tab-content #botylinotherapy-advantages .more span {
-    padding: .65rem .85rem;
+    padding: .65rem 2.1rem;
 }
 
 #clinic-selection {
@@ -1628,7 +1739,7 @@ div[class^=col-] {
 }
 
 #clinic-selection {
-    min-height: 822px;
+    min-height: 790px;
     background: url("../images/spastika/doctor.png") no-repeat scroll center bottom #f0f5f5;
     transition: .5s ease-in-out;
     -webkit-transition: .5s ease-in-out;
@@ -1642,7 +1753,8 @@ div[class^=col-] {
 }
 
 #clinic-selection .clinic-description {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding-left: 40px;
     transition: .5s ease-in-out;
     -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
@@ -1650,7 +1762,7 @@ div[class^=col-] {
 }
 
 #clinic-selection .title {
-    margin-bottom: 4.375rem;
+    margin-bottom: 2.375rem;
 }
 
 #clinic-selection .dropdown {
@@ -1741,8 +1853,8 @@ div[class^=col-] {
 #first-clinic-result,
 #second-clinic-result {
     background: #f0f5f5;
-    padding-bottom: 5rem;
-    margin-bottom: -5rem;
+    padding-bottom: 3rem;
+    margin-bottom: -1rem;
 }
 
 #first-clinic-result .col-12,
@@ -1870,7 +1982,7 @@ div[class^=col-] {
 
 .clinic-list {
     text-align: left;
-    padding-top: 2rem;
+    padding-top: 1rem;
     margin-bottom: 0;
     background: #f0f5f5;
 }
@@ -1945,7 +2057,8 @@ div[class^=col-] {
 
 #doctor-details {
     background: #f0f5f5;
-    padding-bottom: 5rem;
+    padding-bottom: 3.05rem;
+    min-height: 246px;
 }
 
 #doctor-result {
@@ -1958,7 +2071,7 @@ div[class^=col-] {
 #doctor-result {
     background: url(../images/spastika/doctor2.png) no-repeat scroll center top #f0f5f5;
     margin-bottom: -5rem;
-    min-height: 486px;
+    min-height: 481px;
 }
 
 #doctor-result .doctor-photo img {
@@ -2005,7 +2118,7 @@ div[class^=col-] {
 
 #doctor-result .clinic-description {
     margin-top: 1rem;
-    margin-bottom: 4.3rem;
+    margin-bottom: 1.5rem;
     transition: opacity .5s ease-in-out;
     -webkit-transition: opacity .5s ease-in-out;
     -moz-transition: opacity .5s ease-in-out;
@@ -2312,6 +2425,9 @@ nav .container {
 }
 
 @media only screen and (max-width: 992px) {
+    .types-menu .nav-tabs {
+        line-height: 2.5rem !important;
+    }
     #frequency .justify-content-between .col-lg-3 {
         margin-top: 0 !important;
     }
@@ -2319,7 +2435,7 @@ nav .container {
         margin-top: 2rem;
         margin-left: -10.7%;
     }
-    #insult-effects .col-lg-6:last-of-type div:last-of-type {
+    #insult-effects .col-lg-7:last-of-type div:last-of-type {
         padding-left: 0;
     }
     #share {
@@ -2338,6 +2454,9 @@ nav .container {
     }
     #reabilitation-consult {
         line-height: 1.3;
+    }
+    #focal .more {
+        margin-top: 1rem;
     }
 }
 
@@ -2359,6 +2478,18 @@ nav .container {
     #sympthoms img {
         max-height: 470px;
         margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    #rotate640 {
+        display: block;
+        opacity: 1;
+        z-index: 9999;
+        overflow: hidden;
+    }
+    .hide640 {
+        display: none !important;
     }
 }
 

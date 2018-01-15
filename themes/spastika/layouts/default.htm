@@ -56,27 +56,31 @@
 </head>
 
 <body>
+    <!--Rotate screen-->
+    <div id="rotate640">
+        <div class="status"></div>
+    </div>
 
     <!-- Header -->
-    <header id="layout-header" class="container">
+    <header id="layout-header" class="container hide640">
         {% partial 'site/header' %}
     </header>
-    <div class="scroll-bar">
+    <div class="scroll-bar hide640">
         <div class="fill"></div>
     </div>
 
     <!-- Content -->
-    <section id="layout-content">
+    <section id="layout-content" class="hide640">
         {% page %}
     </section>
 
     <!-- Chat box -->
-    <section id="layout-chat">
+    <section id="layout-chat" class="hide640">
         {% partial 'site/chat' %}
     </section>
 
     <!-- Footer -->
-    <footer id="layout-footer">
+    <footer id="layout-footer" class="hide640">
         {% partial 'site/footer' %}
     </footer>
 
