@@ -19,8 +19,12 @@
         var urlPrefix = currentImageUrl.substr(0, currentImageUrl.lastIndexOf('/'));
         if (e.target.getAttribute('id') == "brain1CollapseOne") {
             currentBrain1 = urlPrefix + "/brain1_1.png";
-        } else if ((e.target.getAttribute('id') == "brain1CollapseTwo") || (e.target.getAttribute('id') == "brain1CollapseThree") || (e.target.getAttribute('id') == "brain1CollapseFour")) {
+        } else if (e.target.getAttribute('id') == "brain1CollapseTwo") {
             currentBrain1 = urlPrefix + "/brain1_2.png";
+        } else if (e.target.getAttribute('id') == "brain1CollapseThree") {
+            currentBrain1 = urlPrefix + "/brain1_3.png";
+        } else if (e.target.getAttribute('id') == "brain1CollapseFour") {
+            currentBrain1 = urlPrefix + "/brain1_4.png";
         }
         $('#brains svg image').attr('xlink:href', currentBrain1);
         doAnimations($('#brains svg image'));

@@ -109,7 +109,7 @@
                         $('#doctor-details').empty();
                         var assistantDetails = "";
                         var assistantPhoto = "";
-                        var mainPhotoCss = " style='float: right; clear: right; margin-right: 30px;' ";
+                        var mainPhotoCss = " style='float: right; clear: right; margin-right: 60px;' ";
                         if (doctor.hasOwnProperty('assistant')) {
                             var assistantBase64Photo = doctor.assistant.photo ? doctor.assistant.photo : $emptyDoctor;
                             assistantDetails = "<div class='assistant'><h5>" + doctor.assistant.name + "</h5>" + doctor.main.position + "</div>";
@@ -119,13 +119,13 @@
                         var mainBase64Photo = doctor.main.photo ? doctor.main.photo : $emptyDoctor;
                         $('#doctor-details').append(
                             "<div class='col-lg-5 col-md-7 col-sm-12 '><div class='main doctor-photo' " + mainPhotoCss + "><img src= '" + mainBase64Photo + "' alt='" + doctor.main.name +
-                            "'/></div>" + assistantPhoto + "</div><div class='col-lg-5 col-10'><div class='row justify-content-start'><div class='col-12 doctor-names'><div><h5>" +
+                            "'/></div>" + assistantPhoto + "</div><div class='col-lg-5 col-10 doctor-description'><div class='row justify-content-start'><div class='col-12 doctor-names'><div><h5>" +
                             doctor.main.name + "</h5>" + doctor.main.position + "</div>" + assistantDetails +
-                            "</div><div class='col-6'><a href='#' class='btn btn-primary' role='button'>Записаться</a></div><div class='col-6'><a href='#' class='btn btn-primary brochure-button' role='button'>Скачать брошюру</a></div></div></div>");
+                            "</div><div class='col-6'><a href='#' class='btn btn-primary' role='button'>Записаться</a></div><div class='col-6'><a href='#' class='btn btn-primary brochure-button' role='button'>Скачать брошюру</a></div></div></div><div class='col-lg-2 d-none d-lg-block'></div>");
                         $('#doctor-details').show();
                         $('#doctor-details').animate({
                             "opacity": '1',
-                            "padding-bottom": doctor.hasOwnProperty('assistant') ? "3.05rem" : "5.75rem",
+                            "padding-bottom": doctor.hasOwnProperty('assistant') ? "2.6rem" : "6.3rem",
                             "display": 'block'
                         }, 500);
                     });
