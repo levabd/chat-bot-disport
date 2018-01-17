@@ -125,7 +125,7 @@
                         $('#doctor-details').show();
                         $('#doctor-details').animate({
                             "opacity": '1',
-                            "padding-bottom": doctor.hasOwnProperty('assistant') ? "2.6rem" : "6.3rem",
+                            "padding-bottom": doctor.hasOwnProperty('assistant') ? "2.4rem" : "6.55rem",
                             "display": 'block'
                         }, 500);
                     });
@@ -136,6 +136,10 @@
 
     $('#dropdownDoctor a').click(function(e) {
         var $this = $(this);
+        $('#faq').hide();
+        $('#footer').animate({
+            "padding-top": '90px'
+        });
 
         $('#dropdownDoctor').html($this.html());
         if (excistDoctorsSlider) {
@@ -205,6 +209,8 @@
                             playDoctorsSlider = false;
                         }
                     );
+
+                    displayDoctorDetails($currentSelectedRegionDoctors[0].doctor_id);
 
                 } else {
                     excistDoctorsSlider = false;

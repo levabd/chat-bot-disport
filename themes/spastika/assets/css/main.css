@@ -63,7 +63,7 @@
 .scroll-bar .fill {
     height: 4px;
     width: 10px;
-    background-color: #d5724b;
+    background-color: #f79168;
     position: fixed;
     z-index: 2;
 }
@@ -95,7 +95,7 @@
     padding: .2rem .5rem;
     margin-bottom: 0;
     list-style-type: none;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.4;
 }
 
@@ -193,7 +193,7 @@
 
 .svg-circle-carousel .card-body {
     font: 300 16px/1.3 'Ubuntu', serif;
-    padding: 0 3rem 1rem;
+    padding: 0 2.6rem 1rem;
 }
 
 .svg-circle-carousel .card-header {
@@ -343,7 +343,7 @@ div[class^=col-] {
 }
 
 .page-block .title {
-    font: 700 2.3rem/1 'Vollkorn', serif;
+    font: 700 2.3rem/1.15 'Vollkorn', serif;
     text-transform: uppercase;
     text-align: center;
     margin: 1.4rem 0 1.875rem;
@@ -514,13 +514,13 @@ div[class^=col-] {
 
 .reabilitation ul {
     margin: -2.5rem 0 2.5rem;
-    list-style: none;
+    /*list-style: none;*/
     padding: 0;
     list-style-position: inside;
 }
 
 .reabilitation ul li {
-    padding: .6rem 0 0;
+    padding: .8rem 0 0;
     text-indent: 0;
 }
 
@@ -529,10 +529,11 @@ div[class^=col-] {
     margin-bottom: 2.5rem;
 }
 
-.reabilitation li::before {
+
+/*.reabilitation li::before {
     content: "• ";
-    color: #d5724b;
-}
+    color: #000;
+}*/
 
 .reabilitation .more {
     margin: 0;
@@ -553,7 +554,7 @@ div[class^=col-] {
     top: 10px;
     width: 35px;
     height: 4px;
-    background: #d5724b;
+    background: #f79168;
 }
 
 .reabilitation.container:last-of-type {
@@ -610,6 +611,10 @@ div[class^=col-] {
     padding-top: 3.75rem;
 }
 
+#insult-description .col.text-left {
+    padding-right: 130px;
+}
+
 #insult-description.page-block::before {
     border: none;
 }
@@ -661,10 +666,11 @@ div[class^=col-] {
 
 #frequency img {
     margin-bottom: 1.5rem;
+    max-width: 730px;
 }
 
 #frequency .row:first-of-type {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 #frequency .justify-content-between .col-lg-3 {
@@ -741,7 +747,7 @@ div[class^=col-] {
 }
 
 #incidence-rate .title {
-    margin-bottom: 4rem;
+    margin-bottom: .5rem;
 }
 
 #incidence-rate h3 {
@@ -780,6 +786,10 @@ div[class^=col-] {
     margin-bottom: 32px;
 }
 
+#insult-effects img {
+    max-height: 355px;
+}
+
 #insult-effects .media img {
     margin-right: 2rem;
     max-height: 130px;
@@ -787,11 +797,11 @@ div[class^=col-] {
 
 #insult-effects .media-body {
     padding-top: 1rem;
-    font: 400 22px/1.1 'Ubuntu', sans-serif;
+    font: 300 20px/1.1 'Ubuntu', sans-serif;
 }
 
 #insult-effects .media-body b {
-    font: 700 34px/1.1 'Ubuntu', sans-serif;
+    font: 700 28px/1.1 'Ubuntu', sans-serif;
 }
 
 #insult-effects .media-body span {
@@ -936,6 +946,7 @@ div[class^=col-] {
 #insult-suspicion .row div div {
     padding: 1px 0 0 260px;
     text-indent: -45px;
+    max-width: 900px;
 }
 
 #insult-suspicion .row div div::before {
@@ -943,7 +954,7 @@ div[class^=col-] {
     position: relative;
     left: -25px;
     top: 20px;
-    font: 700 80px/1 'STIXGeneral-Bold';
+    font: 700 80px/.7 'STIXGeneral-Bold';
 }
 
 #insult-suspicion .row div div a {
@@ -963,7 +974,7 @@ div[class^=col-] {
 #insult-therapy .more {
     text-align: inherit;
     margin-bottom: 10px;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 #insult-therapy img {
@@ -1006,18 +1017,21 @@ div[class^=col-] {
     margin-bottom: 60px;
 }
 
-#causes .row .col-9 {
+#causes .row .col-9,
+#causes .row .col-8 {
     font: 300 22px/1 'Ubuntu', sans-serif;
     margin-bottom: 60px;
 }
 
-#causes .row .col-9 b {
+#causes .row .col-9 b,
+#causes .row .col-8 b {
     font-size: 34px;
     line-height: 1.2;
     font-weight: 700;
 }
 
-#causes .row .col-9 span {
+#causes .row .col-9 span,
+#causes .row .col-8 span {
     font-size: 16px;
     line-height: .1;
 }
@@ -1177,7 +1191,6 @@ div[class^=col-] {
 
 #sympthoms .title {
     text-align: left;
-    line-height: 1;
     margin: 1.4rem 18px 1.875rem;
 }
 
@@ -1353,6 +1366,15 @@ div[class^=col-] {
     padding: 5rem 0 7rem;
 }
 
+#faq ul {
+    padding: 0;
+    list-style-position: inside;
+}
+
+#faq li {
+    padding: .8rem 0 0;
+}
+
 #faq .card {
     border: none;
     border-top: 1px solid #e5e5e5;
@@ -1377,6 +1399,7 @@ div[class^=col-] {
 
 #faq .card-body {
     padding: 1rem 0 1.5rem;
+    font-weight: 300;
 }
 
 #faq .card-header a {
@@ -1545,6 +1568,16 @@ div[class^=col-] {
     margin-bottom: 3.25rem;
 }
 
+.svg-carousel-content ul {
+    padding: 0;
+    list-style-position: inside;
+}
+
+.svg-carousel-content ul li {
+    padding: .8rem 0 0;
+    text-indent: 0;
+}
+
 .types-tab-content .carousel-indicators .active {
     background-color: transparent;
 }
@@ -1584,10 +1617,10 @@ div[class^=col-] {
     position: relative;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
-    width: 45px;
-    height: 45px;
-    margin-right: 3px;
-    margin-left: 3px;
+    width: 37px;
+    height: 37px;
+    margin-right: 5px;
+    margin-left: 5px;
     cursor: pointer;
     font: 400 18px/1 FontAwesome;
     text-indent: 0;
@@ -1693,6 +1726,10 @@ div[class^=col-] {
     display: block;
 }
 
+.tab-pane .slide img {
+    max-height: 550px;
+}
+
 .tab-pane p {
     margin-bottom: .5rem;
 }
@@ -1703,7 +1740,7 @@ div[class^=col-] {
 }
 
 #botylinotherapy .more {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 #botylinotherapy .col-6 span {
@@ -1771,7 +1808,7 @@ div[class^=col-] {
 }
 
 #clinic-selection {
-    min-height: 814px;
+    min-height: 821px;
     background: url("../images/spastika/doctor.png") no-repeat scroll center bottom #f0f5f5;
     transition: .5s ease-in-out;
     -webkit-transition: .5s ease-in-out;
@@ -1894,8 +1931,8 @@ div[class^=col-] {
     text-align: left;
 }
 
-#first-clinic-result .col-12 .row,
-#second-clinic-result .col-12 .row {
+#first-clinic-result .col-12 .row.clinic-buttons,
+#second-clinic-result .col-12 .row.clinic-buttons {
     -webkit-padding-start: 40px;
     -moz-padding-start: 40px;
 }
@@ -1975,29 +2012,32 @@ div[class^=col-] {
     display: inline-block;
     margin-top: 0 !important;
     font-size: 14px;
-    color: #808080;
+    text-decoration: underline;
+    color: #17a9d4;
     font-weight: 300;
-    line-height: 1.5;
+    line-height: 1.8;
     padding-left: 20px;
+}
+
+.clinic-result li .map-pin:hover {
+    text-decoration: underline;
+    color: #10647e;
 }
 
 .clinic-result li .map-pin::before {
     position: absolute;
     content: "";
-    margin-left: -16px;
+    color: #17a9d4;
+    margin-left: -20px;
     width: 20px;
     height: 20px;
-    background: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 71.58 125' enable-background='new 0 0 71.58 100' xml:space='preserve'%3E%3Cpath fill='none' d='M35.79,100C35.79,100,0,59.617,0,35.79C0,14.33,14.343,0,35.79,0c21.447,0,35.79,14.33,35.79,35.79 C71.58,59.617,35.79,100,35.79,100z'/%3E%3Cpath fill='%23808080' d='M35.79,0C14.343,0,0,14.33,0,35.79C0,59.617,35.79,100,35.79,100s35.79-40.383,35.79-64.21 C71.58,14.33,57.237,0,35.79,0z M6.315,36.842c0-18.296,11.18-30.527,29.474-30.527c18.292,0,29.474,12.231,29.474,30.527 c0,20.316-29.474,53.686-29.474,53.686S6.315,57.158,6.315,36.842z'/%3E%3Cpath fill='%23010101' d='M35.959,26.374c5.264,0,9.532,4.268,9.532,9.531c0,5.263-4.269,9.531-9.532,9.531 c-5.266,0-9.534-4.268-9.534-9.531C26.425,30.642,30.693,26.374,35.959,26.374z'/%3E%3C/svg%3E") no-repeat scroll left center transparent;
+    background: url("../images/geo_tag.svg") no-repeat scroll left top transparent;
 }
 
-.clinic-result li .map-pin:hover {
-    text-decoration: none;
-    color: #2c2c2c;
-}
 
-.clinic-result li .map-pin:hover::before {
+/*.clinic-result li .map-pin:hover::before {
     background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 71.58 125' enable-background='new 0 0 71.58 100' xml:space='preserve'%3E%3Cpath fill='none' d='M35.79,100C35.79,100,0,59.617,0,35.79C0,14.33,14.343,0,35.79,0c21.447,0,35.79,14.33,35.79,35.79 C71.58,59.617,35.79,100,35.79,100z'/%3E%3Cpath fill='%232c2c2c' d='M35.79,0C14.343,0,0,14.33,0,35.79C0,59.617,35.79,100,35.79,100s35.79-40.383,35.79-64.21 C71.58,14.33,57.237,0,35.79,0z M6.315,36.842c0-18.296,11.18-30.527,29.474-30.527c18.292,0,29.474,12.231,29.474,30.527 c0,20.316-29.474,53.686-29.474,53.686S6.315,57.158,6.315,36.842z'/%3E%3Cpath fill='%23010101' d='M35.959,26.374c5.264,0,9.532,4.268,9.532,9.531c0,5.263-4.269,9.531-9.532,9.531 c-5.266,0-9.534-4.268-9.534-9.531C26.425,30.642,30.693,26.374,35.959,26.374z'/%3E%3C/svg%3E");
-}
+}*/
 
 .clinic-result li .type {
     text-transform: uppercase;
@@ -2007,7 +2047,7 @@ div[class^=col-] {
 
 .clinic-result li h5 {
     margin-top: 1rem;
-    font: 700 20px/1 'Vollkorn', serif;
+    font: 700 18px/1.2 'Vollkorn', serif;
 }
 
 .clinic-result li .type::before {
@@ -2116,8 +2156,10 @@ div[class^=col-] {
 }
 
 #doctor-result .doctor-photo img {
-    width: 187px;
-    height: 187px;
+    width: 191px;
+    height: 191px;
+    margin-left: -2px;
+    margin-top: -2px;
     border-radius: 100%;
     background: #fff;
 }
@@ -2126,13 +2168,13 @@ div[class^=col-] {
     -ms-flex-pack: center!important;
     justify-content: center!important;
     position: relative;
-    width: 203px;
-    height: 203px;
+    width: 195px;
+    height: 195px;
     overflow: hidden;
     white-space: normal;
     border-radius: 100%;
     background: #f5a98a;
-    border: 8px solid #f5a98a;
+    border: 4px solid #f5a98a;
     float: left;
 }
 
@@ -2180,8 +2222,8 @@ div[class^=col-] {
 }
 
 .doctor-names h5 {
-    font: 700 20px/1.1 'Vollkorn', serif;
-    margin-bottom: 0;
+    font: 700 18px/1.1 'Vollkorn', serif;
+    margin-bottom: 5px;
 }
 
 #clinic-selection .col-12.doctor-names {
@@ -2259,18 +2301,18 @@ nav .container {
     text-transform: uppercase;
 }
 
-.navbar-expand-md .navbar-nav .nav-link {
+.navbar.navbar-inverse .navbar-nav .nav-link {
     padding: .5rem 2rem;
     position: relative;
     color: #6f8095;
 }
 
-.navbar-expand-md .navbar-nav .nav-link:hover {
+.navbar.navbar-inverse .navbar-nav .nav-link:hover {
     color: #f79168;
     text-decoration: none;
 }
 
-.navbar-expand-md .navbar-nav .active .nav-link {
+.navbar.navbar-inverse .navbar-nav .active .nav-link {
     color: #f79168;
 }
 
@@ -2322,7 +2364,7 @@ nav .container {
 #footer .upper a {
     position: absolute;
     bottom: 68px;
-    right: -55px;
+    right: 5px;
     height: 40px;
     width: 40px;
     background: #ececec;
@@ -2408,7 +2450,7 @@ nav .container {
 }
 
 #footer .community .icon.social:hover {
-    background: #262626;
+    background: #63dafd;
     color: #6c6c6c;
     transition: 0.5s;
     -moz-transition: 0.5s;
@@ -2459,7 +2501,20 @@ nav .container {
     color: #e6e6e6;
 }
 
+.more-focal {
+    margin-top: 3.75rem;
+    margin-left: -15px;
+}
+
 @media only screen and (max-width: 1200px) {
+    .jumbotron.insult,
+    .jumbotron.spastika,
+    .jumbotron.reabilitation {
+        background-size: 1200px;
+    }
+    .jumbotron {
+        height: 437px;
+    }
     #share {
         left: 0;
         left: calc(50% - 480px);
@@ -2471,8 +2526,266 @@ nav .container {
 }
 
 @media only screen and (max-width: 992px) {
+    #footer {
+        min-height: 270px;
+        padding: 20px 0 15px;
+    }
+    #footer .copyright {
+        padding-top: 15px;
+        margin-bottom: 0;
+        font-size: 10px;
+    }
+    #footer .community .icon.social {
+        -webkit-transform: scale(.8, .8);
+        -ms-transform: scale(.8, .8);
+        transform: scale(.8, .8);
+        margin: 0 10px 0px 0;
+    }
+    #footer hr {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    #footer .description {
+        font-size: 11px;
+        padding-top: 0;
+    }
+    #footer .community {
+        padding-top: 0;
+    }
+    #footer .description p {
+        margin-bottom: .5rem;
+    }
+    #footer .upper a {
+        right: 5px;
+    }
+    .more {
+        margin: 1.5rem 0 0;
+    }
+    .page-block {
+        padding: 2rem 0 0;
+    }
+    #layout-content {
+        margin-top: -82px;
+    }
+    .jumbotron.insult,
+    .jumbotron.spastika,
+    .jumbotron.reabilitation {
+        background-size: 992px;
+    }
+    .navbar.navbar-inverse {
+        background: transparent;
+        padding: 0;
+        -moz-transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+        -o-transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+        -webkit-transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+        transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+    }
+    .navbar-toggler {
+        /*position: fixed;*/
+    }
+    .jumbotron {
+        height: 370px;
+    }
+    .container {
+        max-width: 956px;
+    }
+    .jumbotron .row {
+        font: 400 2.5rem/1 'Vollkorn', serif;
+        margin-top: .5rem;
+    }
+    .jumbotron .row b {
+        font-size: 2.5rem;
+    }
+    .jumbotron .btn-primary {
+        margin: 10px 15px;
+    }
+    .page-block .title {
+        font: 700 1.8rem/1.15 'Vollkorn', serif;
+        margin: 1.4rem 0 1.175rem;
+    }
+    .btn-primary {
+        padding: .85rem 2.3rem;
+        font-size: 12px;
+    }
     .types-menu .nav-tabs {
         line-height: 2.5rem !important;
+    }
+    .types-tab-content {
+        margin-top: 2rem;
+    }
+    .types-tab-content .container .row .col-11 div {
+        font: 300 16px/1.2 'Ubuntu', serif;
+    }
+    #causes .row .col-3 {
+        max-width: 105px;
+    }
+    #causes .row:first-of-type {
+        margin-bottom: 10px;
+    }
+    #causes .row .col-9,
+    #causes .row .col-8 {
+        padding-left: 0;
+    }
+    #hand-position hr {
+        margin: 1.25rem 10px .625rem;
+    }
+    #hand-position .hand {
+        margin-bottom: 15px;
+    }
+    #hand-position {
+        padding: 2rem 10px;
+    }
+    #hand-normal {
+        height: 300px;
+        padding-top: 3rem;
+    }
+    #hand-normal img {
+        height: 180px;
+        width: 180px;
+    }
+    #hand-normal .row div div {
+        padding: 1px 0 0 220px;
+    }
+    #hand-normal .row div div::before {
+        font: 700 80px/.7 'STIXGeneral-Bold';
+    }
+    #hand-normal .row div div a {
+        margin-top: 20px;
+    }
+    #sympthoms {
+        padding-top: 3rem;
+    }
+    #sympthoms .title {
+        margin: 1.4rem 18px .875rem;
+    }
+    #sympthoms li {
+        line-height: 1.1;
+        font-size: 16px;
+    }
+    #complications {
+        padding-top: 3.5rem;
+    }
+    #complications .complication {
+        margin-top: 20px;
+    }
+    #life-quality {
+        padding-top: 3.5rem;
+    }
+    #life-quality .title {
+        margin-bottom: 1.5rem;
+    }
+    #life-quality .carousel-caption p {
+        margin-bottom: .5rem;
+        line-height: 1;
+        font-size: 16px;
+    }
+    #life-quality .carousel-indicators li {
+        padding-right: 20px;
+        width: 40px;
+    }
+    #life-quality .carousel-indicators li:before {
+        -webkit-transform: scale(1.7, 1.7);
+        -ms-transform: scale(1.7, 1.7);
+        transform: scale(1.7, 1.7);
+    }
+    #focal .more {
+        margin-top: 0;
+    }
+    .more-focal {
+        margin-top: 1.75rem;
+        margin-left: -15px;
+    }
+    .svg-circle-carousel.page-block {
+        padding: 1rem 0 0;
+    }
+    .svg-circle-carousel .title {
+        margin-bottom: 1.5rem !important;
+    }
+    #botylinotherapy {
+        padding-top: .5rem;
+    }
+    #botylinotherapy .col-6 {
+        margin-top: .3rem;
+        margin-bottom: 1rem;
+    }
+    #botylinotherapy-advantages {
+        padding-top: 0rem;
+        padding-bottom: 1rem;
+    }
+    #botylinotherapy-advantages .col-4 {
+        margin-top: 1.75rem;
+    }
+    #botylinotherapy-advantages .col-4 img {
+        max-height: 100px;
+    }
+    .types-tab-content #botylinotherapy-advantages .more {
+        margin: 2.5rem -30px 0;
+    }
+    .types-tab-content #botylinotherapy-advantages .more span {
+        padding: .65rem 1.4rem;
+    }
+    .types-tab-content #botylinotherapy-advantages .more a {
+        margin-bottom: 1.5rem;
+        padding: 1.1rem 3.9rem;
+    }
+    #clinic-selection .dropdown .btn-outline-secondary {
+        width: 70%;
+    }
+    #clinic-selection .dropdown-menu {
+        max-height: 200px;
+        font-size: 1.3rem;
+    }
+    #clinic-selection .dropdown-item {
+        padding: .2rem 1.5rem;
+    }
+    #clinic-selection .dropdown .dropdown-menu {
+        width: 70%;
+        width: calc(70% - 22px);
+        width: -webkit-calc(70% - 22px);
+        width: -moz-calc(70% - 22px);
+        width: -o-calc(70% - 22px);
+        width: expression(70% - 22px);
+    }
+    #clinic-selection .dropdown .dropdown-menu::-webkit-scrollbar {
+        width: 2.4em;
+    }
+    #clinic-selection .dropdown .dropdown-menu::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 0px rgba(245, 169, 138, 1);
+    }
+    #clinic-selection .dropdown .dropdown-menu::-webkit-scrollbar-thumb {
+        background-color: #f5a98a;
+        outline: 1px solid #d5724b;
+    }
+    #faq {
+        padding: 2rem 0 7rem;
+    }
+    #faq .card-body {
+        line-height: 1.1;
+    }
+    #faq .card-header a.collapsed {
+        margin: 1.2rem 0;
+    }
+    #faq .col-2:before {
+        height: auto;
+    }
+    .svg-carousel-content ul li {
+        padding: .3rem 0 0;
+    }
+    .types-tab-content .container .row div a {
+        margin-top: .5rem;
+    }
+    #treatment {
+        padding-top: 2rem;
+        height: 300px;
+    }
+    #treatment .row div h3 {
+        margin-bottom: .75rem;
+    }
+    #sympthoms .more {
+        margin: 1.75rem 0 0;
+    }
+    #types .title {
+        margin-bottom: 1rem;
     }
     #frequency .justify-content-between .col-lg-3 {
         margin-top: 0 !important;
@@ -2501,12 +2814,23 @@ nav .container {
     #reabilitation-consult {
         line-height: 1.3;
     }
-    #focal .more {
-        margin-top: 1rem;
-    }
 }
 
 @media only screen and (max-width: 768px) {
+    .jumbotron.insult,
+    .jumbotron.spastika,
+    .jumbotron.reabilitation {
+        background-size: 768px;
+    }
+    .jumbotron {
+        height: 280px;
+    }
+    .container {
+        max-width: 732px;
+    }
+    #sympthoms::before {
+        margin: 0 34px;
+    }
     #doctor-result .doctor-description {
         margin-left: -30px;
     }
@@ -2530,7 +2854,7 @@ nav .container {
     }
 }
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 610px) {
     #rotate640 {
         display: block;
         opacity: 1;
@@ -2543,6 +2867,14 @@ nav .container {
 }
 
 @media only screen and (max-width: 576px) {
+    .jumbotron.insult,
+    .jumbotron.spastika,
+    .jumbotron.reabilitation {
+        background-size: 576px;
+    }
+    .jumbotron {
+        height: 214px;
+    }
     .doctor-names div {
         padding-left: 45px;
         background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4000 4000'%3E%3CclipPath id='clipCircle'%3E%3Ccircle cx='2150' cy='2500' r='1850' /%3E%3C/clipPath%3E%3Cpath fill='%23f79168' transform='translate(0,2200) scale(0.5,-0.5)' stroke='none' d='M2035 3589 c-38 -11 -108 -38 -155 -62 -111 -55 -241 -180 -288 -277 -56 -116 -66 -178 -66 -440 l-1 -235 43 -71 c23 -39 42 -74 42 -80 0 -5 15 -28 34 -52 22 -27 40 -66 51 -110 9 -37 25 -89 37 -117 27 -67 37 -112 38 -161 0 -46 -8 -55 -85 -99 -27 -16 -72 -50 -100 -76 -27 -26 -75 -61 -105 -79 -63 -37 -240 -97 -385 -130 -258 -58 -382 -92 -404 -108 -41 -31 -75 -148 -182 -627 -40 -177 -70 -339 -76 -403 l-5 -52 1696 0 1696 0 0 28 c0 15 -4 32 -9 38 -4 5 -14 56 -20 114 -30 255 -59 396 -107 522 -19 48 -34 102 -34 120 -1 73 -62 154 -161 211 -38 22 -449 180 -563 217 -28 9 -69 42 -137 109 -53 53 -111 107 -129 120 -79 59 -83 164 -15 367 26 76 62 162 80 189 62 95 97 184 111 277 4 35 2 55 -11 80 -14 26 -20 75 -26 223 -10 209 -22 269 -69 333 -54 75 -129 119 -250 149 -59 14 -90 28 -193 85 -42 24 -159 22 -252 -3z' clip-path='url(%23clipCircle)'/%3E%3C/svg%3E") no-repeat scroll left top transparent;
