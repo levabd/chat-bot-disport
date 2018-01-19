@@ -1,47 +1,23 @@
 <!-- Navigation -->
-<nav class="navbar navbar-expand d-none d-lg-block fixed-top navbar-inverse" id="navbar">
-    <div class="container">
-        <a href="{{ 'home'|page }}" class="navbar-brand"><span class="logo-p1">Spasti</span><span class="logo-p2">ka</span></a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item text-center {% if this.page.id == 'home' %}active{% endif %}">
-                    <a class="nav-link" href="{{ 'home'|page }}">Инсульт</a>
-                </li>
-                <li class="nav-item text-center {% if this.page.id == 'spastika' %}active{% endif %}">
-                    <a class="nav-link" href="{{ 'spastika'|page }}">Спастичность</a>
-                </li>
-                <li class="nav-item text-center {% if this.page.id == 'reabilitation' %}active{% endif %}">
-                    <a class="nav-link" href="{{ 'reabilitation'|page }}">Реабилитация</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-toggler-right">
-                <a href="#" class="btn btn-primary open-chat-toggle" role="button">On-line помощь</a>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<nav class="navbar d-block d-lg-none navbar-inverse" id="navbar">
-    <div class="container">
-        <a href="{{ 'home'|page }}" class="navbar-brand"><span class="logo-p1">Spasti</span><span class="logo-p2">ka</span></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarMobileNav" aria-controls="navbarMobileNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarMobileNav">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item text-center {% if this.page.id == 'home' %}active{% endif %}">
-                    <a class="nav-link" href="{{ 'home'|page }}">Инсульт</a>
-                </li>
-                <li class="nav-item text-center {% if this.page.id == 'spastika' %}active{% endif %}">
-                    <a class="nav-link" href="{{ 'spastika'|page }}">Спастичность</a>
-                </li>
-                <li class="nav-item text-center {% if this.page.id == 'reabilitation' %}active{% endif %}">
-                    <a class="nav-link" href="{{ 'reabilitation'|page }}">Реабилитация</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-toggler-right">
-                <a href="#" class="btn btn-primary open-chat-toggle" role="button">On-line помощь</a>
-            </ul>
-        </div>
+<nav class="navbar navbar-expand-lg fixed-top container" id="navbar">
+    <a href="{{ 'home'|page }}" class="navbar-brand"><span class="logo-p1">Spasti</span><span class="logo-p2">ka</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarMobileNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item text-center {% if this.page.id == 'home' %}active{% endif %}">
+                <a class="nav-link" href="{{ 'home'|page }}">Инсульт</a>
+            </li>
+            <li class="nav-item text-center {% if this.page.id == 'spastika' %}active{% endif %}">
+                <a class="nav-link" href="{{ 'spastika'|page }}">Спастичность</a>
+            </li>
+            <li class="nav-item text-center {% if this.page.id == 'reabilitation' %}active{% endif %}">
+                <a class="nav-link" href="{{ 'reabilitation'|page }}">Реабилитация</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-toggler-right">
+            <a href="#" class="btn btn-primary open-chat-toggle" role="button">On-line помощь</a>
+        </ul>
     </div>
 </nav>

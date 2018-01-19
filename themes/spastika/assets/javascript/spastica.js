@@ -99,7 +99,6 @@
 
     function displayDoctorDetails(doctorId) {
         $currentSelectedRegionDoctors.forEach(function(doctor) {
-            console.log(doctorId);
             if (doctor.doctor_id == doctorId) {
                 $('#doctor-details').animate({
                     "opacity": '0',
@@ -109,7 +108,8 @@
                         $('#doctor-details').empty();
                         var assistantDetails = "";
                         var assistantPhoto = "";
-                        var mainPhotoCss = " style='float: right; clear: right; margin-right: 60px;' ";
+                        var mainPhotoCss = doctor.hasOwnProperty('assistant') ? " style='float: right; clear: right; margin-right: 60px;' " : "";
+                        var fullPhotoCss = doctor.hasOwnProperty('assistant') ? " style='height: 195px; max-width: 360px; margin: 0 auto;'" : " style='height: 195px; max-width: 195px; margin: 0 auto;'";
                         if (doctor.hasOwnProperty('assistant')) {
                             var assistantBase64Photo = doctor.assistant.photo ? doctor.assistant.photo : $emptyDoctor;
                             assistantDetails = "<div class='assistant'><h5>" + doctor.assistant.name + "</h5>" + doctor.main.position + "</div>";
@@ -118,10 +118,10 @@
                         }
                         var mainBase64Photo = doctor.main.photo ? doctor.main.photo : $emptyDoctor;
                         $('#doctor-details').append(
-                            "<div class='col-lg-5 col-md-7 col-sm-12 '><div class='main doctor-photo' " + mainPhotoCss + "><img src= '" + mainBase64Photo + "' alt='" + doctor.main.name +
-                            "'/></div>" + assistantPhoto + "</div><div class='col-lg-5 col-10 doctor-description'><div class='row justify-content-start'><div class='col-12 doctor-names'><div><h5>" +
+                            "<div class='col-12 justify-content-center'><div" + fullPhotoCss + " ><div class='main doctor-photo' " + mainPhotoCss + "><img src= '" + mainBase64Photo + "' alt='" + doctor.main.name +
+                            "'/></div>" + assistantPhoto + "</div></div><div class='col-lg-5 col-md-7 col-10 doctor-description'><div class='row justify-content-start'><div class='col-12 doctor-names'><div><h5>" +
                             doctor.main.name + "</h5>" + doctor.main.position + "</div>" + assistantDetails +
-                            "</div><div class='col-6'><a href='#' class='btn btn-primary' role='button'>Записаться</a></div><div class='col-6'><a href='#' class='btn btn-primary brochure-button' role='button'>Скачать брошюру</a></div></div></div><div class='col-lg-2 d-none d-lg-block'></div>");
+                            "</div><div class='col-6'><a href='#' class='btn btn-primary' role='button'>Записаться</a></div><div class='col-6'><a href='#' class='btn btn-primary brochure-button' role='button'>Скачать брошюру</a></div></div></div>");
                         $('#doctor-details').show();
                         $('#doctor-details').animate({
                             "opacity": '1',
@@ -139,6 +139,12 @@
         $('#faq').hide();
         $('#footer').animate({
             "padding-top": '90px'
+        });
+
+        console.log((parseInt($('#doctor-selection').css("min-height"), 10) + 260) + 'px');
+
+        $('#doctor-selection').animate({
+            "min-height": (parseInt($('#doctor-selection').css("min-height"), 10) + 260) + 'px'
         });
 
         $('#dropdownDoctor').html($this.html());

@@ -33,25 +33,58 @@
         e.preventDefault();
     });
 
-    // Scrolling navbar effects
-    /*var fixed = false;
+    // Scrolling effects
     $(document).scroll(function() {
-        if ($(this).scrollTop() > 80) {
-            if (!fixed) {
-                fixed = true;
-                $('#navbar').css({
-                    "padding": '0 1rem',
-                    "border-bottom": 'thin solid rgba(40, 40, 40, .3)'
-                });
-                $('nav .container').css({
-                    "padding": '0 15px'
-                });
-                $('.navbar-collapse .active a::after').css({
-                    "bottom": '13px'
-                });
-                $('.navbar-collapse .btn-primary').css({
-                    "padding": '.5rem 1.65rem'
-                });*/
+        var windowWidth = $(window).width();
+        var defaultOffset = (windowWidth > 992) ? 855 : 410;
+        var newOffset = defaultOffset - $(window).scrollTop() > 100 ? defaultOffset - $(window).scrollTop() : 100;
+        $("#share").stop().animate({
+            top: newOffset + "px"
+        });
+
+        if (windowWidth > 992) {
+            return false;
+        }
+        var lastScrollTop = 0;
+        var hiddenMenu = false;
+        var st = $(this).scrollTop();
+        if (Math.abs(st - lastScrollTop) < 43) {
+            return false;
+        }
+        if (st > lastScrollTop) {
+            if (($(this).scrollTop() > 42) && (!hiddenMenu)) {
+                console.log("hide");
+                $('nav.container').hide();
+                $('#layout-header').animate({
+                    "height": "0"
+                }, 200);
+                $('#layout-header nav').animate({
+                    "height": "0"
+                }, 200);
+                $('#layout-content').animate({
+                    "margin-top": "0"
+                }, 200);
+                hiddenMenu = true;
+            }
+        } else {
+            if (hiddenMenu) {
+                console.log("show");
+                $('#layout-header').animate({
+                    "height": "42px"
+                }, 200);
+                $('#layout-header nav').animate({
+                    "height": "42px"
+                }, 200);
+                $('#layout-content').animate({
+                    "margin-top": "42px"
+                }, 200);
+                $('nav.container').show();
+                hiddenMenu = false;
+            }
+        }
+        lastScrollTop = st;
+    });
+
     /*$('.socials:before').css({
                     "border-left": 'thin solid rgba(40, 40, 40, .3)'
                 });

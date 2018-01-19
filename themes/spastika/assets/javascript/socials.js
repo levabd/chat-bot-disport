@@ -18,11 +18,4 @@
         shareIn: "popup"
     });
 
-    $(window).scroll(function() {
-        var newOffset = 855 - $(window).scrollTop() > 100 ? 855 - $(window).scrollTop() : 100;
-        $("#share").stop().animate({
-            top: newOffset + "px"
-        });
-    });
-
 })();
