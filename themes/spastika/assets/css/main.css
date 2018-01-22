@@ -80,6 +80,16 @@
 
 /*------------------- Tooltip --------------------*/
 
+.btn-popover-close {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-popover-close:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
 .popover {
     max-width: 576px;
     margin: 0 10px;

@@ -3,6 +3,19 @@
     // Tips
     $('[data-toggle="popover"]').popover();
 
+    // Close popover when clicking anywhere on the screen
+    $(document).on('click', function(e) {
+        $('[data-toggle="popover"],[data-original-title]').each(function() {
+            //the 'is' for buttons that trigger popups
+            //the 'has' for icons within a button that triggers a popup
+            var target = $(e.target);
+            if (!target.is('.popover') && !target.is('.popover *') && !target.is('.btn-outline-secondary') || target.is('.btn-popover-close')) {
+                (($(this).popover('hide').data('bs.popover') || {}).inState || {}).click = false;
+                e.preventDefault();
+            }
+        });
+    });
+
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
         e.preventDefault();
