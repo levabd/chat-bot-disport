@@ -68,7 +68,12 @@
         }
     }
 
-    function insertMessage() {
+    function insertMessage(predefinded) {
+        if (predefinded !== undefined) {
+            typeAutoBotMessage(predefinded);
+            return true;
+        }
+
         msg = $('.message-input').val();
         if ($.trim(msg) == '') {
             return false;
@@ -135,9 +140,166 @@
         }
     ]
 
+    var defaultAnswer = 'Проект SPASTICA – информационный ресурс о реабилитации пациентов, перенесших инсульт. Мы информируем о современных подходах и помогаем пациентам записаться на консультацию к профильным специалистам. Дополнительно на нашем веб-сайте вы можете скачать брошуру с информацией о современных подходах реабилитации для пациентов, перенесших инсульт';
+
+    // Insult
+    var insultWelcome = 'Добрый день, я – ваш виртуальный помощник. Проект SPASTICA – информационный ресурс о реабилитации пациентов, перенесших инсульт. Мы информируем о современных подходах и помогаем пациентам записаться на консультацию к профильным специалистам. Дополнительно на нашем веб-сайте вы можете скачать брошуру с информацией о современных подходах реабилитации для пациентов, перенесших инсульт.';
+    var insultEffects = "Распространенные осложнения после инсульта – порез, развитие мышечной спастичности и появление контрактуры, которые мешают восстановлению двигательной функции. Более подробную информацию по этому вопросу мы сможете узнать из разделов <a class='simple-link' href='./spastika'>Спастичность</a> и <a class='simple-link' href='./reabilitation'>Реабилитация</a> после инсульта";
+    var insultTherapy = "<a class='simple-link' href='./spastika'>Узнать детальнее о спастичности и ее причинах</a><br /><a class='simple-link' href='./reabilitation'>Узнать детальнее о реабилитации после инсульта</a>";
+
+    var insultEffectsShown = false;
+    var insultTherapyShown = false;
+    var insultWelcomeShown = false;
+
+    // Spastika
+    var spastikaWelcome = 'Добрый день, я – ваш виртуальный помощник. Проект SPASTICA – информационный ресурс о реабилитации пациентов, перенесших инсульт. Мы информируем о современных подходах и помогаем пациентам записаться на консультацию к профильным специалистам. Дополнительно на нашем веб-сайте вы можете скачать брошуру с информацией о современных подходах реабилитации для пациентов, перенесших инсульт.<br />Спастичность – это патологическое напряжение мышц, которое вызывает контрактуры - изменение в мышцах, сухожилиях и суставе.';
+    var spastikaWelcomeElse = 'Спастичность – это патологическое напряжение мышц, которое вызывает контрактуры - изменение в мышцах, сухожилиях и суставе.';
+    var spastikaHands = "Для различных видов спастичности используются различные виды терапии. Более подробную информацию вы можете узнать ниже в разделе Виды спастичности";
+    var modernDeseases = "Современные методы терапии и реабилитации после инсульта позволяют уменьшить спастичность, чтобы сконцентировать усилия на восстановлении двигательной функции. Выбор конкретного вида терапии зависит от вида спастичности у пациента. Более детальная информация приведена в разделе Виды спастичности.";
+
+    var spastikaWelcomeShown = false;
+    var spastikaHandsShown = false;
+    var modernDeseasesShown = false;
+
+    // Reabilitation
+    var reabilitationWelcome = 'Добрый день, я – ваш виртуальный помощник. Проект SPASTICA – информационный ресурс о реабилитации пациентов, перенесших инсульт. Мы информируем о современных подходах и помогаем пациентам записаться на консультацию к профильным специалистам. Дополнительно на нашем веб-сайте вы можете скачать брошуру с информацией о современных подходах реабилитации для пациентов, перенесших инсульт.<br />Раздел «Реабилитация» содержит информацию о современных подходах реабилитации пациентов после инсульта.';
+    var reabilitationWelcomeElse = 'Раздел «Реабилитация» содержит информацию о современных подходах реабилитации пациентов после инсульта.';
+
+    var reabilitationWelcomeShown = false;
+
+    switch (pageName) {
+        case "insult":
+            {
+                var insult_effects_offset = $('#insult-effects').offset().top;
+                $('#insult-effects a.btn').click(function() {
+                    if (!insultEffectsShown) {
+                        $messages.mCustomScrollbar();
+                        $('.chat').show();
+                        $('#chat_toggle').hide();
+                        insultEffectsShown = true;
+                        insertMessage(insultEffects);
+                    }
+                    return false;
+                });
+                var insult_therapy_offset = $('#insult-therapy').offset().top;
+                $('#insult-therapy a.btn').click(function() {
+                    if (!insultTherapyShown) {
+                        $messages.mCustomScrollbar();
+                        $('.chat').show();
+                        $('#chat_toggle').hide();
+                        insultTherapyShown = true;
+                        insertMessage(insultTherapy);
+                    }
+                    return false;
+                });
+            }
+            /*case "reabilitation":
+                return insultWelcome;*/
+        case "spastika":
+            {
+                var hand_normal_offset = $('#hand-normal').offset().top;
+                $('#hand-normal a.btn').click(function() {
+                    if (!spastikaHandsShown) {
+                        $messages.mCustomScrollbar();
+                        $('.chat').show();
+                        $('#chat_toggle').hide();
+                        spastikaHandsShown = true;
+                        insertMessage(spastikaHands);
+                    }
+                    return false;
+                });
+                var life_quality_offset = $('#life-quality').offset().top;
+                $('#life-quality a.btn').click(function() {
+                    if (!modernDeseasesShown) {
+                        $messages.mCustomScrollbar();
+                        $('.chat').show();
+                        $('#chat_toggle').hide();
+                        modernDeseasesShown = true;
+                        insertMessage(modernDeseases);
+                    }
+                    return false;
+                });
+            }
+    }
+
+    $(document).scroll(function() {
+        switch (pageName) {
+            case "insult":
+                {
+                    if (($(this).scrollTop() > insult_effects_offset) && (!insultEffectsShown)) {
+                        $messages.mCustomScrollbar();
+                        $('.chat').show();
+                        $('#chat_toggle').hide();
+                        insultEffectsShown = true;
+                        insertMessage(insultEffects);
+                    }
+                    if (($(this).scrollTop() > insult_therapy_offset) && (!insultTherapyShown)) {
+                        $messages.mCustomScrollbar();
+                        $('.chat').show();
+                        $('#chat_toggle').hide();
+                        insultTherapyShown = true;
+                        insertMessage(insultTherapy);
+                    }
+                }
+                /*case "reabilitation":
+                    return insultWelcome;*/
+            case "spastika":
+                {
+                    if (($(this).scrollTop() > hand_normal_offset) && (!spastikaHandsShown)) {
+                        $messages.mCustomScrollbar();
+                        $('.chat').show();
+                        $('#chat_toggle').hide();
+                        spastikaHandsShown = true;
+                        insertMessage(spastikaHands);
+                    }
+                    if (($(this).scrollTop() > life_quality_offset) && (!modernDeseasesShown)) {
+                        $messages.mCustomScrollbar();
+                        $('.chat').show();
+                        $('#chat_toggle').hide();
+                        modernDeseasesShown = true;
+                        insertMessage(modernDeseases);
+                    }
+                }
+        }
+    });
+
     function generateBotMessage(request) {
+        switch (pageName) {
+            case "insult":
+                {
+                    if (!insultWelcomeShown) {
+                        insultWelcomeShown = true;
+                        return insultWelcome;
+                    } else {
+                        break;
+                    }
+                }
+            case "reabilitation":
+                {
+                    if (!reabilitationWelcomeShown) {
+                        reabilitationWelcomeShown = true;
+                        return (document.referrer.indexOf(location.protocol + "//" + location.host) === 0) ? reabilitationWelcomeElse : reabilitationWelcome;
+                    } else {
+                        break;
+                    }
+                }
+            case "spastika":
+                {
+                    if (!spastikaWelcomeShown) {
+                        spastikaWelcomeShown = true;
+                        return (document.referrer.indexOf(location.protocol + "//" + location.host) === 0) ? spastikaWelcomeElse : spastikaWelcome;
+                    } else {
+                        break;
+                    }
+                }
+        }
+
+        return defaultAnswer;
+
+        /*        
         var welcome = 'Меня зовут Камилов Сергей Анварович. Врач невролог, врач ЛФК-реабилитолог.<br /><br /> Как Вас зовут?';
         var sorry = 'Извините, я не совсем Вас понимаю. Напишите пожалуйста ваш вопрос.';
+        var insultEffects = "Распространенные осложнения после инсульта – порез, развитие мышечной спастичности и появление контрактуры, которые мешают восстановлению двигательной функции. Более подробную информацию по этому вопросу мы сможете узнать из разделов Спастичность и Реабилитация после инсульта"
         var emptySorry = 'Напишите пожалуйста ваш вопрос.';
 
         if (request == '') {
@@ -167,6 +329,19 @@
         }
 
         return sorry;
+        */
+    }
+
+    function typeAutoBotMessage(msg) {
+        $('<div class="message loading new"><figure class="avatar"><img src="themes/spastika/assets/images/main_avatar.png" /></figure><span></span></div>').appendTo($('.mCSB_container'));
+        updateScrollbar();
+
+        setTimeout(function() {
+            $('.message.loading').remove();
+            $('<div class="message new"><figure class="avatar"><img src="themes/spastika/assets/images/main_avatar.png" /></figure>' + msg + '</div>').appendTo($('.mCSB_container')).addClass('new');
+            setDate();
+            updateScrollbar();
+        }, 1000 + (Math.random() * 20) * 100);
     }
 
     function typeBotMessage(request) {

@@ -88,7 +88,6 @@
     <script src="{{ [
         'assets/vendor/jquery-3.2.1.min.js',
         'assets/vendor/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.concat.min.js',
-        'assets/javascript/chat.js',
         'assets/vendor/popper.min.js',
         'assets/vendor/bootstrap/js/bootstrap.min.js',
         'assets/vendor/multislider/js/multislider.min.js',
@@ -111,6 +110,8 @@
         }
     </script>
     {% framework extras %} {% scripts %}
+
+    <script src="{{ 'assets/javascript/chat.js'|theme }}"></script>
 
 </body>
 

@@ -475,13 +475,13 @@
 /*-------------------- Chat Button --------------------*/
 
 #chat_toggle {
-    bottom: 25px;
-    right: 10px;
+    bottom: 15px;
+    right: 5px;
     position: fixed;
 }
 
 .img-circle {
-    background-color: #23abd5;
+    /*background-color: #23abd5;*/
     box-sizing: content-box;
     -webkit-box-sizing: content-box;
 }
@@ -492,8 +492,8 @@
     border: 2px solid #23abd5;
     width: 150px;
     height: 150px;
-    bottom: -25px;
-    right: 10px;
+    bottom: -15px;
+    right: 5px;
     position: absolute;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
@@ -536,24 +536,28 @@
 
 .img-circle {
     border: 4px solid #23abd5;
-    border-top-color: #fff;
-    border-bottom-color: #fff;
+    /*border: 4px solid rgba(34, 36, 38, 0.35);*/
+    z-index: 9999999;
+    /*border-top-color: #fff;
+    border-bottom-color: #fff;*/
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     transform: rotate(360deg);
     position: absolute;
-    background: -webkit-linear-gradient(top, #fff 48%, #ECEBFA 49%, #ECEBFA 51%, #fff 52%);
+    /*filter: drop-shadow(0 2px 4px rgba(34, 36, 38, 0.35));
+    -webkit-filter: drop-shadow(0 2px 4px rgba(34, 36, 38, 0.35));*/
+    /*background: -webkit-linear-gradient(top, #fff 48%, #ECEBFA 49%, #ECEBFA 51%, #fff 52%);
     background: -moz-linear-gradient(top, #fff 48%, #ECEBFA 49%, #ECEBFA 51%, #fff 52%);
     background: linear-gradient(to bottom, #fff 48%, #ECEBFA 49%, #ECEBFA 51%, #fff 52%);
     -webkit-animation: turning_cw 5s infinite;
     -moz-animation: turning_cw 5s infinite;
-    animation: turning_cw 5s infinite;
+    animation: turning_cw 5s infinite;*/
     box-sizing: content-box;
     -webkit-box-sizing: content-box;
-    width: 72px;
-    height: 72px;
-    bottom: 14px;
-    right: 48px;
+    width: 64px;
+    height: 64px;
+    bottom: 0px;
+    right: 18px;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
@@ -563,15 +567,15 @@
 .img-circleblock {
     box-sizing: content-box;
     -webkit-box-sizing: content-box;
-    width: 72px;
-    height: 72px;
+    width: 64px;
+    height: 64px;
     background-image: url("../images/main_avatar.png");
     background-position: center center;
     background-repeat: no-repeat;
     border-radius: 50%;
-    -webkit-animation: turning_acw 5s infinite;
+    /*-webkit-animation: turning_acw 5s infinite;
     -moz-animation: turning_acw 5s infinite;
-    animation: turning_acw 5s infinite;
+    animation: turning_acw 5s infinite;*/
 }
 
 .img-circle:hover {

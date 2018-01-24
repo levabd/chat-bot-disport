@@ -9,7 +9,7 @@
             //the 'is' for buttons that trigger popups
             //the 'has' for icons within a button that triggers a popup
             var target = $(e.target);
-            if (!target.is('.popover') && !target.is('.popover *') && !target.is('.btn-outline-secondary') || target.is('.btn-popover-close')) {
+            if (!target.is('.popover') && !target.is('.popover *') && !target.is('.btn') && !target.is('.nav-link') && !target.is('.simple-link') && !target.is('.nav-link') && !target.is('.btn-outline-secondary') || target.is('.btn-popover-close')) {
                 (($(this).popover('hide').data('bs.popover') || {}).inState || {}).click = false;
                 e.preventDefault();
             }
@@ -25,9 +25,16 @@
         e.preventDefault();
     });
 
-    // Scroll Position Indicator
-    $(window).on('scroll', function() {
+    $("#upper").click(function(e) {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        e.preventDefault();
+    });
 
+    // Scrolling effects
+    $(document).scroll(function() {
+
+
+        // Scroll Position Indicator
         var docHeight = $(document).height(),
             winHeight = $(window).height();
 
@@ -39,15 +46,6 @@
         $('.scroll-bar .fill').css('width', indicator + '%');
 
 
-    });
-
-    $("#upper").click(function(e) {
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-        e.preventDefault();
-    });
-
-    // Scrolling effects
-    $(document).scroll(function() {
         var windowWidth = $(window).width();
         var defaultOffset = (windowWidth > 992) ? 855 : 410;
         var newOffset = defaultOffset - $(window).scrollTop() > 100 ? defaultOffset - $(window).scrollTop() : 100;

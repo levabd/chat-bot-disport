@@ -112,7 +112,7 @@
                         var fullPhotoCss = doctor.hasOwnProperty('assistant') ? " style='height: 195px; max-width: 360px; margin: 0 auto;'" : " style='height: 195px; max-width: 195px; margin: 0 auto;'";
                         if (doctor.hasOwnProperty('assistant')) {
                             var assistantBase64Photo = doctor.assistant.photo ? doctor.assistant.photo : $emptyDoctor;
-                            assistantDetails = "<div class='assistant'><h5>" + doctor.assistant.name + "</h5>" + doctor.main.position + "</div>";
+                            assistantDetails = "<div class='assistant'><h5>" + doctor.assistant.name + "</h5>" + doctor.assistant.position + "</div>";
                             assistantPhoto = "<div class='assistant doctor-photo'><img src= '" + assistantBase64Photo + "' alt='" + doctor.assistant.name + "'/></div>"
                             mainPhotoCss = "";
                         }
