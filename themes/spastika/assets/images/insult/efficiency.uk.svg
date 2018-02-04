@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 562 315" width="95%">
+
+	<defs>
+		<symbol id="marker" viewBox="0 0 556 531">
+			<path fill="#656e79" fill-opacity=".22" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M517.6324269864974,257.1282863363259 C517.6324269864974,246.83658642306702 526.0565245340656,238.50030949332745 536.4566449631623,238.50030949332745 C546.856765392259,238.50030949332745 555.2808629398272,246.83658642306702 555.2808629398272,257.1282863363259 C555.2808629398272,267.4199862495848 546.856765392259,275.75626317932443 536.4566449631623,275.75626317932443 C526.0565245340656,275.75626317932443 517.6324269864974,267.4199862495848 517.6324269864974,257.1282863363259 z" id="svg_6"/>
+			<path fill="#656e79" fill-opacity=".55" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M525.6127682516089,257.14540556638417 C525.6127682516089,251.15049913903277 530.4010962083671,246.29462493287824 536.3126122043648,246.29462493287824 C542.2241282003627,246.29462493287824 547.0124561571208,251.15049913903277 547.0124561571208,257.14540556638417 C547.0124561571208,263.1403119937355 542.2241282003627,267.9961861998901 536.3126122043648,267.9961861998901 C530.4010962083671,267.9961861998901 525.6127682516089,263.1403119937355 525.6127682516089,257.14540556638417 z" id="svg_7"/>
+			<path fill="#fff" fill-opacity="1" stroke="none" stroke-width="0" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M531.4183777570724,257.05188938975334 C531.4183777570724,254.2894584505268 533.6559468178459,252.05188938975334 536.4183777570724,252.05188938975334 C539.180808696299,252.05188938975334 541.4183777570724,254.2894584505268 541.4183777570724,257.05188938975334 C541.4183777570724,259.8143203289799 539.180808696299,262.05188938975334 536.4183777570724,262.05188938975334 C533.6559468178459,262.05188938975334 531.4183777570724,259.8143203289799 531.4183777570724,257.05188938975334 z" id="svg_8"/>
+		</symbol>
+		<symbol id="tip" viewBox="0 0 92.33 56.63">
+			<polygon points="92.33 0 0 0 0 49 38.48 49 46.17 56.63 53.85 49 92.33 49 92.33 0"/>
+		</symbol>
+	</defs>
+
+	<path stroke="rgb(118, 127, 139)" stroke-width="3" fill="none" d="M60.5,274 L60.5,2 L64.5,15 L60.5,2 L56.5,15"/>
+	<path stroke="rgb(118, 127, 139)" stroke-width="3" fill="none" d="M60.5,274 L538,274 L526,270 L538,274 L526,278"/>
+	
+	<path fill-rule="evenodd"  stroke="rgb(191, 191, 191)" stroke-width="3" stroke-dasharray="8.3, 0.5, 0" stroke-linecap="butt" stroke-linejoin="bevel" fill="none" d="M70,122 L508,122 L508,274"/>
+	<path fill-rule="evenodd"  stroke="rgb(191, 191, 191)" stroke-width="3" stroke-dasharray="8.3, 0.5, 0" stroke-linecap="butt" stroke-linejoin="bevel" fill="none" d="M178,274 L178,120.5"/>
+	<path fill-rule="evenodd"  stroke="rgb(191, 191, 191)" stroke-width="3" stroke-dasharray="8.3, 0.5, 0" stroke-linecap="butt" stroke-linejoin="bevel" fill="none" d="M343,274 L343,120.5"/>
+	
+	<use xlink:href="#marker" transform="translate(-418, -44.5) scale(1.1,1.1)" />
+	<use xlink:href="#marker" transform="translate(-300, 106) scale(1.1,1.1)" />
+	<use xlink:href="#marker" transform="translate(-135, 106) scale(1.1,1.1)" />
+	<use xlink:href="#marker" transform="translate(30, 106) scale(1.1,1.1)" />
+	
+	<use xlink:href="#tip" transform="translate(138, 55) scale(0.15,0.15)" fill="rgb(66, 156, 200)" />
+	<use xlink:href="#tip" transform="translate(303, 55) scale(0.15,0.15)" fill="rgb(66, 156, 200)" />
+	<use xlink:href="#tip" transform="translate(469, 55) scale(0.15,0.15)" fill="rgb(66, 156, 200)" />
+
+	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 153, 305)" font-size="12px">
+		1 місяць
+	</text>
+	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 327, 305)" font-size="12px">
+		1 рік
+	</text>
+	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 487, 305)" font-size="12px">
+		2 роки
+	</text>
+	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 10, 128)" font-size="12px">
+		ККД
+	</text>
+	<text text-anchor="middle" font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 1, 0, 0, 1, 180, 72)" font-weight="bold" font-size="12px">
+		<tspan>1</tspan>
+		<tspan x="0" dy="1em">заняття</tspan>
+	</text>
+	<text font-family="Ubuntu" fill="rgb(66, 156, 200)" transform="matrix( 1, 0, 0, 1, 256, 81)" font-weight="bold" font-size="20px">
+		=
+	</text>
+	<text text-anchor="middle" font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 1, 0, 0, 1, 345, 72)" font-weight="bold" font-size="12px">
+		<tspan>5</tspan>
+		<tspan x="0" dy="1em">занятть</tspan>
+	</text>
+	<text font-family="Ubuntu" fill="rgb(66, 156, 200)" transform="matrix( 1, 0, 0, 1, 421, 81)" font-weight="bold" font-size="20px">
+		=
+	</text>
+	<text text-anchor="middle" font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 1, 0, 0, 1, 511, 72)" font-weight="bold" font-size="12px">
+		<tspan>10</tspan>
+		<tspan x="0" dy="1em">занятть</tspan>
+	</text>
+</svg>

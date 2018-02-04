@@ -123,7 +123,7 @@
                             "<div class='col-12 justify-content-center'><div" + fullPhotoCss + " ><div class='main doctor-photo' " + mainPhotoCss + "><img src= '" + mainBase64Photo + "' alt='" + doctor.main.name +
                             "'/></div>" + assistantPhoto + "</div></div><div class='col-lg-5 col-md-7 col-10 doctor-description'><div class='row justify-content-start'><div class='col-12 doctor-names'><div><h5>" +
                             doctor.main.name + "</h5>" + doctor.main.position + "<br /><strong>" + doctor.main.clinic_name + "</strong><br />" + doctor.main.clinic_address + "</div>" + assistantDetails +
-                            "</div><div class='col-6'><a href='#' class='btn btn-primary' role='button'>Записаться</a></div><div class='col-6'><a href='#' class='btn btn-primary brochure-button' role='button'>Скачать брошюру</a></div></div></div>");
+                            "</div><div class='col-6'><a href='#' class='btn btn-primary' role='button'>Записатися</a></div><div class='col-6'><a href='#' class='btn btn-primary brochure-button' role='button'>Завантажити брошуру</a></div></div></div>");
                         $('#doctor-details').show();
                         $('#doctor-details').animate({
                             "opacity": '1',
@@ -183,7 +183,7 @@
 
                 if ($currentSelectedRegionDoctors.length > 0) {
                     createDoctorElements($('#doctor-result .MS-content'));
-                    $('#doctor-description').html("В первую очередь выберите <b>регион</b> в котором вы ищите специалиста");
+                    $('#doctor-description').html("У першу чергу виберіть <b>регіон</b> в якому ви шукайте спеціаліста");
                     $('#doctor-result').show();
                     $('#doctor-result').animate({
                         "opacity": '1',
@@ -233,7 +233,7 @@
 
                 } else {
                     excistDoctorsSlider = false;
-                    $('#doctor-description').html("<b>Извините, в данном регионе искомых специалистов нет.</b><br />Выберите <b>регион</b> в котором вы ищите специалиста.");
+                    $('#doctor-description').html("<b>Вибачте, в даному регіоні шуканих спеціалістів немає.</b><br/>Виберіть <b>регіон</b> в якому ви шукайте спеціаліста.");
                 }
 
             });
@@ -352,9 +352,9 @@
 
     // Spastica Clinic Search
     function createClinicElement(clinic) {
-        return "<li><div class='type'>Медицинское учреждение</div><h5>" + clinic.name + "</h5><div class='row justify-content-between'><div class='col-lg-5 col-6'>" +
-            clinic.description + "</div><div class='col-lg-5 col-6'><a href='https://www.google.com/maps/search/?api=1&query=" + clinic.address +
-            "' class='map-pin simple-link' target='_blank'>Ссылка на карту</a></div></div><div class='row justify-content-between'><div class='col-lg-5 col-6'>" + clinic.address +
+        return "<li><div class='type'>Медична установа</div><h5>" + clinic.name + "</h5><div class='row justify-content-between'><div class='col-lg-5 col-6'>" +
+            clinic.description + "</div><div class='col-lg-5 col-6'><a  href='https://www.google.com/maps/search/?api=1&query=" + clinic.address +
+            "' class='map-pin simple-link' target='_blank'>Посилання на карту</a></div></div><div class='row justify-content-between'><div class='col-lg-5 col-6'>" + clinic.address +
             "</div><div class='col-lg-5 col-6 phone'>" + clinic.phone + "</div></div></li>";
     }
 
@@ -415,7 +415,7 @@
 
                     if ($selectedRegionClinics.length > 0) {
                         createClinicElements($selectedRegionClinics, item.resultList);
-                        item.searchDescription.html("Выберите <b>регион</b> в котором вы ищите клинику");
+                        item.searchDescription.html("Виберіть <b>регіон</b> в якому ви шукайте клініку");
                         cropList($(item.resultListItemSelector), $(item.resultMoreButtonSelector));
                         item.resultBlock.show();
                         item.resultBlock.animate({
@@ -423,7 +423,7 @@
                             "display": 'block'
                         }, 500);
                     } else {
-                        item.searchDescription.html("<b>Извините, в данном регионе требуемых клиник нет.</b><br />Выберите <b>регион</b> в котором вы ищите клинику.");
+                        item.searchDescription.html("<b>Вибачте, в даному регіоні необхідних клінік немає.</b><br/> Виберіть <b>регіон</b> в якому ви шукайте клініку.");
                     }
 
                 });

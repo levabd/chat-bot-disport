@@ -79,4 +79,9 @@
   'RainLab\\Translate\\Classes\\LocaleMiddleware' => 'plugins\\rainlab\\translate\\classes\\LocaleMiddleware.php',
   'vdomah\\translatetabs\\Plugin' => 'plugins\\vdomah\\translatetabs\\Plugin.php',
   'panakour\\translate\\Plugin' => 'plugins\\panakour\\translate\\Plugin.php',
+  'PanaKour\\Translate\\Components\\StaticMenuMultilingual' => 'plugins\\panakour\\translate\\components\\StaticMenuMultilingual.php',
+  'RainLab\\Translate\\FormWidgets\\MLRichEditor' => 'plugins\\rainlab\\translate\\formwidgets\\MLRichEditor.php',
+  'RainLab\\Translate\\Classes\\MLCmsObject' => 'plugins\\rainlab\\translate\\classes\\MLCmsObject.php',
+  'RainLab\\Translate\\Classes\\MLContent' => 'plugins\\rainlab\\translate\\classes\\MLContent.php',
+  'RainLab\\Translate\\FormWidgets\\MLTextarea' => 'plugins\\rainlab\\translate\\formwidgets\\MLTextarea.php',
 );

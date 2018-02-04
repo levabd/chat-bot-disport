@@ -1,26 +1,50 @@
 <div id="footer">
     <div class="container">
         <div class="upper d-none d-sm-block">
-            <a href="#" id="upper"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+            <a href="#" id="upper">
+                <i class="fa fa-angle-up" aria-hidden="true"></i>
+            </a>
         </div>
         <div class="row">
-            <div class="col-12 col-lg-6"><span class="logo-p1">Spasti</span><span class="logo-p2">ka</span></div>
-            <div class="d-none d-lg-block d-xl-block col-md-2 menu"><a href="{{ 'home'|page }}">Инсульт</a></div>
-            <div class="d-none d-lg-block d-xl-block col-md-2 menu"><a href="{{ 'spastika'|page }}">Спастичность</a></div>
-            <div class="d-none d-lg-block d-xl-block col-md-2 menu"><a href="{{ 'reabilitation'|page }}">Реабилитация</a></div>
+            <div class="col-12 col-lg-6">
+                <span class="logo-p1">Spasti</span>
+                <span class="logo-p2">ka</span>
+            </div>
+            <div class="d-none d-lg-block d-xl-block col-md-2 menu">
+                <a class="simple-link" href="{{ 'home'|page }}">{{ 'title.home'|_ }}</a>
+            </div>
+            <div class="d-none d-lg-block d-xl-block col-md-2 menu">
+                <a class="simple-link" href="{{ 'spastika'|page }}">{{ 'title.spastika'|_ }}</a>
+            </div>
+            <div class="d-none d-lg-block d-xl-block col-md-2 menu">
+                <a class="simple-link" href="{{ 'reabilitation'|page }}">{{ 'title.reabilitation'|_ }}</a>
+            </div>
         </div>
         <div class="row justify-content-between">
             <div class="col-12 col-md-8 description">
-                <p>Консультант проекта – врач-невропатолог, врач ЛФК высшей категории Камилов Сергей Анварович.</p>
-                <p>Автор трех запатентованных методик по лечению и реабилитации больных, перенесших инсульт и трех методик по лечению больных находящихся в хроническом вегетативном состоянии.</p>
-                <p>Информация, опубликованная на сайте, предназначена только для ознакомления. Описанные методы диагностики, лечения и реабилитации самостоятельно использовать не рекомендуется. Обязательно проконсультируйтесь со специалистом, чтобы не нанести
-                    вред своему здоровью или здоровью ваших близких.</p>
+                {% content "footer.htm" %}
             </div>
             <div class="col-12 col-md-3 community">
-                <div class='icon social fcb'><a href="#"><i class='fa fa-facebook'></i></a></div>
-                <div class='icon social tw'><a href="#"><i class='fa fa-twitter'></i></a></div>
-                <div class='icon social gp'><a href="#"><i class='fa fa-google-plus'></i></a></div>
-                <div class='icon social in'><a href="#"><i class='fa fa-linkedin'></i></a></div>
+                <div class='icon social fcb'>
+                    <a href="#">
+                        <i class='fa fa-facebook'></i>
+                    </a>
+                </div>
+                <div class='icon social tw'>
+                    <a href="#">
+                        <i class='fa fa-twitter'></i>
+                    </a>
+                </div>
+                <div class='icon social gp'>
+                    <a href="#">
+                        <i class='fa fa-google-plus'></i>
+                    </a>
+                </div>
+                <div class='icon social in'>
+                    <a href="#">
+                        <i class='fa fa-linkedin'></i>
+                    </a>
+                </div>
             </div>
         </div>
         <hr />

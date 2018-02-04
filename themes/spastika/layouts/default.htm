@@ -1,3 +1,31 @@
+==
+<?php 
+function onStart()
+{
+    Event::listen('cms.page.init', function($controller, $page) {
+        $messageIds = [$page->title, $page->seo_title];
+        
+            if (isset($page->apiBag['staticPage']))
+            {
+                $vars = $page->apiBag['staticPage']->getViewBag();
+                $messageIds[] = $vars->property('seo_title');
+                $vars->setProperty('seo_title', Message::get($vars->property('seo_title')));
+            }
+            
+            Message::importMessages($messageIds);
+            $page->title = Message::get($page->title);
+            
+            if ($page->seo_title)
+            {
+                $page->seo_title = Message::get($page->seo_title);
+            }
+        });
+    $this['rootPath'] = url('/');
+    $this['currentLocale'] = app()->getLocale();
+	$this['currentLocaleCyr'] = ($this['currentLocale'] == 'ru') ? 'рус' : 'укр';
+}
+?> 
+==
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -6,16 +34,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>SPASTIKA - {{ this.page.title }}</title>
-    <meta name="description" content="{{ this.page.meta_description }}" />
-    <meta name="title" content="{{ this.page.meta_title }}" />
+    <title>SPASTIKA - {{ this.page.title|_ }}</title>
+    <meta name="description" content="{{ this.page.meta_description|_ }}" />
+    <meta name="title" content="{{ this.page.meta_title|_ }}" />
     <meta name="author" content="Oleg Levitsky https://github.com/levabd" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
     <meta property="og:locale" content="ru_RU">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="SPASTIKA - {{ this.page.title }}">
+    <meta property="og:title" content="SPASTIKA - {{ this.page.title|_ }}">
     <meta property="og:url" content="">
     <meta property="og:site_name" content="SPASTIKA">
     <meta property="og:image" content="{{ 'assets/images/android-icon-192x192.png'|theme }}">
@@ -44,15 +72,15 @@
     <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
     <link href="{{ [
-        'assets/vendor/font-awesome/css/font-awesome.min.css',
-        'assets/vendor/bootstrap/css/bootstrap.min.css',
-        'assets/vendor/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.min.css',
-        'assets/vendor/animate.min.css',
-        'assets/vendor/jssocials-1.4.0/jssocials.css',
-        'assets/vendor/jssocials-1.4.0/jssocials-theme-plain.css',
-        'assets/css/main.css',
-        'assets/css/chat.css'
-    ]|theme }}" rel="stylesheet"> {% styles %}
+	'assets/vendor/font-awesome/css/font-awesome.min.css',
+	'assets/vendor/bootstrap/css/bootstrap.min.css',
+	'assets/vendor/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.min.css',
+	'assets/vendor/animate.min.css',
+	'assets/vendor/jssocials-1.4.0/jssocials.css',
+	'assets/vendor/jssocials-1.4.0/jssocials-theme-plain.css',
+	'assets/css/main.css',
+	'assets/css/chat.css'
+]|theme }}" rel="stylesheet"> {% styles %}
 </head>
 
 <body>
@@ -76,7 +104,7 @@
 
     <!-- Chat box -->
     <section id="layout-chat" class="hide640">
-        {% partial 'site/chat' %}
+        {% partial 'site/chat.' ~ currentLocale ~ '.htm' %}
     </section>
 
     <!-- Footer -->
@@ -86,14 +114,14 @@
 
     <!-- Scripts -->
     <script src="{{ [
-        'assets/vendor/jquery-3.2.1.min.js',
-        'assets/vendor/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.concat.min.js',
-        'assets/vendor/popper.min.js',
-        'assets/vendor/bootstrap/js/bootstrap.min.js',
-        'assets/vendor/multislider/js/multislider.min.js',
-        'assets/vendor/jssocials-1.4.0/jssocials.min.js',
-        'assets/javascript/app.js'
-    ]|theme }}"></script>
+	'assets/vendor/jquery-3.2.1.min.js',
+	'assets/vendor/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.concat.min.js',
+	'assets/vendor/popper.min.js',
+	'assets/vendor/bootstrap/js/bootstrap.min.js',
+	'assets/vendor/multislider/js/multislider.min.js',
+	'assets/vendor/jssocials-1.4.0/jssocials.min.js',
+	'assets/javascript/app.js'
+]|theme }}"></script>
     <script type="text/javascript">
         // Base animations
         function doAnimations(elems) {
@@ -108,10 +136,12 @@
                 });
             });
         }
+		
+		var rootPath = "{{ rootPath }}";
     </script>
     {% framework extras %} {% scripts %}
 
-    <script src="{{ 'assets/javascript/chat.js'|theme }}"></script>
+    <script src="{{ rootPath ~ '/themes/spastika/assets/javascript/chat.' ~ currentLocale ~ '.js' }}"></script>
 
 </body>
 

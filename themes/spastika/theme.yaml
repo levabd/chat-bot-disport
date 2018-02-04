@@ -3,3 +3,12 @@ description: 'SPASTIKA theme by Media Systems'
 author: 'Oleg Levitsky'
 homepage: 'https://github.com/levabd'
 code: ''
+translate:
+    ru:
+        title.home: 'Инсульт'
+        title.reabilitation: 'Реабилитация'
+        title.spastika: 'Спастичность'
+    uk:
+        title.home: 'Інсульт'
+        title.reabilitation: 'Реабілітація'
+        title.spastika: 'Спастичність'

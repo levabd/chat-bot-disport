@@ -64,7 +64,6 @@
         }
         if (st > lastScrollTop) {
             if (($(this).scrollTop() > 42) && (!hiddenMenu)) {
-                console.log("hide");
                 $('nav.container').hide();
                 $('#layout-header').animate({
                     "height": "0"
@@ -79,7 +78,6 @@
             }
         } else {
             if (hiddenMenu) {
-                console.log("show");
                 $('#layout-header').animate({
                     "height": "42px"
                 }, 200);

@@ -78,6 +78,30 @@
 }
 
 
+/*-------------- Language Switcher ---------------*/
+
+select.form-control:not([size]):not([multiple]) {
+    height: auto !important;
+    width: 2.8rem !important;
+    font: 700 14px 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    border: 3px solid #ced4da;
+    border-radius: .5rem;
+    margin-right: 1rem;
+    padding: .8rem .25rem;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    cursor: pointer;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+
 /*------------------- Tooltip --------------------*/
 
 .btn-popover-close {
@@ -2583,6 +2607,13 @@ nav {
 }
 
 @media only screen and (max-width: 992px) {
+    .navbar-nav.d-flex {
+        padding-left: 49%;
+    }
+    select.form-control:not([size]):not([multiple]) {
+        padding: .42rem .1rem;
+        width: 2.4rem !important;
+    }
     #generalised .btn-outline-secondary,
     #regional .btn-outline-secondary {
         padding: .35rem .8rem;
