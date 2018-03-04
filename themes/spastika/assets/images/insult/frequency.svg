@@ -31,7 +31,7 @@
 		<tspan x="0" dy="22">ИНСУЛЬТ:</tspan>
 	</text>
 	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 0.9986158818343, 0, 0, 1.00190576782008,588.547752076717, 185.588587435676)" font-weight="bold" font-size="34px">
-		10%
+		15%
 	</text>
 	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 0.9986158818343, 0, 0, 1.00190576782008,588.03875530864, 205.065102406296)" font-weight="300" font-size="16px">
 		случаев
@@ -41,7 +41,7 @@
 		<tspan dx="-103" dy="22">ИНСУЛЬТ:</tspan>
 	</text>
 	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 1.00063511631693, 0, 0, 1.00190576782008,94.9780884870659, 185.088587435676)" font-weight="bold" font-size="34px">
-		90%
+		85%
 	</text>
 	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 1.00063511631693, 0, 0, 1.00190576782008,107.982216743126, 205.065102406296)" font-weight="300" font-size="16px">
 		случаев
@@ -81,10 +81,10 @@
 		<path d="M71.32923872213651,-23.176274578121056A75,75 0 0,1 71.32923872213651,23.176274578121056L0,0Z" transform="translate(381,82)" fill="rgb(245,169,138)"></path>
 		<path fill-rule="evenodd"  stroke="rgb(191, 191, 191)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M380.536,1.079 C425.224,1.079 461.451,37.309 461.451,82.000 C461.451,126.690 425.224,162.920 380.536,162.920 C335.848,162.920 299.622,126.690 299.622,82.000 C299.622,37.309 335.848,1.079 380.536,1.079 Z"/>
 		<text font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 0.99942357755931, 0, 0, 1.0001141731696,420.009222759051, 87.0852106067055)" font-weight="bold" font-size="15.998px">
-			10%
+			15%
 		</text>
 		<text font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 0.99942357755931, 0, 0, 1.0001141731696,323.510087392712, 87.5330904965308)" font-weight="bold" font-size="17.998px">
-			90%
+			85%
 		</text>
 	</g>
 </svg>
