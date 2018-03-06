@@ -29,33 +29,33 @@
 	<use xlink:href="#tip" transform="translate(303, 55) scale(0.15,0.15)" fill="rgb(66, 156, 200)" />
 	<use xlink:href="#tip" transform="translate(469, 55) scale(0.15,0.15)" fill="rgb(66, 156, 200)" />
 
-	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 153, 305)" font-size="12px">
+	<text font-family="'Ubuntu', sans-serif" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 153, 305)" font-size="12px">
 		1 місяць
 	</text>
-	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 327, 305)" font-size="12px">
+	<text font-family="'Ubuntu', sans-serif" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 327, 305)" font-size="12px">
 		1 рік
 	</text>
-	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 487, 305)" font-size="12px">
+	<text font-family="'Ubuntu', sans-serif" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 487, 305)" font-size="12px">
 		2 роки
 	</text>
-	<text font-family="Ubuntu" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 10, 128)" font-size="12px">
+	<text font-family="'Ubuntu', sans-serif" fill="rgb(74, 86, 101)" transform="matrix( 1, 0, 0, 1, 10, 128)" font-size="12px">
 		ККД
 	</text>
-	<text text-anchor="middle" font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 1, 0, 0, 1, 180, 72)" font-weight="bold" font-size="12px">
+	<text text-anchor="middle" font-family="'Ubuntu', sans-serif" fill="rgb(255, 255, 255)" transform="matrix( 1, 0, 0, 1, 180, 72)" font-weight="bold" font-size="12px">
 		<tspan>1</tspan>
 		<tspan x="0" dy="1em">заняття</tspan>
 	</text>
-	<text font-family="Ubuntu" fill="rgb(66, 156, 200)" transform="matrix( 1, 0, 0, 1, 256, 81)" font-weight="bold" font-size="20px">
+	<text font-family="'Ubuntu', sans-serif" fill="rgb(66, 156, 200)" transform="matrix( 1, 0, 0, 1, 256, 81)" font-weight="bold" font-size="20px">
 		=
 	</text>
-	<text text-anchor="middle" font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 1, 0, 0, 1, 345, 72)" font-weight="bold" font-size="12px">
+	<text text-anchor="middle" font-family="'Ubuntu', sans-serif" fill="rgb(255, 255, 255)" transform="matrix( 1, 0, 0, 1, 345, 72)" font-weight="bold" font-size="12px">
 		<tspan>5</tspan>
 		<tspan x="0" dy="1em">занять</tspan>
 	</text>
-	<text font-family="Ubuntu" fill="rgb(66, 156, 200)" transform="matrix( 1, 0, 0, 1, 421, 81)" font-weight="bold" font-size="20px">
+	<text font-family="'Ubuntu', sans-serif" fill="rgb(66, 156, 200)" transform="matrix( 1, 0, 0, 1, 421, 81)" font-weight="bold" font-size="20px">
 		=
 	</text>
-	<text text-anchor="middle" font-family="Ubuntu" fill="rgb(255, 255, 255)" transform="matrix( 1, 0, 0, 1, 511, 72)" font-weight="bold" font-size="12px">
+	<text text-anchor="middle" font-family="'Ubuntu', sans-serif" fill="rgb(255, 255, 255)" transform="matrix( 1, 0, 0, 1, 511, 72)" font-weight="bold" font-size="12px">
 		<tspan>10</tspan>
 		<tspan x="0" dy="1em">занять</tspan>
 	</text>
