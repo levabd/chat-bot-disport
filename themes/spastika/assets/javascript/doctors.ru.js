@@ -1,7 +1,7 @@
 var $doctors = [{
         "region_id": 1,
         "doctors": [{
-				"doctor_id": 1,
+				"doctor_id": 0,
                 "main": {
                     "name": "Живилко Светлана Михайловна",
 					"position": "Невролог, рефлексотерапевт",
@@ -19,7 +19,7 @@ var $doctors = [{
                 }
             },
             {
-				"doctor_id": 2,
+				"doctor_id": 1,
 				"main": {
                     "name": "Камилов Сергей Анварович",
 					"position": "Врач невропатолог, врач-ЛФК высшей категории",
@@ -30,7 +30,7 @@ var $doctors = [{
                 }
             },
             {
-				"doctor_id": 3,
+				"doctor_id": 2,
                 "main": {
                     "name": "Гаврилив Ирина Романовна",
 					"position": "Невролог",
@@ -48,7 +48,7 @@ var $doctors = [{
                 }
             },
             {
-				"doctor_id": 4,
+				"doctor_id": 3,
                 "main": {
                     "name": "Кушнеренко Алеся Леонидовна",
 					"position": "Невролог",
@@ -66,7 +66,7 @@ var $doctors = [{
                 }
             },
             {
-				"doctor_id": 5,
+				"doctor_id": 4,
                "main": {
                     "name": "Гаврилив Ирина Романовна",
 					"position": "Невролог",
@@ -84,7 +84,7 @@ var $doctors = [{
                 }
             },
             {
-				"doctor_id": 6,
+				"doctor_id": 5,
                 "main": {
                     "name": "Бровченко Марианна Станиславовна",
 					"position": "Заведующая центром нейрореабилитации",
@@ -106,7 +106,7 @@ var $doctors = [{
     {
         "region_id": 2,
         "doctors": [{
-				"doctor_id": 1,
+				"doctor_id": 6,
                 "main": {
                     "name": "Кравченко Светлана Леонидовна",
 					"position": "Заведующая отделением",
@@ -121,7 +121,7 @@ var $doctors = [{
 	{
         "region_id": 4,
         "doctors": [{
-				"doctor_id": 1,
+				"doctor_id": 7,
                 "main": {
                     "name": "Сук Владимир Михайлович",
 					"position": "Ассистент кафедры неврологии и нейрохирургии ДДМА",
@@ -132,7 +132,7 @@ var $doctors = [{
                 }
             },
             {
-				"doctor_id": 2,
+				"doctor_id": 8,
                 "main": {
                     "name": "Кирпа Юрий Иванович",
 					"position": "Заведующий отделением",
@@ -147,7 +147,7 @@ var $doctors = [{
 	{
         "region_id": 13,
         "doctors": [{
-				"doctor_id": 1,
+				"doctor_id": 9,
                 "main": {
                     "name": "Данилков Ростислав Иванович",
 					"position": "Заведующий отделением",
@@ -169,7 +169,7 @@ var $doctors = [{
 		{
         "region_id": 14,
         "doctors": [{
-				"doctor_id": 1,
+				"doctor_id": 10,
                 "main": {
                     "name": "Борисенко Оксана Анатольевна",
 					"position": "Заведующий отделением",
@@ -187,7 +187,7 @@ var $doctors = [{
                 }
             },
             {
-				"doctor_id": 2,
+				"doctor_id": 11,
                "main": {
                     "name": "Островская Виктория Владимировна",
 					"position": "Врач отделения неврологии",
@@ -209,7 +209,7 @@ var $doctors = [{
 	{
         "region_id": 15,
         "doctors": [{
-				"doctor_id": 1,
+				"doctor_id": 12,
                 "main": {
                     "name": "Хубейтова Ирина Вильевна",
 					"position": "Заведующая отделением",
@@ -224,7 +224,7 @@ var $doctors = [{
 		{
         "region_id": 16,
         "doctors": [{
-				"doctor_id": 1,
+				"doctor_id": 13,
                 "main": {
                     "name": "Литвиненко Наталья",
 					"position": "Заведующая кафедрой",
@@ -239,7 +239,7 @@ var $doctors = [{
 	{
         "region_id": 17,
         "doctors": [{
-				"doctor_id": 1,
+				"doctor_id": 14,
                 "main": {
                     "name": "Вашенюк Александр Леонтьевич",
 					"position": "Главный врач, невролог",
@@ -257,7 +257,7 @@ var $doctors = [{
                 }
             },
 			{
-				"doctor_id": 2,
+				"doctor_id": 15,
                 "main": {
                     "name": "Сенькив Ольга Владимировна",
 					"position": "Невролог",
@@ -275,7 +275,7 @@ var $doctors = [{
                 }
             },
 			{
-				"doctor_id": 3,
+				"doctor_id": 16,
                 "main": {
                     "name": "Левковский Алексей Александрович",
 					"position": "Невролог",
@@ -298,7 +298,7 @@ var $doctors = [{
 	{
         "region_id": 20,
         "doctors": [{
-				"doctor_id": 1,
+				"doctor_id": 17,
                 "main": {
                     "name": "Варешнюк Елена",
 					"position": "Невролог",
@@ -309,7 +309,7 @@ var $doctors = [{
                 }
             },
 			{
-				"doctor_id": 2,
+				"doctor_id": 18,
                 "main": {
                     "name": "Пасюра Игорь",
 					"position": "Заведующий отделением неврологии",
@@ -320,7 +320,7 @@ var $doctors = [{
                 }
             },
 			{
-				"doctor_id": 3,
+				"doctor_id": 19,
                 "main": {
                     "name": "Коврига Юлия",
 					"position": "Невролог",
@@ -331,7 +331,7 @@ var $doctors = [{
                 }
             },
 			{
-				"doctor_id": 4,
+				"doctor_id": 20,
                 "main": {
                     "name": "Гребенюк Анна",
 					"position": "Невролог",
@@ -346,7 +346,7 @@ var $doctors = [{
 	{
         "region_id": 22,
         "doctors": [{
-				"doctor_id": 1,
+				"doctor_id": 21,
                 "main": {
                     "name": "Костюк Александр Владимирович",
 					"position": "Областной взрослый невролог",
@@ -361,7 +361,7 @@ var $doctors = [{
     {
         "region_id": 23,
         "doctors": [{
-				"doctor_id": 1,
+				"doctor_id": 22,
                 "main": {
                     "name": "Мотричук Елена Александровна",
 					"position": "Невролог, заведующая отделением",
