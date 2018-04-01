@@ -145,8 +145,8 @@
     var defaultAnswer = 'Проект SPASTICA – информационный ресурс о реабилитации пациентов, перенесших инсульт. Мы информируем о современных подходах и помогаем пациентам записаться на консультацию к профильным специалистам. Дополнительно на нашем веб-сайте вы можете скачать брошуру с информацией о современных подходах реабилитации для пациентов, перенесших инсульт';
 
     // Insult
-    var insultWelcome = 'Добрый день, я – ваш виртуальный помощник. Проект SPASTIKA – информационный ресурс о реабилитации пациентов, перенесших инсульт. Мы информируем о современных подходах и помогаем пациентам записаться на консультацию к профильным специалистам. Дополнительно на нашем веб-сайте вы можете скачать брошюру с информацией о современных подходах к реабилитации для пациентов, перенесших инсульт.';
-    var insultEffects = "Распространенные осложнения после инсульта – парез, развитие мышечной спастичности и появление контрактуры, которые мешают восстановлению двигательной функции. Более подробную информацию по этому вопросу вы сможете узнать из разделов <a class='simple-link' href='" + rootPath + "/ru/spastika'>Спастичность</a> и <a class='simple-link' href='" + rootPath + "/ru/reabilitation'>Реабилитация</a> после инсульта";
+    var insultWelcome = 'В этом разделе собрана краткая информация о природе инсульта, его проявлении и последствиях.';
+    var insultEffects = "Часто после инсульта возникают парез, контрактуры, развивается мышечная спастичность, которая мешает движению. Разделы <a class='simple-link' href='" + rootPath + "/ru/spastika'>Спастичность</a> и <a class='simple-link' href='" + rootPath + "/ru/reabilitation'>Реабилитация</a> содержат детальную информацию об этом.";
     var insultTherapy = "<a class='simple-link' href='" + rootPath + "/ru/spastika'>Узнать детальнее о спастичности и ее причинах</a><br /><a class='simple-link' href='" + rootPath + "/ru/reabilitation'>Узнать детальнее о реабилитации после инсульта</a>";
 
     var insultEffectsShown = false;
@@ -155,9 +155,9 @@
 
     // Spastika
     var spastikaPercent = 'Изменение положения руки это изменение положения руки.';
-    var spastikaWelcome = 'Проект SPASTIKA – информационный ресурс о реабилитации пациентов, перенесших инсульт. Мы информируем о современных подходах и помогаем пациентам записаться на консультацию к профильным специалистам. Дополнительно на нашем веб-сайте вы можете скачать брошюру с информацией о современных подходах к реабилитации для пациентов, перенесших инсульт';
+    var spastikaWelcome = 'Спастичность – это патологическое напряжение мышц, которое вызывает контрактуры - нарушение подвижности в суставе.';
     var spastikaWelcomeElse = 'Спастичность – это патологическое напряжение мышц, которое вызывает контрактуры - нарушение подвижности в суставе.';
-    var spastikaHands = "Для различных видов спастичности используются различные виды терапии. Более подробную информацию вы можете узнать ниже в разделе Виды спастичности";
+    var spastikaHands = "Современные методы терапии и реабилитации после инсульта позволяют уменьшить спастичность, чтобы направить усилия на восстановлении движения. Выбор конкретного вида терапии зависит от вида спастичности у пациента и подбирается индивидуально врачом. ";
     var modernDeseases = "Современные методы терапии и реабилитации после инсульта позволяют уменьшить спастичность, чтобы сконцентрировать усилия на восстановлении двигательной функции. Выбор конкретного вида терапии зависит от вида спастичности у пациента. Более детальная информация приведена в разделе Виды спастичности.";
 
     var spastikaPercentShown = false;
@@ -166,8 +166,8 @@
     var modernDeseasesShown = false;
 
     // Reabilitation
-    var reabilitationWelcome = 'Проект SPASTIKA – информационный ресурс о реабилитации пациентов, перенесших инсульт. Мы информируем о современных подходах и помогаем пациентам записаться на консультацию к профильным специалистам. Дополнительно на нашем веб-сайте вы можете скачать брошюру с информацией о современных подходах к реабилитации для пациентов, перенесших инсульт.';
-    var reabilitationWelcomeElse = 'Раздел «Реабилитация» содержит информацию о современных подходах к реабилитации пациентов после инсульта.';
+    var reabilitationWelcome = 'В этом разделе собрана краткая информация о современных подходах реабилитации пациентов после инсульта.';
+    var reabilitationWelcomeElse = 'В этом разделе собрана краткая информация о современных подходах реабилитации пациентов после инсульта.';
 
     var reabilitationWelcomeShown = false;
 
@@ -183,7 +183,7 @@
             }
             return false;
         });
-        var insult_therapy_offset = $('#insult-therapy').offset().top;
+        /*var insult_therapy_offset = $('#insult-therapy').offset().top;
         $('#insult-therapy a.btn').click(function() {
             if (!insultTherapyShown) {
                 $messages.mCustomScrollbar();
@@ -193,10 +193,10 @@
                 insertMessage(insultTherapy);
             }
             return false;
-        });
+        });*/
     } else if (pageName == "spastika") {
-        var hand_normal_offset = $('#hand-normal').offset().top;
-        $('#hand-normal a.btn').click(function() {
+        var hand_normal_offset = $('#hand-position').offset().top - 200;
+        $('#hand-position a.btn').click(function() {
             if (!spastikaHandsShown) {
                 $messages.mCustomScrollbar();
                 $('.chat').show();
@@ -206,7 +206,7 @@
             }
             return false;
         });
-        var life_quality_offset = $('#life-quality').offset().top;
+        /*var life_quality_offset = $('#life-quality').offset().top;
         $('#life-quality a.btn').click(function() {
             if (!modernDeseasesShown) {
                 $messages.mCustomScrollbar();
@@ -217,7 +217,7 @@
             }
             return false;
         });
-        var hand_offset = $('#hand-position').offset().top;
+        var hand_offset = $('#hand-position').offset().top;*/
     }
 
     $(document).scroll(function() {
@@ -338,6 +338,11 @@
     }
 
     function typeAutoBotMessage(msg) {
+		if (!dialogCreated) {
+			$('<div class="welcome-message new" style="margin-left: 0px !important; padding-bottom: 0px !important;">Проект SPASTICA – информационный ресурс о реабилитации пациентов, перенесших инсульт. Здесь собрана короткая, полезная информация о инсульте и реабилитации после него.<hr /></div>').appendTo($('.mCSB_container')).addClass('new');
+			dialogCreated = true;
+		}
+		
         $('<div class="message loading new"><figure class="avatar"><img src="' + avatarBase64 + '" /></figure><span></span></div>').appendTo($('.mCSB_container'));
         updateScrollbar();
 
@@ -350,6 +355,11 @@
     }
 
     function typeBotMessage(request) {
+		if (!dialogCreated) {
+			$('<div class="welcome-message new" style="margin-left: 0px !important; padding-bottom: 0px !important;">Проект SPASTICA – информационный ресурс о реабилитации пациентов, перенесших инсульт. Здесь собрана короткая, полезная информация о инсульте и реабилитации после него.<hr /></div>').appendTo($('.mCSB_container')).addClass('new');
+			dialogCreated = true;
+		}
+		
         if ($('.message-input').val() != '') {
             return false;
         }

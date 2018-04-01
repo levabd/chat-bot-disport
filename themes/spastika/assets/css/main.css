@@ -520,6 +520,10 @@ div[class^=col-] {
     text-decoration: underline;
 }
 
+.reabilitation strong {
+    font-weight: 500;
+}
+
 .reabilitation .popover-symbol:after {
     content: "\f08e";
     display: inline-block;
@@ -530,11 +534,12 @@ div[class^=col-] {
 
 .reabilitation .title {
     font: 700 2.25rem/1 'Vollkorn', serif;
-    margin: 5rem 0 1.25rem;
+    margin: 0 0 1.25rem;
 }
 
 .reabilitation .main-title {
     text-transform: uppercase;
+	margin: 5rem 0 1.25rem;
 }
 
 .reabilitation .text {
@@ -554,11 +559,54 @@ div[class^=col-] {
     margin: -2.5rem 0 2.5rem;
     /*list-style: none;*/
     padding: 0;
-    list-style-position: inside;
+	padding-left: 1.2rem;
+    /*list-style-position: inside;*/
+}
+
+.reabilitation ol {
+    margin-left: -1.3rem;
+}
+
+.reabilitation .botylinotherapy svg {
+	margin-bottom: -13%;
+}
+
+.reabilitation .botylinotherapy span{
+    text-transform: uppercase;
+    font: 700 16px/1 'Ubuntu', serif;
+}
+
+.reabilitation-steps {
+  counter-reset: foo;
+  padding-left: 0;
+  margin-left: 2.8rem !important;
+}
+.reabilitation-steps li {
+  list-style-type: none;
+  text-indent: -1.8rem;
+}
+.reabilitation-steps li::before {
+  counter-increment: foo;
+  display: inline-block;
+  content: "0" counter(foo) "  ";
+  padding-right: .5rem;
+  vertical-align: -20%;
+  color: #34c3f2;
+  font: 700 28px/1 'Ubuntu', serif;
+}
+
+.reabilitation-steps
+
+.reabilitation .botylinotherapy svg {
+    margin-bottom: -16%;
+}
+
+.reabilitation ol li {
+    padding-left: .8rem;
 }
 
 .reabilitation ul li {
-    padding: .8rem 0 0;
+    /*padding: .8rem 0 0;*/
     text-indent: 0;
 }
 
@@ -605,7 +653,6 @@ div[class^=col-] {
     font: 300 20px/1.8 'Ubuntu', serif;
     color: #fff;
     height: 440px;
-    margin: 2rem 0 0;
     padding-top: 6rem;
 }
 

@@ -58,7 +58,9 @@ return [
             'port'      => 3306,
             'database'  => 'disport',
             'username'  => 'root',
-            'password'  => 'gycora775&',
+            /*'database'  => 'spastika_disport',
+            'username'  => 'spastika_root',*/
+			'password'  => 'gycora775&',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',

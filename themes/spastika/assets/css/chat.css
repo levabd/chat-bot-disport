@@ -111,7 +111,7 @@
     width: 100%;
 }
 
-.messages .message {
+.messages .message, .messages .welcome-message {
     clear: both;
     float: left;
     padding: 10px 10px 7px;
