@@ -1,0 +1,12 @@
+{
+    "name": "levabd/mail_templates",
+    "description": "Packages for the plugin",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+        "name": "Oleg Levitsky",
+        "email": "levabd@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {}
+}

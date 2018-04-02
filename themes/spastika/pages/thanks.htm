@@ -1,0 +1,23 @@
+title = "Дякуєм за заявку"
+url = "/thanks"
+layout = "default"
+is_hidden = 0
+==
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-11 text-center">
+            <h1>{{ 'Дякуємо!'|_ }}</h1>
+        </div>
+        <!--div class="mt-5 col-5 col-lg-3 col-md-4 text-center">
+            <img src="{{ 'assets/images/work5.svg'|theme }}">
+        </div-->
+        <div class="w-100"></div>
+        <div class="mt-5 col-10 col-lg-6 col-md-8 text-left">
+            {{ 'Дякуємо за звернення. Наш менеджер зв\'яжеться з Вами найближчим часом.'|_ }}
+        </div>
+        <div class="my-5 col-11 text-center">
+            <a class="btn btn-primary" href="{{ 'home'|page }}">{{ 'На Головну'|_ }}</a>
+        </div>
+    </div>
+</div>

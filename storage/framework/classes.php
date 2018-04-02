@@ -84,4 +84,6 @@
   'RainLab\\Translate\\Classes\\MLCmsObject' => 'plugins\\rainlab\\translate\\classes\\MLCmsObject.php',
   'RainLab\\Translate\\Classes\\MLContent' => 'plugins\\rainlab\\translate\\classes\\MLContent.php',
   'RainLab\\Translate\\FormWidgets\\MLTextarea' => 'plugins\\rainlab\\translate\\formwidgets\\MLTextarea.php',
+  'levabd\\mailtemplates\\Plugin' => 'plugins\\levabd\\mailtemplates\\Plugin.php',
+  'system\\Controllers\\mailtemplates' => 'modules\\system\\controllers\\mailtemplates.php',
 );

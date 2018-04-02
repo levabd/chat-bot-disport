@@ -24,6 +24,25 @@
     font-style: normal;
 }
 
+/*------------------- Ad Hook -------------------*/
+
+.dropdown-menu.show .dropdown-menu {
+    display: block !important;
+}
+
+.dropdown-menu a:focus {
+	outline: -webkit-focus-ring-color auto 0px !important;
+}
+
+.bootstrap-select.col-sm-12 {
+	padding: 0 !important;
+}
+
+.bootstrap-select.col-sm-12 .btn-default{
+	background-color: white;
+	border-width: 2px;
+    border-color: buttonface;
+}
 
 /*---------------- Rotate Screen ----------------*/
 
