@@ -356,7 +356,7 @@
 
     function typeBotMessage(request) {
 		if (!dialogCreated) {
-			$('<div class="welcome-message new" style="margin-left: 0px !important; padding-bottom: 0px !important;">Проект SPASTICA – информационный ресурс о реабилитации пациентов, перенесших инсульт. Здесь собрана короткая, полезная информация о инсульте и реабилитации после него.<hr /></div>').appendTo($('.mCSB_container')).addClass('new');
+			$('<div class="welcome-message new" style="margin-left: 0px !important; padding-bottom: 0px !important;">Проект SPASTICA - інформаційний ресурс про реабілітацію пацієнтів, які перенесли інсульт. Тут зібрана коротка, корисна інформація про інсульті та реабілітації після нього.<hr /></div>').appendTo($('.mCSB_container')).addClass('new');
 			dialogCreated = true;
 		}
 		
