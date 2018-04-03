@@ -9,7 +9,7 @@
             //the 'is' for buttons that trigger popups
             //the 'has' for icons within a button that triggers a popup
             var target = $(e.target);
-            if (!target.is('.popover') && !target.is('.popover *') && !target.is('.btn') && !target.is('.nav-link') && !target.is('.simple-link') && !target.is('.nav-link') && !target.is('.btn-outline-secondary') || target.is('.btn-popover-close')) {
+            if (!target.is('.popover') && !target.is('.popover *') && !target.is('.btn') && !target.is('.form-check-input') && !target.is('.form-check-label') && !target.is('.nav-link') && !target.is('.simple-link') && !target.is('.nav-link') && !target.is('.btn-outline-secondary') || target.is('.btn-popover-close')) {
                 (($(this).popover('hide').data('bs.popover') || {}).inState || {}).click = false;
                 e.preventDefault();
             }

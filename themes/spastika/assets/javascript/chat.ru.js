@@ -231,13 +231,13 @@
                         insultEffectsShown = true;
                         insertMessage(insultEffects);
                     }
-                    if (($(this).scrollTop() > insult_therapy_offset) && (!insultTherapyShown)) {
+                    /*if (($(this).scrollTop() > insult_therapy_offset) && (!insultTherapyShown)) {
                         $messages.mCustomScrollbar();
                         $('.chat').show();
                         $('#chat_toggle').hide();
                         insultTherapyShown = true;
                         insertMessage(insultTherapy);
-                    }
+                    }*/
                 }
                 /*case "reabilitation":
                     return insultWelcome;*/
@@ -250,7 +250,7 @@
                         spastikaHandsShown = true;
                         insertMessage(spastikaHands);
                     }
-                    if (($(this).scrollTop() > life_quality_offset) && (!modernDeseasesShown)) {
+                    /*if (($(this).scrollTop() > life_quality_offset) && (!modernDeseasesShown)) {
                         $messages.mCustomScrollbar();
                         $('.chat').show();
                         $('#chat_toggle').hide();
@@ -263,7 +263,7 @@
                         $('#chat_toggle').hide();
                         spastikaPercentShown = true;
                         insertMessage(spastikaPercent);
-                    }
+                    }*/
                 }
         }
     });

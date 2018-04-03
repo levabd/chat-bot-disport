@@ -6,6 +6,46 @@ is_hidden = 0
 
 [localePicker]
 ==
+<?
+use RainLab\Translate\Models\Message;
+
+function onInsultForm(){
+
+	$date = explode(".", date("H:i:s d.m.Y"));
+    switch ($date[1]){
+        case 1: $m='січня'; break;
+        case 2: $m='лютого'; break;
+        case 3: $m='березня'; break;
+        case 4: $m='квітня'; break;
+        case 5: $m='травня'; break;
+        case 6: $m='червня'; break;
+        case 7: $m='липня'; break;
+        case 8: $m='серпня'; break;
+        case 9: $m='вересня'; break;
+        case 10: $m='жовтня'; break;
+        case 11: $m='листопада'; break;
+        case 12: $m='грудня'; break;
+    };
+
+	$vars = [
+        'name'=> 'Інсульт стався таку кількість часу тому: '.request('insulTime'),
+        'email'=> 'Електронна пошта: '.request('email'),
+        'phone'=> '',
+		'description'=> '',
+		'doctor'=> '',
+		'ukdate'=> $date[0].' '.$m.' '.$date[2],
+    ];
+
+	foreach (['info@spastika.com', 'spastika.info@gmail.com'] as $mailRecipient){
+		Mail::send('levabd.mailtemplates::mail.insult', $vars, function($message) use($mailRecipient, $vars) {
+			$message->to($mailRecipient, $vars['email']);
+		});
+	}
+
+    return response('success', 200);
+}
+?>
+==
 {% content "home.htm" rootpath=rootPath %}
 
 <script type="text/javascript">
@@ -14,4 +54,73 @@ is_hidden = 0
 
 {% put scripts %}
 	<script src="{{ 'assets/javascript/insult.js'|theme }}"></script>
+	
+	<script>
+    	(function() {
+    		
+    		$('#insult-value1').click(function (e) {
+    		    $('#insult-value1').prop('checked',true);
+    		    $('#insult-value1').attr('checked',true);
+    		});
+    		
+    		$('#insult-value2').click(function (e) {
+    		    $('#insult-value2').prop('checked',true);
+    		    $('#insult-value2').attr('checked',true);
+    		});
+    		
+    		$('#insult-value3').click(function (e) {
+    		    $('#insult-value3').prop('checked',true);
+    		    $('#insult-value3').attr('checked',true);
+    		});
+    		
+    		$('#insult-value4').click(function (e) {
+    		    $('#insult-value4').prop('checked',true);
+    		    $('#insult-value4').attr('checked',true);
+    		});
+    		
+    		$('#insult-value5').click(function (e) {
+    		    $('#insult-value5').prop('checked',true);
+    		    $('#insult-value5').attr('checked',true);
+    		});
+    				
+    		$('#insult-form-submit').click(function (e) {
+    			e.preventDefault();
+   
+    			var insultTime = '';
+    			var $email = $('#email');
+    			
+    			if ($('#insult-value1').attr('checked') == 'checked') {
+    			    insultTime = 'до 1 місяця';
+    			}
+    			
+    			if ($('#insult-value2').attr('checked') == 'checked') {
+    			    insultTime = '1 - 3 місяця';
+    			}
+    			
+    			if ($('#insult-value3').attr('checked') == 'checked') {
+    			    insultTime = '3 - 6 місяця';
+    			}
+    			
+    			if ($('#insult-value4').attr('checked') == 'checked') {
+    			    insultTime = '6 - 12 місяця';
+    			}
+    			
+    			if ($('#insult-value5').attr('checked') == 'checked') {
+    			    insultTime = 'більше 1 року';
+    			}
+    			
+    			ga('send', 'event', 'button','click','buklet');
+    			
+    			$.request('onInsultForm', {
+    				data: {
+    					insulTime: insultTime,
+    					email: $email.val()
+    				},
+    				success: function (data) {
+    					window.location.replace("{{ 'assets/images/upload/ukr_инсульт.png'|theme }}");
+    				}
+    			});
+    		});
+    	})();
+    </script>
 {% endput %}

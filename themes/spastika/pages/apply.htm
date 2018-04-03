@@ -33,7 +33,7 @@ function onRegistrationForm(){
 		'ukdate'=> $date[0].' '.$m.' '.$date[2],
     ];
 
-	foreach (['levabd@gmail.com', 'info@spastika.com', 'spastika.info@gmail.com'] as $mailRecipient){
+	foreach (['info@spastika.com', 'spastika.info@gmail.com'] as $mailRecipient){
 		Mail::send('levabd.mailtemplates::mail.order', $vars, function($message) use($mailRecipient, $vars) {
 			$message->to($mailRecipient, $vars['name']);
 		});
