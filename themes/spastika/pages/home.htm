@@ -50,6 +50,9 @@ function onInsultForm(){
 
 <script type="text/javascript">
 	var pageName = "insult";
+	var currentLocale = "{{ currentLocale }}";
+	var ukBrochureURI = "{{ 'assets/images/upload/ukr_insult.png'|theme }}";
+	var ruBrochureURI = "{{ 'assets/images/upload/rus_insult.png'|theme }}";
 </script>
 
 {% put scripts %}
@@ -84,6 +87,7 @@ function onInsultForm(){
     		});
     				
     		$('#insult-form-submit').click(function (e) {
+    		
     			e.preventDefault();
    
     			var insultTime = '';
@@ -117,7 +121,14 @@ function onInsultForm(){
     					email: $email.val()
     				},
     				success: function (data) {
-    					window.location.replace("{{ 'assets/images/upload/ukr_инсульт.png'|theme }}");
+    					var brochureURI = ruBrochureURI;
+    					if (currentLocale == "ru"){
+    						brochureURI = ruBrochureURI;
+    					}
+    					if (currentLocale == "uk"){
+    						brochureURI = ukBrochureURI;
+    					}
+    					window.location.replace(brochureURI);
     				}
     			});
     		});
