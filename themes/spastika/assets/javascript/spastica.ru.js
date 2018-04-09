@@ -123,7 +123,7 @@
                             "<div class='col-12 justify-content-center'><div" + fullPhotoCss + " ><div class='main doctor-photo' " + mainPhotoCss + "><img src= '" + mainBase64Photo + "' alt='" + doctor.main.name +
                             "'/></div>" + assistantPhoto + "</div></div><div class='col-lg-5 col-md-7 col-10 doctor-description'><div class='row justify-content-start'><div class='col-12 doctor-names'><div><h5>" +
                             doctor.main.name + "</h5>" + doctor.main.position + "<br /><strong>" + doctor.main.clinic_name + "</strong><br />" + doctor.main.clinic_address + "</div>" + assistantDetails +
-                            "</div><div class='col-6'><a href='" + rootPath + "/ru/apply?doctor-id=" + doctorId + "' class='btn btn-primary' role='button'>Записаться</a></div><div class='col-6'><a href='" + rootPath + "/themes/spastika/assets/images/upload/ukr_spastika.png' class='btn btn-primary brochure-button' onclick=\"ga('send', 'event', 'button_spastika','click','buklet_spastika');\" role='button'target='_blank' download=''>Скачать брошюру</a></div></div></div>");
+                            "</div><div class='col-6'><a href='" + rootPath + "/ru/apply?doctor-id=" + doctorId + "' class='btn btn-primary' role='button'>Записаться</a></div><div class='col-6'><a href='" + rootPath + "/themes/spastika/assets/images/upload/rus_spastika.png' class='btn btn-primary brochure-button' onclick=\"ga('send', 'event', 'button_spastika','click','buklet_spastika');\" role='button'target='_blank' download=''>Скачать брошюру</a></div></div></div>");
                         $('#doctor-details').show();
                         $('#doctor-details').animate({
                             "opacity": '1',
