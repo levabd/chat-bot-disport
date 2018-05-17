@@ -32,7 +32,15 @@
         return false;
     });
 
+    
+    var buttonPressed = false;
+    
     function openChat() {
+    
+    	if (!buttonPressed){
+    		ga('send', 'event', 'chat_open','view','chat_open');
+    	}
+	
         $messages.mCustomScrollbar();
         $('.chat').show();
         $('#chat_toggle').hide();
@@ -49,6 +57,8 @@
     });
 
     $('#chat_toggle').click(function() {
+    	ga('send', 'event', 'chat_click','click','chat_click');
+    	buttonPressed = true;
         openChat();
         return false;
     });
@@ -176,6 +186,9 @@
         $('#insult-effects a.btn').click(function() {
             if (!insultEffectsShown) {
                 $messages.mCustomScrollbar();
+                if (!buttonPressed){
+	    		ga('send', 'event', 'chat_open','view','chat_open');
+	    	}
                 $('.chat').show();
                 $('#chat_toggle').hide();
                 insultEffectsShown = true;
@@ -198,6 +211,9 @@
         var hand_normal_offset = $('#hand-position').offset().top - 200;
         $('#hand-position a.btn').click(function() {
             if (!spastikaHandsShown) {
+	        if (!buttonPressed){
+	    		ga('send', 'event', 'chat_open','view','chat_open');
+	    	}
                 $messages.mCustomScrollbar();
                 $('.chat').show();
                 $('#chat_toggle').hide();
@@ -226,6 +242,9 @@
                 {
                     if (($(this).scrollTop() > insult_effects_offset) && (!insultEffectsShown)) {
                         $messages.mCustomScrollbar();
+                        if (!buttonPressed){
+		    		ga('send', 'event', 'chat_open','view','chat_open');
+		    	}
                         $('.chat').show();
                         $('#chat_toggle').hide();
                         insultEffectsShown = true;
@@ -245,6 +264,9 @@
                 {
                     if (($(this).scrollTop() > hand_normal_offset) && (!spastikaHandsShown)) {
                         $messages.mCustomScrollbar();
+                        if (!buttonPressed){
+		    		ga('send', 'event', 'chat_open','view','chat_open');
+		    	}
                         $('.chat').show();
                         $('#chat_toggle').hide();
                         spastikaHandsShown = true;
