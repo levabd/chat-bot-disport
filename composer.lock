@@ -2269,7 +2269,7 @@
         },
         {
             "name": "october/system",
-            "version": "v1.0.428",
+            "version": "v1.0.473",
             "source": {
                 "type": "git",
                 "url": "https://github.com/octoberrain/system.git",
